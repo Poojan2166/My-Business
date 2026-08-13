@@ -1,0 +1,1498 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maison — Fine Dining · Reservation Only</title>
+    <meta
+      name="description"
+      content="A table set by copper, fire, and the season. Eight courses. One quiet room. Est. 2014. Reservation only."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=IBM+Plex+Mono:wght@400&family=Manrope:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ╔══════════════════════════════════════════════════════╗ -->
+    <!--   HERO SECTION — Rectangle 290 overlay + bg image       -->
+    <!-- ╚══════════════════════════════════════════════════════╝ -->
+    <section class="hero" id="hero">
+      <div class="hero__bg">
+        <img
+          src="Images/BackgroundImg.svg"
+          alt="Maison dining room"
+          class="hero__bg-img"
+        />
+        <div class="hero__overlay"></div>
+      </div>
+
+      <!-- Top navigation bar (overlaid on hero) -->
+      <header class="site-nav" id="site-nav" role="banner">
+        <div class="site-nav__inner">
+          <!-- Logo / Restaurant Name -->
+          <a href="#" class="site-nav__logo" aria-label="Maison — Home">
+            <span class="logo-wordmark">Maison Cuivre</span>
+          </a>
+
+          <!-- Nav links (center) -->
+          <nav class="site-nav__links" aria-label="Main navigation">
+            <a href="#menu" class="nav-link">Menu</a>
+            <a href="#chef" class="nav-link">Chef</a>
+            <a href="#gallery" class="nav-link">Gallery</a>
+            <a href="#journal" class="nav-link">Journal</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </nav>
+
+          <!-- CTA -->
+          <a href="#contact" class="site-nav__cta" id="nav-cta"> Reserve </a>
+
+          <!-- Mobile toggle button -->
+          <button class="site-nav__toggle" id="mobile-nav-toggle" aria-label="Open navigation menu" aria-controls="mobile-nav" aria-expanded="false">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Hero content -->
+      <div class="hero__content">
+        <!-- Tag line row -->
+        <div class="hero__tag" id="hero-tag">
+          <span class="hero__tag-line" aria-hidden="true"></span>
+          <span class="hero__tag-text">Est. 2014 · Reservation only</span>
+        </div>
+
+        <!-- Main headline -->
+        <h1 class="hero__headline" id="hero-headline">
+          A table set by&nbsp;<br />
+          <em class="hero__headline-accent">copper,</em><br />
+          fire, and the season.
+        </h1>
+
+        <!-- Sub-description -->
+        <p class="hero__desc" id="hero-desc">
+          Eight courses. One quiet room. A kitchen that cooks the way our
+          grandparents cooked — slowly, and with the windows open.
+        </p>
+
+        <!-- CTA buttons row -->
+        <div class="hero__actions" id="hero-actions">
+          <a href="#contact" class="btn btn--primary" id="btn-call">call now</a>
+          <a
+            href="#story"
+            class="btn btn--circle"
+            id="btn-play"
+            aria-label="Watch our story"
+          >
+            <svg
+              class="btn-play-icon"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <polygon points="2,1 13,7 2,13" fill="#FFBC51" />
+            </svg>
+          </a>
+          <a href="#story" class="btn btn--ghost" id="btn-enquire"
+            >OUR STORY · 02:14</a
+          >
+        </div>
+
+        <!-- Mini info panel (right side) -->
+        <div
+          class="hero__info-panel"
+          id="hero-info-panel"
+          aria-label="Booking details"
+        >
+          <div class="info-row">
+            <span class="info-label">Seating</span>
+            <span class="info-value">19:00 · 21:30</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Tasting menu</span>
+            <span class="info-value">€ 165 / guest</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Wine pairing</span>
+            <span class="info-value">€ 95</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Open</span>
+            <span class="info-value">Tue – Sat</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ╔══════════════════════════════════════════════════════╗ -->
+    <!--   STATS BAR — 4 key figures on dark background           -->
+    <!-- ╚══════════════════════════════════════════════════════╝ -->
+    <section
+      class="stats-bar"
+      id="stats-bar"
+      aria-label="Restaurant highlights"
+    >
+      <div class="stats-bar__inner">
+        <article class="stat-item" id="stat-01">
+          <span class="stat-item__index" aria-hidden="true">01</span>
+          <div class="stat-item__body">
+            <span class="stat-item__title">Michelin star</span>
+            <span class="stat-item__sub">since 2019</span>
+          </div>
+        </article>
+
+        <article class="stat-item" id="stat-02">
+          <span class="stat-item__index" aria-hidden="true">02</span>
+          <div class="stat-item__body">
+            <span class="stat-item__title">Eight courses</span>
+            <span class="stat-item__sub">every evening</span>
+          </div>
+        </article>
+
+        <article class="stat-item" id="stat-03">
+          <span class="stat-item__index" aria-hidden="true">03</span>
+          <div class="stat-item__body">
+            <span class="stat-item__title">Twenty seats</span>
+            <span class="stat-item__sub">one service</span>
+          </div>
+        </article>
+
+        <article class="stat-item" id="stat-04">
+          <span class="stat-item__index" aria-hidden="true">04</span>
+          <div class="stat-item__body">
+            <span class="stat-item__title">Forty growers</span>
+            <span class="stat-item__sub">within 80 km</span>
+          </div>
+        </article>
+      </div>
+      <!-- Copper divider line -->
+      <div class="stats-bar__divider" aria-hidden="true"></div>
+    </section>
+
+    <!-- ╔══════════════════════════════════════════════════════╗ -->
+    <!--   TICKER / MARQUEE BAR — Kitchen philosophy tags         -->
+    <!-- ╚══════════════════════════════════════════════════════╝ -->
+    <div class="ticker-bar" id="ticker-bar" aria-hidden="true">
+      <div class="ticker-bar__track">
+        <span class="ticker-item">Hand-foraged</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-item">Slow-cured</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-item">House-fermented</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-item">Copper-touched</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-item">Seasonal</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-item">Wood-fired</span>
+        <span class="ticker-dot"></span>
+        <!-- duplicate for seamless loop -->
+        <span class="ticker-item">Hand-foraged</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-item">Slow-cured</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-item">House-fermented</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-item">Copper-touched</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-item">Seasonal</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-item">Wood-fired</span>
+        <span class="ticker-dot"></span>
+      </div>
+    </div>
+
+    <!-- ╔══════════════════════════════════════════════════════╗ -->
+    <!--   OUR KITCHEN SECTION — Rectangle 319                   -->
+    <!-- ╚══════════════════════════════════════════════════════╝ -->
+    <section
+      class="kitchen-section"
+      id="chef"
+      aria-labelledby="kitchen-heading"
+    >
+      <div class="kitchen-section__inner">
+        <!-- Left Column: Quote -->
+        <div class="kitchen-section__quote-col">
+          <div class="section-label">
+            <span class="section-label__line"></span>
+            <span class="section-label__text">Our kitchen</span>
+          </div>
+          <h2 class="kitchen-section__quote" id="kitchen-heading">
+            We cook in
+            <span class="kitchen-section__quote-accent">copper</span> because it
+            tells the truth about heat.
+          </h2>
+        </div>
+
+        <!-- Right Column: Story & Stats -->
+        <div class="kitchen-section__details-col">
+          <p class="kitchen-section__text">
+            Maison Cuivre opened in a former metalworks at the edge of the old
+            quarter. We kept the chimneys, the wide timber floors, and the long
+            communal table where the smiths once shared lunch.
+          </p>
+          <p class="kitchen-section__text">
+            The menu changes every fortnight, written by hand and shaped by what
+            arrived that morning — never more than eight courses, never the same
+            twice in a season.
+          </p>
+
+          <hr class="kitchen-section__divider" />
+
+          <div class="kitchen-stats">
+            <div class="kitchen-stat-item">
+              <span class="kitchen-stat-number">08</span>
+              <span class="kitchen-stat-label">Courses</span>
+            </div>
+            <div class="kitchen-stat-item">
+              <span class="kitchen-stat-number">20</span>
+              <span class="kitchen-stat-label">Seats</span>
+            </div>
+            <div class="kitchen-stat-item">
+              <span class="kitchen-stat-number">11</span>
+              <span class="kitchen-stat-label">Years</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ╔══════════════════════════════════════════════════════╗ -->
+    <!--   THE TASTING SHOWCASE SECTION — Rectangle 320          -->
+    <!-- ╚══════════════════════════════════════════════════════╝ -->
+    <section
+      class="tasting-section"
+      id="menu"
+      aria-labelledby="tasting-heading"
+    >
+      <div class="tasting-section__inner">
+        <!-- Header -->
+        <header class="tasting-section__header">
+          <div class="section-label">
+            <span class="section-label__line section-label__line--gold"></span>
+            <span class="section-label__text section-label__text--gold"
+              >The tasting · Spring</span
+            >
+          </div>
+          <h2 class="tasting-section__headline" id="tasting-heading">
+            Three of eight.
+          </h2>
+        </header>
+
+        <!-- Cards Grid -->
+        <div class="tasting-grid">
+          <!-- Dish 01 -->
+          <article class="dish-card" id="dish-scallop">
+            <div class="dish-card__bg">
+              <img
+                src="Images/Hand_dived_scallop.svg"
+                alt="Hand-dived scallop"
+                class="dish-card__img"
+              />
+            </div>
+
+            <div class="dish-card__content">
+              <div class="dish-card__meta">
+                <h3 class="dish-card__title">Hand-dived scallop</h3>
+                <p class="dish-card__desc">
+                  Smoked Butter, Sea Grape, Dill Oil
+                </p>
+              </div>
+              <span class="dish-card__number">01</span>
+            </div>
+          </article>
+
+          <!-- Dish 02 -->
+          <article class="dish-card dish-card--offset" id="dish-boeuf">
+            <div class="dish-card__bg">
+              <img
+                src="Images/Aged_cote_de_bœuf.svg"
+                alt="Aged côte de bœuf"
+                class="dish-card__img"
+              />
+            </div>
+
+            <div class="dish-card__content">
+              <div class="dish-card__meta">
+                <h3 class="dish-card__title">Aged côte de bœuf</h3>
+                <p class="dish-card__desc">
+                  Bone Marrow Jus, Charred Shallot, Copper Salt
+                </p>
+              </div>
+              <span class="dish-card__number">02</span>
+            </div>
+          </article>
+
+          <!-- Dish 03 -->
+          <article class="dish-card" id="dish-chocolate">
+            <div class="dish-card__bg">
+              <img
+                src="Images/Bitter_chocolate.svg"
+                alt="Bitter chocolate dessert"
+                class="dish-card__img"
+              />
+            </div>
+
+            <div class="dish-card__content">
+              <div class="dish-card__meta">
+                <h3 class="dish-card__title">Bitter chocolate</h3>
+                <p class="dish-card__desc">
+                  Olive Oil, Gold Leaf, Fleur De Sel
+                </p>
+              </div>
+              <span class="dish-card__number">03</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- Footer link -->
+        <div class="tasting-section__footer">
+          <a href="#contact" class="tasting-footer-link"
+            >Request the full menu &rarr;</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ╔══════════════════════════════════════════════════════╗ -->
+    <!--   CHEF NOTE SECTION — Rectangle 321                     -->
+    <!-- ╚══════════════════════════════════════════════════════╝ -->
+    <section
+      class="chef-note-section"
+      id="chef-note"
+      aria-labelledby="chef-note-heading"
+    >
+      <div class="chef-note-section__inner">
+        <!-- Left: Image -->
+        <div class="chef-note-section__img-col">
+          <img
+            src="Images/A_note_from_the_kitchen.svg"
+            alt="Chef Auguste Vidal at work"
+            class="chef-note-section__img"
+          />
+          <div class="chef-note-section__name">
+            <p class="chef-note-dec">Auguste Vidal — Chef Patron</p>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="chef-note-section__content-col">
+          <div class="section-label">
+            <span class="section-label__line section-label__line--gold"></span>
+            <span class="section-label__text section-label__text--gold"
+              >A note from the kitchen</span
+            >
+          </div>
+
+          <blockquote class="chef-note-section__quote" id="chef-note-heading">
+            "I learned to cook standing on a crate in my grandmother's kitchen
+            in Lyon.
+            <span class="chef-note-section__quote-accent">
+              Nothing here is invented
+            </span>
+            &mdash; only remembered, carefully."
+          </blockquote>
+
+          <div class="chef-meta-grid">
+            <div class="chef-meta-item">
+              <h4 class="chef-meta-label">Trained at</h4>
+              <p class="chef-meta-value">
+                Maison Pic &middot; Troisgros &middot; Le Bernardin
+              </p>
+            </div>
+            <div class="chef-meta-item">
+              <h4 class="chef-meta-label">Cooks for</h4>
+              <p class="chef-meta-value">Twenty guests, twice an evening</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ╔══════════════════════════════════════════════════════╗ -->
+    <!--   CARTE SECTION — Rectangle 322                         -->
+    <!-- ╚══════════════════════════════════════════════════════╝ -->
+    <section
+      class="carte-section"
+      id="carte"
+      aria-labelledby="carte-heading"
+    >
+      <div class="carte-section__inner">
+        <!-- Section Header -->
+        <header class="carte-header">
+          <div class="carte-header__left">
+            <div class="section-label">
+              <span class="section-label__line section-label__line--gold"></span>
+              <span class="section-label__text section-label__text--gold">Carte — Hiver MMXXVI</span>
+            </div>
+            <h2 class="carte-headline" id="carte-heading">
+              Three movements<br />
+              <span class="carte-headline__italic">of twelve.</span>
+            </h2>
+          </div>
+          <div class="carte-header__right">
+            <p class="carte-desc">
+              An excerpt. The complete menu is revealed at the table, never before.
+            </p>
+          </div>
+        </header>
+
+        <!-- Menu List -->
+        <div class="carte-list">
+          <!-- Item I -->
+          <article class="carte-item" id="carte-item-scallop">
+            <div class="carte-item__category">
+              <span class="carte-item__label">Ouverture</span>
+              <span class="carte-item__num">I</span>
+            </div>
+            <div class="carte-item__details">
+              <h3 class="carte-item__title">Hand-dived Scallop</h3>
+              <p class="carte-item__desc">
+                Bruleed scallop, brown butter, Oscietra caviar, copper consommé.
+              </p>
+            </div>
+            <div class="carte-item__image-wrap">
+              <img
+                src="Images/Carte_Hand_dived_Scallop.svg"
+                alt="Hand-dived Scallop dish"
+                class="carte-item__img"
+                loading="lazy"
+              />
+            </div>
+            <div class="carte-item__price">
+              <span class="carte-item__currency">EUR</span>
+              <span class="carte-item__val">32</span>
+            </div>
+          </article>
+
+          <!-- Item II -->
+          <article class="carte-item" id="carte-item-wagyu">
+            <div class="carte-item__category">
+              <span class="carte-item__label">Plat Principal</span>
+              <span class="carte-item__num">II</span>
+            </div>
+            <div class="carte-item__details">
+              <h3 class="carte-item__title">Aged Wagyu A5</h3>
+              <p class="carte-item__desc">
+                60-day dry-aged sirloin, shaved Périgord truffle, bone marrow jus.
+              </p>
+            </div>
+            <div class="carte-item__image-wrap">
+              <img
+                src="Images/Carte_Aged_Wagyu_A5.svg"
+                alt="Aged Wagyu A5 dish"
+                class="carte-item__img"
+                loading="lazy"
+              />
+            </div>
+            <div class="carte-item__price">
+              <span class="carte-item__currency">EUR</span>
+              <span class="carte-item__val">84</span>
+            </div>
+          </article>
+
+          <!-- Item III -->
+          <article class="carte-item" id="carte-item-cocoa">
+            <div class="carte-item__category">
+              <span class="carte-item__label">Dessert</span>
+              <span class="carte-item__num">III</span>
+            </div>
+            <div class="carte-item__details">
+              <h3 class="carte-item__title">Cocoa Sphere ’24</h3>
+              <p class="carte-item__desc">
+                Single-origin Madagascar 72%, smoked caramel, 24-carat gold leaf.
+              </p>
+            </div>
+            <div class="carte-item__image-wrap">
+              <img
+                src="Images/Carte_Cocoa_Sphere _24.svg"
+                alt="Cocoa Sphere dessert"
+                class="carte-item__img"
+                loading="lazy"
+              />
+            </div>
+            <div class="carte-item__price">
+              <span class="carte-item__currency">EUR</span>
+              <span class="carte-item__val">24</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- Section Footer -->
+        <footer class="carte-footer">
+          <p class="carte-footer__info">
+            Full tasting · 12 courses · 285 € · Wine pairing 195 €
+          </p>
+          <div class="carte-footer__line"></div>
+          <a href="#contact" class="carte-footer__link" id="carte-request-link">
+            Request the full menu &rarr;
+          </a>
+        </footer>
+      </div>
+    </section>
+
+    <!-- ╔══════════════════════════════════════════════════════╗ -->
+    <!--   GALLERY/FRAMES SECTION — Rectangle 326               -->
+    <!-- ╚══════════════════════════════════════════════════════╝ -->
+    <section
+      class="gallery-section"
+      id="gallery"
+      aria-labelledby="gallery-heading"
+    >
+      <div class="gallery-section__inner">
+        <!-- Section Header -->
+        <header class="gallery-header">
+          <div class="gallery-header__left">
+            <div class="section-label">
+              <span class="section-label__line section-label__line--gold"></span>
+              <span class="section-label__text section-label__text--gold">A look inside</span>
+            </div>
+            <h2 class="gallery-headline" id="gallery-heading">
+              Service, in<br />
+              <span class="gallery-headline__italic">four frames.</span>
+            </h2>
+          </div>
+          <div class="gallery-header__right">
+            <p class="gallery-desc">
+              Photography by Camille Roux. Tap any frame to enlarge.
+            </p>
+          </div>
+        </header>
+
+        <!-- Grid of 4 frames -->
+        <div class="gallery-grid">
+          <!-- Frame 1 -->
+          <button class="gallery-card" id="gallery-card-kitchen" aria-haspopup="dialog" aria-label="Enlarge Kitchen frame" data-image="Images/Kitchen.svg" data-title="Course IV · plated" data-label="Kitchen">
+            <div class="gallery-card__img-wrap">
+              <img
+                src="Images/Kitchen.svg"
+                alt="Kitchen — Course IV · plated"
+                class="gallery-card__img"
+                loading="lazy"
+              />
+              <div class="gallery-card__overlay"></div>
+            </div>
+            <div class="gallery-card__caption">
+              <span class="gallery-card__label">Kitchen</span>
+              <span class="gallery-card__title">Course IV · plated</span>
+            </div>
+          </button>
+
+          <!-- Frame 2 -->
+          <button class="gallery-card" id="gallery-card-cellar" aria-haspopup="dialog" aria-label="Enlarge Cellar frame" data-image="Images/Cellar.svg" data-title="The wine list · 1,200 bottles" data-label="Cellar">
+            <div class="gallery-card__img-wrap">
+              <img
+                src="Images/Cellar.svg"
+                alt="Cellar — The wine list · 1,200 bottles"
+                class="gallery-card__img"
+                loading="lazy"
+              />
+              <div class="gallery-card__overlay"></div>
+            </div>
+            <div class="gallery-card__caption">
+              <span class="gallery-card__label">Cellar</span>
+              <span class="gallery-card__title">The wine list · 1,200 bottles</span>
+            </div>
+          </button>
+
+          <!-- Frame 3 -->
+          <button class="gallery-card" id="gallery-card-room" aria-haspopup="dialog" aria-label="Enlarge Room frame" data-image="Images/Room.svg" data-title="The Cellar — private dining" data-label="Room">
+            <div class="gallery-card__img-wrap">
+              <img
+                src="Images/Room.svg"
+                alt="Room — The Cellar — private dining"
+                class="gallery-card__img"
+                loading="lazy"
+              />
+              <div class="gallery-card__overlay"></div>
+            </div>
+            <div class="gallery-card__caption">
+              <span class="gallery-card__label">Room</span>
+              <span class="gallery-card__title">The Cellar — private dining</span>
+            </div>
+          </button>
+
+          <!-- Frame 4 -->
+          <button class="gallery-card" id="gallery-card-pass" aria-haspopup="dialog" aria-label="Enlarge Pass frame" data-image="Images/Pass.svg" data-title="Service, 19:42" data-label="Pass">
+            <div class="gallery-card__img-wrap">
+              <img
+                src="Images/Pass.svg"
+                alt="Pass — Service, 19:42"
+                class="gallery-card__img"
+                loading="lazy"
+              />
+              <div class="gallery-card__overlay"></div>
+            </div>
+            <div class="gallery-card__caption">
+              <span class="gallery-card__label">Pass</span>
+              <span class="gallery-card__title">Service, 19:42</span>
+            </div>
+          </button>
+        </div>
+    </section>
+
+    <!-- ╔══════════════════════════════════════════════════════╗ -->
+    <!--   THE ROOMS SECTION — Rectangle 327                     -->
+    <!-- ╚══════════════════════════════════════════════════════╝ -->
+    <section
+      class="rooms-section"
+      id="rooms"
+      aria-labelledby="rooms-heading"
+    >
+      <div class="rooms-section__inner">
+        <!-- Section Header -->
+        <header class="rooms-header">
+          <div class="rooms-header__left">
+            <div class="section-label">
+              <span class="section-label__line section-label__line--gold"></span>
+              <span class="section-label__text section-label__text--gold">The rooms</span>
+            </div>
+            <h2 class="rooms-headline" id="rooms-heading">
+              Three rooms,
+              one <span class="rooms-headline__italic"> long evening.</span>
+            </h2>
+          </div>
+          <div class="rooms-header__right">
+            <p class="rooms-desc">
+              Each room is its own service, with its own menu and its own pace. Tap a room to read more.
+            </p>
+          </div>
+        </header>
+
+        <!-- Rooms List -->
+        <div class="rooms-list">
+          <!-- Room 01 -->
+          <a href="#contact" class="rooms-item" id="rooms-item-dining">
+            <span class="rooms-item__num">01</span>
+            <h3 class="rooms-item__name">The Dining Room</h3>
+            <span class="rooms-item__details">20 seats · single service</span>
+            <span class="rooms-item__arrow" aria-hidden="true">&rarr;</span>
+          </a>
+
+          <!-- Room 02 -->
+          <a href="#contact" class="rooms-item" id="rooms-item-counter">
+            <span class="rooms-item__num">02</span>
+            <h3 class="rooms-item__name">The Counter</h3>
+            <span class="rooms-item__details">4 seats facing the pass</span>
+            <span class="rooms-item__arrow" aria-hidden="true">&rarr;</span>
+          </a>
+
+          <!-- Room 03 -->
+          <a href="#contact" class="rooms-item" id="rooms-item-cellar">
+            <span class="rooms-item__num">03</span>
+            <h3 class="rooms-item__name">The Cellar</h3>
+            <span class="rooms-item__details">Private, up to 10 guests</span>
+            <span class="rooms-item__arrow" aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ╔══════════════════════════════════════════════════════╗ -->
+    <!--   REVIEWS SECTION — Rectangle 328                       -->
+    <!-- ╚══════════════════════════════════════════════════════╝ -->
+    <section
+      class="reviews-section"
+      id="reviews"
+      aria-labelledby="reviews-heading"
+    >
+      <div class="reviews-section__inner">
+        <!-- Section Header -->
+        <header class="reviews-header">
+          <div class="reviews-header__left">
+            <div class="section-label">
+              <span class="section-label__line section-label__line--gold"></span>
+              <span class="section-label__text section-label__text--gold">In their words</span>
+            </div>
+            <h2 class="reviews-headline" id="reviews-heading">
+              Quietly spoken<br />
+              <span class="reviews-headline__gold">for.</span>
+            </h2>
+          </div>
+        </header>
+
+        <!-- Grid of 3 reviews -->
+        <div class="reviews-grid">
+          <!-- Card 1 -->
+          <article class="reviews-card" id="reviews-card-lemonde">
+            <div class="reviews-card__header">
+              <div class="reviews-card__stars">
+                <img src="Images/star.svg" alt="" class="star-icon" />
+               
+              </div>
+            </div>
+            <blockquote class="reviews-card__body">
+              "The kind of restaurant that makes you remember why you started eating out in the first place."
+            </blockquote>
+            <footer class="reviews-card__footer">
+              <cite class="reviews-card__author">Le Monde</cite>
+            </footer>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="reviews-card" id="reviews-card-gaultmillau">
+            <div class="reviews-card__header">
+              <span class="reviews-card__rating">18 / 20</span>
+            </div>
+            <blockquote class="reviews-card__body">
+              "Henri cooks with absolute confidence and absolutely no hurry. The result is extraordinary."
+            </blockquote>
+            <footer class="reviews-card__footer">
+              <cite class="reviews-card__author">Gault & Millau</cite>
+            </footer>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="reviews-card" id="reviews-card-condenast">
+            <div class="reviews-card__header">
+              <span class="reviews-card__rating">Gold List</span>
+            </div>
+            <blockquote class="reviews-card__body">
+              "A copper-lit room and eight perfect courses. We left lighter than we arrived."
+            </blockquote>
+            <footer class="reviews-card__footer">
+              <cite class="reviews-card__author">Condé Nast Traveller</cite>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ╔══════════════════════════════════════════════════════╗ -->
+    <!--   PRIVATE DINING & EVENTS SECTION — Rectangle 332       -->
+    <!-- ╚══════════════════════════════════════════════════════╝ -->
+    <section
+      class="events-section"
+      id="events"
+      aria-labelledby="events-heading"
+    >
+      <div class="events-section__inner">
+        <!-- Left Side: Content & Details -->
+        <div class="events-content">
+          <div class="section-label">
+            <span class="section-label__line section-label__line--gold"></span>
+            <span class="section-label__text section-label__text--gold">Private dining & events</span>
+          </div>
+          
+          <h2 class="events-headline" id="events-heading">
+            Take the whole room
+            for the <span class="events-headline__italic">evening.</span>
+          </h2>
+          
+          <p class="events-desc">
+            Anniversaries, weddings, brand dinners, intimate launches. We close the doors from seven, and the night is written for you alone.
+          </p>
+
+          <!-- Stats Grid -->
+          <div class="events-stats">
+            <!-- Stat 1 -->
+            <div class="events-stat-item">
+              <span class="events-stat-item__label">Up to</span>
+              <span class="events-stat-item__val">32 guests</span>
+            </div>
+            <!-- Stat 2 -->
+            <div class="events-stat-item">
+              <span class="events-stat-item__label">From</span>
+              <span class="events-stat-item__val">&euro; 220 / guest</span>
+            </div>
+            <!-- Stat 3 -->
+            <div class="events-stat-item">
+              <span class="events-stat-item__label">Notice</span>
+              <span class="events-stat-item__val">21 days</span>
+            </div>
+          </div>
+
+          <!-- CTA Button -->
+          <div class="events-cta-wrap">
+            <a   class="btn btn--gold" id="btn-private-enquiry">
+              Enquire about a private evening
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Side: Image -->
+        <div class="events-image-wrap">
+          <img
+            src="Images/Private_dining_&_events.svg"
+            alt="Private dining room configuration and layout"
+            class="events-image"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ╔══════════════════════════════════════════════════════╗ -->
+    <!--   RECOGNITION SECTION — Rectangle 334                    -->
+    <!-- ╚══════════════════════════════════════════════════════╝ -->
+    <section
+      class="recognition-section"
+      id="recognition"
+      aria-labelledby="recognition-heading"
+    >
+      <div class="recognition-section__inner">
+        <!-- Section Header -->
+        <header class="recognition-header">
+          <div class="recognition-header__left">
+            <div class="section-label">
+              <span class="section-label__line section-label__line--gold"></span>
+              <span class="section-label__text section-label__text--gold">Recognition</span>
+            </div>
+            <h2 class="recognition-headline" id="recognition-heading">
+              A decade of
+              <span class="recognition-headline__gold">kind words.</span>
+            </h2>
+          </div>
+          <div class="recognition-header__right">
+            <span class="recognition-years">2015 — 2026</span>
+          </div>
+        </header>
+
+        <!-- Grid of 6 Accolades -->
+        <div class="recognition-grid">
+          <!-- Card 1 -->
+          <article class="recognition-card">
+            <div class="recognition-card__content">
+              <h3 class="recognition-card__title">The Cellar</h3>
+              <span class="recognition-card__subtext">★ One star</span>
+            </div>
+            <span class="recognition-card__year">2019</span>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="recognition-card">
+            <div class="recognition-card__content">
+              <h3 class="recognition-card__title">Gault & Millau</h3>
+              <span class="recognition-card__subtext">18 / 20</span>
+            </div>
+            <span class="recognition-card__year">2023</span>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="recognition-card">
+            <div class="recognition-card__content">
+              <h3 class="recognition-card__title">World's 50 Best</h3>
+              <span class="recognition-card__subtext">Discovery</span>
+            </div>
+            <span class="recognition-card__year">2024</span>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="recognition-card">
+            <div class="recognition-card__content">
+              <h3 class="recognition-card__title">La Liste</h3>
+              <span class="recognition-card__subtext">94 / 100</span>
+            </div>
+            <span class="recognition-card__year">2025</span>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="recognition-card">
+            <div class="recognition-card__content">
+              <h3 class="recognition-card__title">Le Fooding</h3>
+              <span class="recognition-card__subtext">Salle de l'année</span>
+            </div>
+            <span class="recognition-card__year">2022</span>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="recognition-card">
+            <div class="recognition-card__content">
+              <h3 class="recognition-card__title">Condé Nast</h3>
+              <span class="recognition-card__subtext">Gold List</span>
+            </div>
+            <span class="recognition-card__year">2025</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ╔══════════════════════════════════════════════════════╗ -->
+    <!--   JOURNAL SECTION — Rectangle 341                       -->
+    <!-- ╚══════════════════════════════════════════════════════╝ -->
+    <section
+      class="journal-section"
+      id="journal"
+      aria-labelledby="journal-heading"
+    >
+      <div class="journal-section__inner">
+        <!-- Section Header -->
+        <header class="journal-header">
+          <div class="journal-header__left">
+            <div class="section-label">
+              <span class="section-label__line section-label__line--gold"></span>
+              <span class="section-label__text section-label__text--gold">Journal</span>
+            </div>
+            <h2 class="journal-headline" id="journal-heading">
+              From the
+              <span class="journal-headline__italic">kitchen desk.</span>
+            </h2>
+          </div>
+          <div class="journal-header__right">
+            <a href="#journal" class="journal-all-link">All writing &rarr;</a>
+          </div>
+        </header>
+
+        <!-- Grid of 3 columns -->
+        <div class="journal-grid">
+          <!-- Column 1 -->
+          <article class="journal-card" id="journal-card-fieldnotes">
+            <div class="journal-card__image-wrap journal-card__image-wrap--short">
+              <img
+                src="Images/Field_notes.svg"
+                alt="Field notes asparagus sketch drawing"
+                class="journal-card__img"
+                loading="lazy"
+              />
+            </div>
+            <div class="journal-card__content">
+              <div class="journal-card__meta">
+                <span class="journal-card__label">Field notes</span>
+                <span class="journal-card__date">06 / 2026</span>
+              </div>
+              <h3 class="journal-card__title">
+                On the asparagus we waited four months for
+              </h3>
+              <a href="#journal" class="journal-card__link">Read &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Column 2 -->
+          <article class="journal-card" id="journal-card-cellar">
+            <div class="journal-card__image-wrap journal-card__image-wrap--tall">
+              <img
+                src="Images/Cellar_journal.svg"
+                alt="Cellar journal Loire whites wine list sketch"
+                class="journal-card__img"
+                loading="lazy"
+              />
+            </div>
+            <div class="journal-card__content">
+              <div class="journal-card__meta">
+                <span class="journal-card__label">Cellar</span>
+                <span class="journal-card__date">05 / 2026</span>
+              </div>
+              <h3 class="journal-card__title">
+                Five Loire whites worth a second glass
+              </h3>
+              <a href="#journal" class="journal-card__link">Read &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Column 3 -->
+          <article class="journal-card" id="journal-card-kitchen">
+            <div class="journal-card__image-wrap journal-card__image-wrap--short">
+              <img
+                src="Images/Kitchen_journal.svg"
+                alt="Kitchen journal aging beef illustration"
+                class="journal-card__img"
+                loading="lazy"
+              />
+            </div>
+            <div class="journal-card__content">
+              <div class="journal-card__meta">
+                <span class="journal-card__label">Kitchen</span>
+                <span class="journal-card__date">04 / 2026</span>
+              </div>
+              <h3 class="journal-card__title">
+                Why we rest beef for eighty-three days
+              </h3>
+              <a href="#journal" class="journal-card__link">Read &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ╔══════════════════════════════════════════════════════╗ -->
+    <!--   FAQ SECTION — Rectangle 345                           -->
+    <!-- ╚══════════════════════════════════════════════════════╝ -->
+    <section
+      class="faq-section"
+      id="faq"
+      aria-labelledby="faq-heading"
+    >
+      <div class="faq-section__inner">
+        <!-- Section Header -->
+        <header class="faq-header">
+          <div class="section-label section-label--centered">
+            <span class="section-label__line section-label__line--gold"></span>
+            <span class="section-label__text section-label__text--gold">Before you arrive</span>
+          </div>
+          <h2 class="faq-headline" id="faq-heading">
+            A few <span class="faq-headline__italic">small things.</span>
+          </h2>
+        </header>
+
+        <!-- FAQ Accordion List -->
+        <div class="faq-list">
+          <!-- Item 1 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-answer-1">
+              <span class="faq-question">How far in advance can I book?</span>
+              <span class="faq-icon-wrap">
+                <img src="Images/downicon.svg" alt="Toggle answer" class="faq-icon" />
+              </span>
+            </button>
+            <div class="faq-answer" id="faq-answer-1" aria-hidden="true">
+              <div class="faq-answer__inner">
+                <p>Reservations open on the first day of each month at 10:00 AM local time for the following month. We recommend booking well in advance as tables fill quickly.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-answer-2">
+              <span class="faq-question">Can you accommodate dietary requests?</span>
+              <span class="faq-icon-wrap">
+                <img src="Images/downicon.svg" alt="Toggle answer" class="faq-icon" />
+              </span>
+            </button>
+            <div class="faq-answer" id="faq-answer-2" aria-hidden="true">
+              <div class="faq-answer__inner">
+                <p>Yes, we accommodate most common allergies and dietary preferences (vegetarian, pescatarian, gluten-free) with at least 48 hours' notice. Please note your requirements during booking.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-answer-3">
+              <span class="faq-question">Is there a dress code?</span>
+              <span class="faq-icon-wrap">
+                <img src="Images/downicon.svg" alt="Toggle answer" class="faq-icon" />
+              </span>
+            </button>
+            <div class="faq-answer" id="faq-answer-3" aria-hidden="true">
+              <div class="faq-answer__inner">
+                <p>We suggest smart casual attire. While jackets are not required, we ask that guests refrain from wearing athletic wear, shorts, or flip-flops.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-answer-4">
+              <span class="faq-question">Do you offer corkage?</span>
+              <span class="faq-icon-wrap">
+                <img src="Images/downicon.svg" alt="Toggle answer" class="faq-icon" />
+              </span>
+            </button>
+            <div class="faq-answer" id="faq-answer-4" aria-hidden="true">
+              <div class="faq-answer__inner">
+                <p>You may bring up to two bottles of wine per table that are not already present on our wine list. A corkage fee of 75€ per bottle will apply.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-answer-5">
+              <span class="faq-question">Is the dining room accessible?</span>
+              <span class="faq-icon-wrap">
+                <img src="Images/downicon.svg" alt="Toggle answer" class="faq-icon" />
+              </span>
+            </button>
+            <div class="faq-answer" id="faq-answer-5" aria-hidden="true">
+              <div class="faq-answer__inner">
+                <p>Yes, our main dining room, private events space, and facilities are fully wheelchair accessible. Please let us know if you require any specific assistance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ╔══════════════════════════════════════════════════════╗ -->
+    <!--   RESERVATIONS SECTION — Rectangle 346                   -->
+    <!-- ╚══════════════════════════════════════════════════════╝ -->
+    <section
+      class="reservation-section"
+      id="reservations"
+      aria-labelledby="reservation-heading"
+    >
+      <div class="reservation-section__inner">
+        <!-- Section Header -->
+        <header class="reservation-header">
+          <div class="section-label section-label--centered">
+            <span class="section-label__line section-label__line--gold"></span>
+            <span class="section-label__text section-label__text--gold">Reservations</span>
+          </div>
+          <h2 class="reservation-headline" id="reservation-heading">
+            A table for two,<br />a Saturday in <span class="reservation-headline__italic">June.</span>
+          </h2>
+          <p class="reservation-desc">
+            The book opens sixty days in advance. Tell us the date, the number of guests, and anything we should know.
+          </p>
+        </header>
+
+        <!-- Reservation Form -->
+        <form class="reservation-form" action="#" method="POST">
+          <div class="reservation-form__row">
+            <!-- Date Field -->
+            <div class="form-group">
+              <label for="res-date" class="form-label">Date</label>
+              <input
+                type="text"
+                id="res-date"
+                name="date"
+                class="form-input"
+                placeholder="dd-mm-yy"
+                required
+              />
+            </div>
+
+            <!-- Guests Field -->
+            <div class="form-group">
+              <label for="res-guests" class="form-label">Guests</label>
+              <select id="res-guests" name="guests" class="form-select" required>
+                <option value="1">1 guest</option>
+                <option value="2" selected>2 guests</option>
+                <option value="3">3 guests</option>
+                <option value="4">4 guests</option>
+                <option value="5">5 guests</option>
+                <option value="6">6 guests</option>
+              </select>
+            </div>
+
+            <!-- Seating Field -->
+            <div class="form-group">
+              <label for="res-seating" class="form-label">Seating</label>
+              <select id="res-seating" name="seating" class="form-select" required>
+                <option value="12:00">12:00</option>
+                <option value="12:30">12:30</option>
+                <option value="13:00">13:00</option>
+                <option value="19:00" selected>19:00</option>
+                <option value="19:30">19:30</option>
+                <option value="20:00">20:00</option>
+                <option value="20:30">20:30</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Name Field -->
+          <div class="form-group form-group--full">
+            <label for="res-name" class="form-label">Name</label>
+            <input
+              type="text"
+              id="res-name"
+              name="name"
+              class="form-input"
+              placeholder="Henri vallois"
+              required
+            />
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn--gold btn--full-width">
+            Request reservation
+          </button>
+        </form>
+
+        <p class="reservation-phone">
+          Or telephone the maître d' &middot; <a href="tel:+33478000000" class="reservation-phone__link">+33 4 78 00 00 00</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ╔══════════════════════════════════════════════════════╗ -->
+    <!--   NEWSLETTER SECTION — Rectangle 347                    -->
+    <!-- ╚══════════════════════════════════════════════════════╝ -->
+    <section class="newsletter-section" id="newsletter" aria-labelledby="newsletter-heading">
+      <div class="newsletter-section__inner">
+        <!-- Left Column: Content -->
+        <div class="newsletter-content">
+          <div class="section-label">
+            <span class="section-label__line"></span>
+            <span class="section-label__text">The letter</span>
+          </div>
+          <h2 class="newsletter-headline" id="newsletter-heading">
+            A short note <em class="newsletter-headline__italic">once a month.</em>
+          </h2>
+          <p class="newsletter-desc">
+            New menus, open dates, and the occasional recipe. No more than twelve letters a year.
+          </p>
+        </div>
+
+        <!-- Right Column: Form -->
+        <div class="newsletter-form-container">
+          <form class="newsletter-form" action="#" method="POST">
+            <div class="newsletter-form__group">
+              <input
+                type="email"
+                class="newsletter-input"
+                placeholder="your.name@maison.com"
+                aria-label="Email address"
+                required
+              />
+              <button type="submit" class="btn newsletter-submit">
+                Subscribe
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ╔══════════════════════════════════════════════════════╗ -->
+    <!--   FOOTER SECTION — Rectangle 346                        -->
+    <!-- ╚══════════════════════════════════════════════════════╝ -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="site-footer__inner">
+        <!-- Main Footer Content -->
+        <div class="site-footer__main">
+          <!-- Left Column: Brand Logo and Description -->
+          <div class="footer-brand">
+            <h2 class="footer-logo">Maison Cuivre</h2>
+            <p class="footer-brand-desc">
+              14 rue des Forgerons, Lyon · A modern European tasting room, by reservation only.
+            </p>
+            <div class="footer-socials">
+              <a href="#" class="footer-social-btn" target="_blank" rel="noopener">Instagram</a>
+              <a href="#" class="footer-social-btn" target="_blank" rel="noopener">Substack</a>
+              <a href="#" class="footer-social-btn" target="_blank" rel="noopener">Vimeo</a>
+            </div>
+          </div>
+
+          <!-- Middle Column (Visit) -->
+          <div class="footer-col">
+            <span class="footer-col-label">Visit</span>
+            <div class="footer-col-content">
+              <p>Tue – Sat 19:00 · 21:30</p>
+              <p>Closed Aug 1 – 20</p>
+            </div>
+          </div>
+
+          <!-- Right Column (Contact) -->
+          <div class="footer-col">
+            <span class="footer-col-label">Contact</span>
+            <div class="footer-col-content">
+              <p><a href="tel:+33478000000" class="footer-link">+33 4 78 00 00 00</a></p>
+              <p><a href="mailto:book@maisoncuivre.fr" class="footer-link">book@maisoncuivre.fr</a></p>
+              <p>Press · Private events</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider Line -->
+        <hr class="footer-divider" />
+
+        <!-- Bottom Row: Copyright & Coordinates -->
+        <div class="site-footer__bottom">
+          <span class="footer-copyright">© 2026 Maison Cuivre</span>
+          <span class="footer-coords">N 45.7640 · E 4.8357</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ╔══════════════════════════════════════════════════════╗ -->
+    <!--   LIGHTBOX MODAL FOR GALLERY                            -->
+    <!-- ╚══════════════════════════════════════════════════════╝ -->
+    <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+      <button class="lightbox__close" id="lightbox-close" aria-label="Close image viewer">&times;</button>
+      <div class="lightbox__content">
+        <img src="" alt="" id="lightbox-img" class="lightbox__img" />
+      </div>
+      <div class="lightbox__caption">
+        <span id="lightbox-caption-label" class="lightbox__caption-label"></span>
+        <span id="lightbox-caption-title" class="lightbox__caption-title"></span>
+      </div>
+    </div>
+
+    <!-- ╔══════════════════════════════════════════════════════╗ -->
+    <!--   DISH DETAIL MODAL (Frame 422)                         -->
+    <!-- ╚══════════════════════════════════════════════════════╝ -->
+    <div id="dish-modal" class="dish-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Dish details">
+      <div class="dish-modal__backdrop" id="dish-modal-backdrop" tabindex="-1"></div>
+      <div class="dish-modal__container" id="dish-modal-container">
+        <!-- Left Column: Image -->
+        <div class="dish-modal__image-wrap">
+          <img src="" alt="" id="dish-modal-img" class="dish-modal__img" />
+        </div>
+
+        <!-- Right Column: Content -->
+        <div class="dish-modal__content">
+          <!-- Close button -->
+          <button class="dish-modal__close" id="dish-modal-close" aria-label="Close details">
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+
+          <!-- Header -->
+          <div class="dish-modal__header">
+            <span id="dish-modal-course" class="dish-modal-course"></span>
+            <h2 id="dish-modal-title" class="dish-modal-title"></h2>
+          </div>
+
+          <!-- Description -->
+          <p id="dish-modal-desc" class="dish-modal-desc"></p>
+
+          <!-- Ingredients -->
+          <div class="dish-modal__ingredients">
+            <h3 class="dish-modal-section-label">Ingredients</h3>
+            <ul id="dish-modal-ingredients-list" class="dish-modal-ingredients-list"></ul>
+          </div>
+
+          <hr class="dish-modal-divider" />
+
+          <!-- Suggested Pairing -->
+          <div class="dish-modal__pairing">
+            <h3 class="dish-modal-section-label">Suggested pairing</h3>
+            <p id="dish-modal-pairing-text" class="dish-modal-pairing-text"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ╔══════════════════════════════════════════════════════╗ -->
+    <!--   ROOM DETAIL MODAL (Rectangle 320 popup variant)       -->
+    <!-- ╚══════════════════════════════════════════════════════╝ -->
+    <div id="room-modal" class="room-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Room details">
+      <div class="room-modal__backdrop" id="room-modal-backdrop" tabindex="-1"></div>
+      <div class="room-modal__container" id="room-modal-container">
+        <!-- Top Image Section with Close Button -->
+        <div class="room-modal__image-wrap">
+          <img src="" alt="" id="room-modal-img" class="room-modal__img" />
+          <button class="room-modal__close" id="room-modal-close" aria-label="Close details">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Bottom Content Section -->
+        <div class="room-modal__content">
+          <span id="room-modal-category" class="room-modal-category"></span>
+          <h2 id="room-modal-title" class="room-modal-title"></h2>
+          <p id="room-modal-desc" class="room-modal-desc"></p>
+
+          <!-- Badges / Features -->
+          <div class="room-modal__badges" id="room-modal-badges"></div>
+
+          <!-- Reserve CTA -->
+          <div class="room-modal__footer">
+            <a href="#contact" class="btn room-modal-cta" id="room-modal-cta">Reserve this room &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ╔══════════════════════════════════════════════════════╗ -->
+    <!--   PRIVATE ENQUIRY FORM MODAL                            -->
+    <!-- ╚══════════════════════════════════════════════════════╝ -->
+    <div id="enquiry-modal" class="enquiry-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Private enquiry form">
+      <div class="enquiry-modal__backdrop" id="enquiry-modal-backdrop" tabindex="-1"></div>
+      <div class="enquiry-modal__container" id="enquiry-modal-container">
+        <!-- Close Button -->
+        <button class="enquiry-modal__close" id="enquiry-modal-close" aria-label="Close enquiry form">
+          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <!-- Header -->
+        <div class="enquiry-modal__header">
+          <span class="enquiry-modal-category">Private Enquiry</span>
+          <h2 class="enquiry-modal-title">Tell us about your evening</h2>
+          <p class="enquiry-modal-desc">We Respond To Every Enquiry Within 48 Hours.</p>
+        </div>
+
+        <!-- Form content -->
+        <form class="enquiry-modal__form" id="enquiry-modal-form" action="#" method="POST">
+          <div class="enquiry-modal__form-grid">
+            <!-- Name -->
+            <div class="enquiry-field-group">
+              <label for="enquiry-name" class="enquiry-label">Name</label>
+              <input type="text" id="enquiry-name" class="enquiry-input" required autocomplete="name" />
+            </div>
+
+            <!-- Email -->
+            <div class="enquiry-field-group">
+              <label for="enquiry-email" class="enquiry-label">Email</label>
+              <input type="email" id="enquiry-email" class="enquiry-input" required autocomplete="email" />
+            </div>
+
+            <!-- Date -->
+            <div class="enquiry-field-group">
+              <label for="enquiry-date" class="enquiry-label">Date</label>
+              <input type="text" id="enquiry-date" class="enquiry-input" placeholder="e.g. DD/MM/YYYY" required />
+            </div>
+
+            <!-- Guests -->
+            <div class="enquiry-field-group">
+              <label for="enquiry-guests" class="enquiry-label">Guests</label>
+              <input type="number" id="enquiry-guests" class="enquiry-input" min="1" required />
+            </div>
+
+            <!-- A few words -->
+            <div class="enquiry-field-group enquiry-field-group--full">
+              <label for="enquiry-message" class="enquiry-label">A few words</label>
+              <textarea id="enquiry-message" class="enquiry-input enquiry-input--textarea" rows="3" required></textarea>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="enquiry-modal__footer">
+            <button type="submit" class="btn enquiry-modal-submit">Send Enquiry</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- ╔══════════════════════════════════════════════════════╗ -->
+    <!--   MOBILE NAVIGATION DRAWER                              -->
+    <!-- ╚══════════════════════════════════════════════════════╝ -->
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Mobile navigation menu">
+      <div class="mobile-nav__backdrop" id="mobile-nav-backdrop" tabindex="-1"></div>
+      <div class="mobile-nav__content" id="mobile-nav-content">
+        <!-- Header row inside mobile menu drawer -->
+        <div class="mobile-nav__header">
+          <span class="logo-wordmark">Maison Cuivre</span>
+          <button class="mobile-nav__close" id="mobile-nav-close" aria-label="Close menu">
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Links -->
+        <nav class="mobile-nav__links" aria-label="Mobile main navigation">
+          <a href="#menu" class="mobile-nav-link">Menu</a>
+          <a href="#chef" class="mobile-nav-link">Chef</a>
+          <a href="#gallery" class="mobile-nav-link">Gallery</a>
+          <a href="#journal" class="mobile-nav-link">Journal</a>
+          <a href="#contact" class="mobile-nav-link">Contact</a>
+        </nav>
+
+        <!-- Footer / CTA -->
+        <div class="mobile-nav__footer">
+          <a href="#contact" class="btn btn--primary mobile-nav__cta" id="mobile-nav-cta">Reserve</a>
+          <div class="mobile-nav__info">
+            <div class="mobile-info-row">
+              <span class="info-label">Est. 2014</span>
+              <span class="info-value">Reservation only</span>
+            </div>
+            <div class="mobile-info-row">
+              <span class="info-label">Open</span>
+              <span class="info-value">Tue – Sat</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

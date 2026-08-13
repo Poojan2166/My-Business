@@ -1,0 +1,1306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maren & Mill</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="#" class="navbar-brand">Maren &amp; Mill</a>
+
+        <div class="navbar-links">
+          <a href="#" class="nav-link">Menu</a>
+          <a href="#" class="nav-link">Beans</a>
+          <a href="#" class="nav-link">The Room</a>
+          <a href="#" class="nav-link">Visit</a>
+          <!-- Mobile Only CTA -->
+          <a href="#" class="navbar-cta mobile-only">
+            <span>Find us</span>
+            <svg class="btn-arrow" viewBox="0 0 10 10" fill="none">
+              <path
+                d="M1 9L9 1M9 1H2M9 1V8"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Desktop Only CTA -->
+        <a href="#" class="navbar-cta desktop-only">
+          <span>Find us</span>
+          <svg class="btn-arrow" viewBox="0 0 10 10" fill="none">
+            <path
+              d="M1 9L9 1M9 1H2M9 1V8"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+
+        <!-- Hamburger Button -->
+        <button class="navbar-toggle" aria-label="Toggle menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </nav>
+
+    <main class="hero-section">
+      <div class="hero-container">
+        <!-- Left Content Column -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-num">N&deg; 001</span>
+            <span class="badge-text">&mdash; a slow coffee house</span>
+          </div>
+
+          <h1 class="hero-title">
+            A counter that <span class="highlight-italic">remembers</span>
+            <br />
+            your name, and your order, in that order.
+          </h1>
+
+          <p class="hero-description">
+            Maren &amp; Mill is a coffee house in the old textile quarter of
+            Fort Kochi. We roast on Tuesdays, brew every morning at six-thirty,
+            and only serve what we would gladly drink ourselves.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#" class="btn-primary">
+              Today on the dial
+              <svg class="btn-arrow" viewBox="0 0 10 10" fill="none">
+                <path
+                  d="M1 9L9 1M9 1H2M9 1V8"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a href="#" class="btn-secondary"> See the menu </a>
+          </div>
+        </div>
+
+        <!-- Right Visual Column -->
+        <div class="hero-visual">
+          <div class="visual-meta-top">
+            <span class="dial-count">001 / 012</span>
+          </div>
+
+          <div class="image-wrapper">
+            <!-- Vertical Rail overlay -->
+            <div class="vertical-rail">
+              <span class="rail-title">On the dial</span>
+              <span class="rail-divider"></span>
+              <span class="rail-detail"
+                >Yirgacheffe Konga &middot; washed &middot; 2050 m</span
+              >
+            </div>
+
+            <img src="Images/Coffee.svg" alt="Coffee Pour" class="hero-image" />
+          </div>
+
+          <div class="visual-meta-bottom">
+            <span class="meta-plate">Plate 01</span>
+            <span class="meta-time">The first pour &mdash; 06:31 a.m.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Bar Section -->
+      <div class="stats-bar">
+        <div class="stats-container">
+          <div class="stat-item">
+            <span class="stat-number">12</span>
+            <span class="stat-label">origins on rotation</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">06:30</span>
+            <span class="stat-label">doors open, daily</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">62&deg;C</span>
+            <span class="stat-label">milk, never hotter</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">2016</span>
+            <span class="stat-label">since this corner</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Marquee Banner Section (Frame 428) -->
+    <div class="marquee-banner">
+      <div class="marquee-track">
+        <span class="marquee-item">Saturday cuppings at three</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-item">Cash, card, or a good story</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-item">Pelago, two hours out of the roaster</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-item">Aleyamma's almond, baked next door</span>
+        <span class="marquee-dot"></span>
+        <!-- Duplicated for seamless loop -->
+        <span class="marquee-item">Saturday cuppings at three</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-item">Cash, card, or a good story</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-item">Pelago, two hours out of the roaster</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-item">Aleyamma's almond, baked next door</span>
+        <span class="marquee-dot"></span>
+      </div>
+    </div>
+
+    <!-- Philosophy Section (Rectangle 363) -->
+    <section class="philosophy-section">
+      <div class="philosophy-container">
+        <!-- Left Column: Intro -->
+        <div class="philosophy-intro">
+          <div class="philosophy-badge">
+            <span class="badge-num">N&deg; 002</span>
+            <span class="badge-text">&mdash; our small philosophy</span>
+          </div>
+          <h2 class="philosophy-title">
+            We do four things, and we do them
+            <span class="highlight-italic">slowly</span>.
+          </h2>
+        </div>
+
+        <!-- Right Column: Grid of 4 philosophy items -->
+        <div class="philosophy-grid">
+          <!-- Item 01 -->
+          <div class="philosophy-card">
+            <span class="card-num">01</span>
+            <h3 class="card-title">Source, with patience</h3>
+            <p class="card-desc">
+              We taste two hundred green samples a year. We buy from twelve
+              farms, three of which we have visited in person, and one we now
+              call by first name.
+            </p>
+          </div>
+
+          <!-- Item 02 -->
+          <div class="philosophy-card">
+            <span class="card-num">02</span>
+            <h3 class="card-title">Roast, with restraint</h3>
+            <p class="card-desc">
+              Our roaster is a 1956 Probat, refurbished. We roast in small
+              batches on Tuesdays only, and rest every bean for a full week
+              before it touches a grinder.
+            </p>
+          </div>
+
+          <!-- Item 03 -->
+          <div class="philosophy-card">
+            <span class="card-num">03</span>
+            <h3 class="card-title">Brew, with attention</h3>
+            <p class="card-desc">
+              Every coffee on our bar is timed, weighed, and tasted before it
+              leaves the counter. If it is not right, we pull it again, no
+              questions.
+            </p>
+          </div>
+
+          <!-- Item 04 -->
+          <div class="philosophy-card">
+            <span class="card-num">04</span>
+            <h3 class="card-title">Serve, with grace</h3>
+            <p class="card-desc">
+              No upsell, no flavored syrup, no shouting over the music. A flat
+              white tastes better when you are not asked about the size.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section (Rectangle 364) -->
+    <section class="menu-section">
+      <div class="menu-container">
+        <!-- Header area -->
+        <div class="menu-header">
+          <div class="menu-intro">
+            <div class="menu-badge">
+              <span class="badge-num">N&deg; 003</span>
+              <span class="badge-text">&mdash; the bar</span>
+            </div>
+            <h2 class="menu-title">
+              Six things <span class="menu-title-second">worth ordering.</span>
+            </h2>
+            <p class="menu-desc">
+              Tap any item to see the origin, the roast, and the small story
+              behind it. The full menu lives on the chalkboard at the counter.
+            </p>
+          </div>
+          <div class="menu-status">
+            <!-- <span class="status-dot"></span> -->
+            <span class="status-text">updated &middot; weekly</span>
+          </div>
+        </div>
+
+        <!-- Menu List Rows -->
+        <div class="menu-list">
+          <!-- Row 1 -->
+          <div class="menu-row" data-item-index="0">
+            <span class="row-num">01</span>
+            <div class="row-info">
+              <h4 class="item-name">Hand-Drawn Espresso</h4>
+              <p class="item-desc">Two ounces. No compromises.</p>
+            </div>
+            <span class="row-notes"
+              >cocoa nib &middot; stewed plum &middot; brown sugar</span
+            >
+            <span class="row-price">&#8377;180</span>
+            <a href="#" class="row-action">
+              <span class="action-text">Open</span>
+              <svg class="action-arrow" viewBox="0 0 10 10" fill="none">
+                <path
+                  d="M1 9L9 1M9 1H2M9 1V8"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="menu-row" data-item-index="1">
+            <span class="row-num">02</span>
+            <div class="row-info">
+              <h4 class="item-name">Flat White</h4>
+              <p class="item-desc">
+                Double ristretto. Microfoam, not architecture.
+              </p>
+            </div>
+            <span class="row-notes"
+              >MILK CHOCOLATE &middot; ROASTED HAZELNUT &middot; CREAM</span
+            >
+            <span class="row-price">&#8377;240</span>
+            <a href="#" class="row-action">
+              <span class="action-text">Open</span>
+              <svg class="action-arrow" viewBox="0 0 10 10" fill="none">
+                <path
+                  d="M1 9L9 1M9 1H2M9 1V8"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Row 3 -->
+          <div class="menu-row" data-item-index="2">
+            <span class="row-num">03</span>
+            <div class="row-info">
+              <h4 class="item-name">Slow-Pour Filter</h4>
+              <p class="item-desc">
+                Single origin. Brewed at the counter, on a timer.
+              </p>
+            </div>
+            <span class="row-notes"
+              >WHITE PEACH &middot; JASMINE &middot; HONEYCOMB</span
+            >
+            <span class="row-price">&#8377;260</span>
+            <a href="#" class="row-action">
+              <span class="action-text">Open</span>
+              <svg class="action-arrow" viewBox="0 0 10 10" fill="none">
+                <path
+                  d="M1 9L9 1M9 1H2M9 1V8"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Row 4 -->
+          <div class="menu-row" data-item-index="3">
+            <span class="row-num">04</span>
+            <div class="row-info">
+              <h4 class="item-name">Cardamom Cortado</h4>
+              <p class="item-desc">
+                A house ritual. Lightly spiced, never sweet.
+              </p>
+            </div>
+            <span class="row-notes"
+              >CARDAMOM &middot; BURNT CREAM &middot; ORANGE PEEL</span
+            >
+            <span class="row-price">&#8377;220</span>
+            <a href="#" class="row-action">
+              <span class="action-text">Open</span>
+              <svg class="action-arrow" viewBox="0 0 10 10" fill="none">
+                <path
+                  d="M1 9L9 1M9 1H2M9 1V8"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Row 5 -->
+          <div class="menu-row" data-item-index="4">
+            <span class="row-num">05</span>
+            <div class="row-info">
+              <h4 class="item-name">Cold Brew, 18 Hours</h4>
+              <p class="item-desc">
+                Steeped overnight. Poured over a single rock.
+              </p>
+            </div>
+            <span class="row-notes"
+              >DARK CHOCOLATE &middot; FIG &middot; MOLASSES</span
+            >
+            <span class="row-price">&#8377;260</span>
+            <a href="#" class="row-action">
+              <span class="action-text">Open</span>
+              <svg class="action-arrow" viewBox="0 0 10 10" fill="none">
+                <path
+                  d="M1 9L9 1M9 1H2M9 1V8"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Row 6 -->
+          <div class="menu-row" data-item-index="5">
+            <span class="row-num">06</span>
+            <div class="row-info">
+              <h4 class="item-name">Almond Croissant</h4>
+              <p class="item-desc">Baked next door. Out by eleven.</p>
+            </div>
+            <span class="row-notes"
+              >FRANGIPANE &middot; SEA SALT &middot; CULTURED BUTTER</span
+            >
+            <span class="row-price">&#8377;160</span>
+            <a href="#" class="row-action">
+              <span class="action-text">Open</span>
+              <svg class="action-arrow" viewBox="0 0 10 10" fill="none">
+                <path
+                  d="M1 9L9 1M9 1H2M9 1V8"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Origin Section (Rectangle 365) -->
+    <section class="origin-section">
+      <div class="origin-container">
+        <!-- Left Column: Visual -->
+        <div class="origin-visual">
+          <div class="origin-image-wrapper">
+            <img
+              src="Images/from_origin_to_cup.svg"
+              alt="From Origin to Cup"
+              class="origin-image"
+            />
+          </div>
+        </div>
+
+        <!-- Right Column: Content -->
+        <div class="origin-content">
+          <div class="origin-badge">
+            <span class="badge-num">N&deg; 004</span>
+            <span class="badge-text">&mdash; from origin to cup</span>
+          </div>
+
+          <h2 class="origin-title">
+            We know the <span class="highlight-italic">farms</span>. <br />
+            Most of them, by name.
+          </h2>
+
+          <p class="origin-desc">
+            Every kilo of green coffee that walks through our door comes from a
+            producer we can write back to. When you buy a bag, the back of it
+            tells you where it grew, who picked it, and at what elevation.
+          </p>
+
+          <div class="origin-stats">
+            <!-- Stat 1 -->
+            <div class="origin-stat-item">
+              <span class="origin-stat-label">Producers</span>
+              <span class="origin-stat-number">12</span>
+            </div>
+            <!-- Stat 2 -->
+            <div class="origin-stat-item">
+              <span class="origin-stat-label">Countries</span>
+              <span class="origin-stat-number">07</span>
+            </div>
+            <!-- Stat 3 -->
+            <div class="origin-stat-item">
+              <span class="origin-stat-label">Direct trade %</span>
+              <span class="origin-stat-number">82%</span>
+            </div>
+            <!-- Stat 4 -->
+            <div class="origin-stat-item">
+              <span class="origin-stat-label">Avg. premium paid</span>
+              <span class="origin-stat-number">2.4&times;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Weekday Rituals Section (Rectangle 367) -->
+    <section class="rituals-section">
+      <div class="rituals-container">
+        <!-- Left: Header -->
+        <div class="rituals-intro">
+          <div class="rituals-badge">
+            <span class="badge-num">N&deg; 005</span>
+            <span class="badge-text">&mdash; a day, in five rituals</span>
+          </div>
+          <h2 class="rituals-title">
+            The shape of a <span class="rituals-accent-title">weekday</span>.
+          </h2>
+          <p class="rituals-desc">
+            We open early and close gently. Here is what an average day looks
+            like, from the first grind to the last cup.
+          </p>
+        </div>
+
+        <!-- Right: Timeline -->
+        <div class="rituals-timeline">
+          <!-- Vertical line -->
+          <div class="timeline-line"></div>
+
+          <!-- Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <span class="timeline-time">06.30</span>
+              <h3 class="timeline-title">First pull</h3>
+              <p class="timeline-desc">
+                Doors not yet open. The grinder warms, the espresso machine
+                settles into temperature, the chalkboard gets today's bean.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <span class="timeline-time">07.00</span>
+              <h3 class="timeline-title">Doors open</h3>
+              <p class="timeline-desc">
+                Regulars first. Their orders are already on the rail when they
+                walk in.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <span class="timeline-time">10.45</span>
+              <h3 class="timeline-title">The pastry cutoff</h3>
+              <p class="timeline-desc">
+                Whatever Aleyamma sent over is gone by now. We refuse to fake it
+                with anything frozen.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <span class="timeline-time">15.00</span>
+              <h3 class="timeline-title">The afternoon cupping</h3>
+              <p class="timeline-desc">
+                Public cupping at the back table on Saturdays. Five coffees, no
+                spoons spared.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <span class="timeline-time">19.30</span>
+              <h3 class="timeline-title">The grinders rest</h3>
+              <p class="timeline-desc">
+                Last filter of the day. The room slows. Conversations go longer
+                than the coffee.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Take a Bag Home Section (Rectangle 368) -->
+    <section class="retail-section">
+      <div class="retail-container">
+        <!-- Header Row -->
+        <div class="retail-header">
+          <div class="retail-intro">
+            <div class="retail-badge">
+              <span class="badge-num">N&deg; 006</span>
+              <span class="badge-text">&mdash; take a bag home</span>
+            </div>
+            <h2 class="retail-title">
+              Four roasts, on the shelf this
+              <span class="retail-highlight-italic"> month.</span>
+            </h2>
+          </div>
+          <p class="retail-desc">
+            All beans are roasted weekly and shipped within seventy-two hours.
+            Tap any roast to see its full origin card and brewing notes.
+          </p>
+        </div>
+
+        <!-- Product Cards -->
+        <div class="retail-cards">
+          <!-- Card 1 -->
+          <div class="retail-card" data-retail-index="0">
+            <div class="card-top">
+              <span class="card-process">Washed</span>
+            </div>
+
+            <div class="card-main">
+              <h3 class="card-name">Yirgacheffe Konga</h3>
+              <span class="card-origin">Gedeb, Ethiopia</span>
+            </div>
+            <div class="card-divider"></div>
+            <p class="card-notes">
+              bergamot &middot; white peach &middot; jasmine
+            </p>
+            <div class="card-footer">
+              <span class="card-price">&#8377;780</span>
+              <div class="card-footer-right">
+                <span class="card-weight">250 g</span>
+                <a href="#" class="card-open">
+                  <span>Open</span>
+                  <svg viewBox="0 0 10 10" fill="none">
+                    <path
+                      d="M1 9L9 1M9 1H2M9 1V8"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="retail-card" data-retail-index="1">
+            <div class="card-top">
+              <span class="card-process">Anaerobic natural</span>
+            </div>
+            <div class="card-main">
+              <h3 class="card-name">Kerehaklu Estate</h3>
+              <span class="card-origin">Chikmagalur, India</span>
+            </div>
+            <div class="card-divider"></div>
+            <p class="card-notes">ripe mango &middot; maple &middot; clove</p>
+            <div class="card-footer">
+              <span class="card-price">&#8377;720</span>
+              <div class="card-footer-right">
+                <span class="card-weight">250 g</span>
+                <a href="#" class="card-open">
+                  <span>Open</span>
+                  <svg viewBox="0 0 10 10" fill="none">
+                    <path
+                      d="M1 9L9 1M9 1H2M9 1V8"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="retail-card" data-retail-index="2">
+            <div class="card-top">
+              <span class="card-process">Honey</span>
+            </div>
+            <div class="card-main">
+              <h3 class="card-name">Finca La Fany</h3>
+              <span class="card-origin">Huehuetenango, Guatemala</span>
+            </div>
+            <div class="card-divider"></div>
+            <p class="card-notes">red apple &middot; toffee &middot; almond</p>
+            <div class="card-footer">
+              <span class="card-price">&#8377;840</span>
+              <div class="card-footer-right">
+                <span class="card-weight">250 g</span>
+                <a href="#" class="card-open">
+                  <span>Open</span>
+                  <svg viewBox="0 0 10 10" fill="none">
+                    <path
+                      d="M1 9L9 1M9 1H2M9 1V8"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="retail-card" data-retail-index="3">
+            <div class="card-top">
+              <span class="card-process">Blend</span>
+            </div>
+            <div class="card-main">
+              <h3 class="card-name">Pelago &mdash; House Blend</h3>
+              <span class="card-origin">Ethiopia + Karnataka</span>
+            </div>
+            <div class="card-divider"></div>
+            <p class="card-notes">cocoa &middot; plum &middot; brown sugar</p>
+            <div class="card-footer">
+              <span class="card-price">&#8377;680</span>
+              <div class="card-footer-right">
+                <span class="card-weight">250 g</span>
+                <a href="#" class="card-open">
+                  <span>Open</span>
+                  <svg viewBox="0 0 10 10" fill="none">
+                    <path
+                      d="M1 9L9 1M9 1H2M9 1V8"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Archive Section (Rectangle 374) -->
+    <section class="archive-section">
+      <div class="archive-container">
+        <!-- Header Row -->
+        <div class="archive-header">
+          <div class="archive-intro">
+            <div class="archive-badge">
+              <span class="badge-num">N&deg; 007</span>
+              <span class="badge-text">&mdash; the archive</span>
+            </div>
+            <h2 class="archive-title">A few mornings, in <span class="archive-accent-title">photographs</span>.</h2>
+          </div>
+          <p class="archive-note">Tap any photo to open it full size.</p>
+        </div>
+
+        <!-- Masonry Grid -->
+        <div class="archive-grid">
+          <!-- Row 1: Wide photo left + Tall photo right -->
+          <div class="archive-row archive-row-1">
+            <div class="archive-photo archive-wide" data-index="1">
+              <img src="Images/the_archive_1.svg" alt="Archive photo 1" />
+            </div>
+            <div class="archive-photo archive-tall" data-index="2">
+              <img src="Images/the_archive_2.svg" alt="Archive photo 2" />
+            </div>
+          </div>
+
+          <!-- Row 2: Two smaller landscape photos -->
+          <div class="archive-row archive-row-2">
+            <div class="archive-photo archive-small" data-index="3">
+              <img src="Images/the_archive_3.svg" alt="Archive photo 3" />
+            </div>
+            <div class="archive-photo archive-small" data-index="4">
+              <img src="Images/the_archive_4.svg" alt="Archive photo 4" />
+            </div>
+          </div>
+
+          <!-- Row 3: Medium left + Wide right -->
+          <div class="archive-row archive-row-3">
+            <div class="archive-photo archive-medium" data-index="5">
+              <img src="Images/the_archive_5.svg" alt="Archive photo 5" />
+            </div>
+            <div class="archive-photo archive-wide-2" data-index="6">
+              <img src="Images/the_archive_6.svg" alt="Archive photo 6" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Private Hire Section (Rectangle 381) -->
+    <section class="hire-section">
+      <div class="hire-container">
+        <!-- Left Content Column -->
+        <div class="hire-content">
+          <div class="hire-badge">
+            <span class="badge-num">N&deg; 008</span>
+            <span class="badge-text">&mdash; private hire</span>
+          </div>
+
+          <h2 class="hire-title">
+            We know the <span class="highlight-italic">farms</span>. <br />
+            Most of them, by name.
+          </h2>
+
+          <p class="hire-desc">
+            Every kilo of green coffee that walks through our door comes from a
+            producer we can write back to. When you buy a bag, the back of it
+            tells you where it grew, who picked it, and at what elevation.
+          </p>
+
+          <!-- Capacity and Price Stats -->
+          <div class="hire-stats">
+            <div class="hire-stat-item">
+              <span class="hire-stat-label">Seated</span>
+              <span class="hire-stat-number">20</span>
+            </div>
+            <div class="hire-stat-item">
+              <span class="hire-stat-label">Standing</span>
+              <span class="hire-stat-number">40</span>
+            </div>
+            <div class="hire-stat-item">
+              <span class="hire-stat-label">From</span>
+              <span class="hire-stat-number">&#8377;18k</span>
+            </div>
+          </div>
+
+          <!-- Enquire Button -->
+          <a href="#" class="btn-enquire">
+            <span>Enquire about an evening</span>
+            <svg class="btn-arrow" viewBox="0 0 10 10" fill="none">
+              <path
+                d="M1 9L9 1M9 1H2M9 1V8"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Right Visual Column -->
+        <div class="hire-visual">
+          <div class="hire-image-wrapper">
+            <img
+              src="Images/private_hire.svg"
+              alt="Private Hire"
+              class="hire-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section (Rectangle 383) -->
+    <section class="team-section">
+      <div class="team-container">
+        <!-- Header Row -->
+        <div class="team-header">
+          <div class="team-intro">
+            <div class="team-badge">
+              <span class="badge-num">N&deg; 009</span>
+              <span class="badge-text">&mdash; behind the counter</span>
+            </div>
+            <h2 class="team-title">
+              Three people you will <span class="team-accent-title">see most mornings</span>.
+            </h2>
+          </div>
+          <p class="team-desc">
+            We are a small team. Most of us have been here since the second
+            espresso machine. Tap a portrait to read a sentence or two.
+          </p>
+        </div>
+
+        <!-- Team Grid -->
+        <div class="team-grid">
+          <!-- Member 1 -->
+          <div class="team-card">
+            <div class="member-image-wrapper">
+              <img src="Images/Maren_Kuruvilla.svg" alt="Maren Kuruvilla" class="member-image" />
+            </div>
+            <div class="member-info">
+              <span class="member-role">Founder, Head Roaster</span>
+              <h3 class="member-name">Maren Kuruvilla</h3>
+            </div>
+          </div>
+
+          <!-- Member 2 -->
+          <div class="team-card">
+            <div class="member-image-wrapper">
+              <img src="Images/Aditi_Roy.svg" alt="Aditi Roy" class="member-image" />
+            </div>
+            <div class="member-info">
+              <span class="member-role">Lead Barista</span>
+              <h3 class="member-name">Aditi Roy</h3>
+            </div>
+          </div>
+
+          <!-- Member 3 -->
+          <div class="team-card">
+            <div class="member-image-wrapper">
+              <img src="Images/Joaquim_Pereira.svg" alt="Joaquim Pereira" class="member-image" />
+            </div>
+            <div class="member-info">
+              <span class="member-role">Cafe Manager</span>
+              <h3 class="member-name">Joaquim Pereira</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section (Rectangle 387) -->
+    <section class="review-section">
+      <div class="review-container">
+        <!-- Header Row -->
+        <div class="review-header">
+          <div class="review-intro">
+            <div class="review-badge">
+              <span class="badge-num">N&deg; 010</span>
+              <span class="badge-text">&mdash; what people say, quietly</span>
+            </div>
+            <h2 class="review-title">
+              A decade of <span class="review-accent-title">kind words</span>.
+            </h2>
+          </div>
+        </div>
+
+        <!-- Review Grid -->
+        <div class="review-grid">
+          <!-- Card 1 -->
+          <div class="review-card">
+            <span class="review-quote">&ldquo;</span>
+            <p class="review-text">
+              I have lived in three countries and ordered a flat white in all of them. Maren &amp; Mill is the only place that asked me which milk temperature I prefer. Sixty-two, since you are asking.
+            </p>
+            <div class="review-divider"></div>
+            <span class="review-author">Nila Devarajan</span>
+            <span class="review-meta">Regular since 2019</span>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="review-card">
+            <span class="review-quote">&ldquo;</span>
+            <p class="review-text">
+              A cup of their Kerehaklu in the morning and I was on a plane to Chikmagalur by the weekend. They put the producer's number on the bag.
+            </p>
+            <div class="review-divider"></div>
+            <span class="review-author">Rohan Bhat</span>
+            <span class="review-meta">Cookbook author</span>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="review-card">
+            <span class="review-quote">&ldquo;</span>
+            <p class="review-text">
+              The room is quiet, the bar is loud, and somehow that is the right way around. Best espresso south of Pondicherry.
+            </p>
+            <div class="review-divider"></div>
+            <span class="review-author">Aleksandra Ow</span>
+            <span class="review-meta">Architect, Singapore</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Banner Section (Rectangle 394) -->
+    <div class="stats-banner-section">
+      <div class="stats-banner-container">
+        <!-- Stat Item 1 -->
+        <div class="banner-stat-item">
+          <span class="banner-stat-number">1,820</span>
+          <span class="banner-stat-label">kilos roasted, last year</span>
+        </div>
+        <!-- Stat Item 2 -->
+        <div class="banner-stat-item">
+          <span class="banner-stat-number">62&deg;C</span>
+          <span class="banner-stat-label">milk temperature, always</span>
+        </div>
+        <!-- Stat Item 3 -->
+        <div class="banner-stat-item">
+          <span class="banner-stat-number">0</span>
+          <span class="banner-stat-label">flavored syrups, ever</span>
+        </div>
+        <!-- Stat Item 4 -->
+        <div class="banner-stat-item">
+          <span class="banner-stat-number">4.9</span>
+          <span class="banner-stat-label">from one thousand reviews</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ Section (Rectangle 395) -->
+    <section class="faq-section">
+      <div class="faq-container">
+        <!-- Header Column -->
+        <div class="faq-header">
+          <div class="faq-badge">
+            <span class="badge-num">N&deg; 011</span>
+            <span class="badge-text">&mdash; a few small things</span>
+          </div>
+          <h2 class="faq-title">
+            Questions we hear, <span class="faq-accent-title">most often</span>.
+          </h2>
+        </div>
+
+        <!-- Accordion Column -->
+        <div class="faq-accordion">
+          <!-- Accordion Item 1 -->
+          <details class="faq-item">
+            <summary class="faq-summary">
+              <span class="faq-number">01</span>
+              <span class="faq-question">Do you take reservations for the morning?</span>
+              <span class="faq-icon-wrapper">
+                <img src="Images/plusicon.svg" alt="Toggle" class="faq-icon" />
+              </span>
+            </summary>
+            <div class="faq-content">
+              <p>We operate on a walk-in basis for morning service. Just drop by and we'll find you a spot as quickly as possible.</p>
+            </div>
+          </details>
+
+          <!-- Accordion Item 2 -->
+          <details class="faq-item">
+            <summary class="faq-summary">
+              <span class="faq-number">02</span>
+              <span class="faq-question">Do you have plant milks?</span>
+              <span class="faq-icon-wrapper">
+                <img src="Images/plusicon.svg" alt="Toggle" class="faq-icon" />
+              </span>
+            </summary>
+            <div class="faq-content">
+              <p>Yes, we offer organic oat milk and house-made almond milk as alternatives for all of our espresso drinks.</p>
+            </div>
+          </details>
+
+          <!-- Accordion Item 3 -->
+          <details class="faq-item">
+            <summary class="faq-summary">
+              <span class="faq-number">03</span>
+              <span class="faq-question">Do you serve decaf?</span>
+              <span class="faq-icon-wrapper">
+                <img src="Images/plusicon.svg" alt="Toggle" class="faq-icon" />
+              </span>
+            </summary>
+            <div class="faq-content">
+              <p>We do. We serve a clean, water-processed decaf single-origin coffee that tastes just as good as our regular offerings.</p>
+            </div>
+          </details>
+
+          <!-- Accordion Item 4 -->
+          <details class="faq-item">
+            <summary class="faq-summary">
+              <span class="faq-number">04</span>
+              <span class="faq-question">Can I work from a laptop?</span>
+              <span class="faq-icon-wrapper">
+                <img src="Images/plusicon.svg" alt="Toggle" class="faq-icon" />
+              </span>
+            </summary>
+            <div class="faq-content">
+              <p>We welcome laptop users in designated window seating. We offer free high-speed Wi-Fi to keep you connected.</p>
+            </div>
+          </details>
+
+          <!-- Accordion Item 5 -->
+          <details class="faq-item">
+            <summary class="faq-summary">
+              <span class="faq-number">05</span>
+              <span class="faq-question">Where can I buy your beans?</span>
+              <span class="faq-icon-wrapper">
+                <img src="Images/plusicon.svg" alt="Toggle" class="faq-icon" />
+              </span>
+            </summary>
+            <div class="faq-content">
+              <p>You can purchase fresh whole-bean coffee directly at our counter or through our online store. We roast weekly.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservation / Contact Section (Rectangle 396) -->
+    <section class="reserve-section">
+      <div class="reserve-container">
+        <!-- Left Info Column -->
+        <div class="reserve-info">
+          <div class="reserve-badge">
+            <span class="badge-num">N&deg; 012</span>
+            <span class="badge-text">&mdash; come in</span>
+          </div>
+          <h2 class="reserve-title">
+            A table for two, <br />
+            <span class="reserve-accent-title">a Saturday in June</span>.
+          </h2>
+
+          <div class="reserve-details">
+            <!-- Block 1: Address -->
+            <div class="detail-block">
+              <span class="detail-label">The address</span>
+              <p class="detail-value">14 Bastion Street, Fort Kochi, 682001</p>
+            </div>
+
+            <!-- Block 2: Hours -->
+            <div class="detail-row">
+              <div class="detail-block">
+                <span class="detail-label">Mon &mdash; Fri</span>
+                <p class="detail-value">06.30 &mdash; 20.00</p>
+              </div>
+              <div class="detail-block">
+                <span class="detail-label">Sat &mdash; Sun</span>
+                <p class="detail-value">07.30 &mdash; 21.00</p>
+              </div>
+            </div>
+
+            <!-- Block 3: Contact -->
+            <div class="detail-row">
+              <div class="detail-block">
+                <span class="detail-label">Telephone</span>
+                <p class="detail-value">+91 484 221 0084</p>
+              </div>
+              <div class="detail-block">
+                <span class="detail-label">Write to us</span>
+                <p class="detail-value">hello@marenmill.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Form Column -->
+        <div class="reserve-card">
+          <span class="form-tag">private hire &amp; cuppings</span>
+          <h3 class="form-title">Tell us what you have in mind.</h3>
+
+          <form action="#" method="POST" class="reserve-form">
+            <div class="reserve-form-grid">
+              <!-- Field 1 -->
+              <div class="form-group">
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <!-- Field 2 -->
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <!-- Field 3 -->
+              <div class="form-group">
+                <label for="guests">Guests</label>
+                <input type="text" id="guests" name="guests" required />
+              </div>
+              <!-- Field 4 -->
+              <div class="form-group">
+                <label for="date">Date</label>
+                <input type="text" id="date" name="date" placeholder="dd-mm-yy" required />
+              </div>
+              <!-- Field 5 -->
+              <div class="form-group full-width">
+                <label for="details">A few details</label>
+                <textarea id="details" name="details" required></textarea>
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn-submit">
+              <span>Send enquiry</span>
+              <svg class="btn-arrow" viewBox="0 0 10 10" fill="none">
+                <path
+                  d="M1 9L9 1M9 1H2M9 1V8"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section (Rectangle 398 & 399) -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <!-- Top Footer (Newsletter) -->
+        <div class="footer-top">
+          <div class="footer-newsletter-info">
+            <div class="footer-badge">
+              <span class="badge-dash">-</span>
+              <span class="badge-text"> a short note, once a month</span>
+            </div>
+            <h2 class="footer-newsletter-title">
+              New roasts, the odd recipe, the day the doors will be shut.
+            </h2>
+          </div>
+
+          <form action="#" class="footer-newsletter-form">
+            <div class="footer-form-group">
+              <label for="newsletter-email">Email</label>
+              <input type="email" id="newsletter-email" name="email" required />
+            </div>
+            <button type="submit" class="btn-subscribe">Subscribe</button>
+          </form>
+        </div>
+
+        <!-- Bottom Footer (Links & Copyright) -->
+        <div class="footer-bottom">
+          <div class="footer-brand-column">
+            <h2 class="footer-logo">Maren &amp; Mill</h2>
+            <p class="footer-tagline">
+              A slow coffee house in Fort Kochi. Roasted on Tuesdays, brewed every morning, served by people who care more than they should.
+            </p>
+          </div>
+
+          <div class="footer-links-grid">
+            <!-- Column 1 -->
+            <div class="footer-links-col">
+              <span class="links-title">Explore</span>
+              <ul class="links-list">
+                <li><a href="#">The bar</a></li>
+                <li><a href="#">Our beans</a></li>
+                <li><a href="#">Private hire</a></li>
+                <li><a href="#">Visit us</a></li>
+              </ul>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="footer-links-col">
+              <span class="links-title">Follow</span>
+              <ul class="links-list">
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Journal</a></li>
+                <li><a href="#">Wholesale</a></li>
+                <li><a href="#">Press</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Copyright Row -->
+        <div class="footer-copyright-row">
+          <span class="copyright-text">Ac Maren &amp; Mill, since 2016</span>
+          <span class="copyright-location">Made slowly, in Fort Kochi</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Menu Item Details Modal (Rectangle 403) -->
+    <div class="menu-modal-overlay" id="menuModal">
+      <div class="menu-modal-card">
+        <!-- Close Button -->
+        <button class="modal-close-btn" aria-label="Close modal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <!-- Left Image Column -->
+        <div class="modal-image-col"></div>
+
+        <!-- Right Details Column -->
+        <div class="modal-details-col">
+          <span class="modal-category">on the menu</span>
+          <h2 class="modal-title" id="modalTitle">Hand-Drawn Espresso</h2>
+          <p class="modal-subtitle" id="modalSubtitle">Two ounces. No compromises.</p>
+          
+          <hr class="modal-divider" />
+
+          <div class="modal-info-grid">
+            <div class="modal-info-row">
+              <span class="info-label">Tasting</span>
+              <span class="info-value" id="modalTasting">cocoa nib &middot; stewed plum &middot; brown sugar</span>
+            </div>
+            <div class="modal-info-row">
+              <span class="info-label">Origin</span>
+              <span class="info-value" id="modalOrigin">Ethiopia + Karnataka</span>
+            </div>
+            <div class="modal-info-row">
+              <span class="info-label">Roast</span>
+              <span class="info-value" id="modalRoast">Medium</span>
+            </div>
+            <div class="modal-info-row">
+              <span class="info-label">Price</span>
+              <span class="info-value" id="modalPrice">&#8377;180</span>
+            </div>
+          </div>
+
+          <p class="modal-description" id="modalDescription">
+            Pulled in 28 seconds from our house Pelago blend &mdash; a 70/30 of Ethiopian Guji and washed Karnataka. Served in a warmed demitasse with a glass of cold water on the side.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Archive Photo Lightbox Modal -->
+    <div class="archive-modal-overlay" id="archiveModal">
+      <div class="archive-modal-card">
+        <!-- Close Button -->
+        <button class="archive-modal-close-btn" aria-label="Close modal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <!-- Main Image -->
+        <div class="archive-modal-img-wrapper">
+          <img id="archiveModalImg" src="" alt="Archive Full Photo" />
+        </div>
+
+        <!-- Footer Text Row -->
+        <div class="archive-modal-footer">
+          <span class="archive-modal-caption" id="archiveModalCaption">THE ROOM, ON A TUESDAY MORNING</span>
+          <span class="archive-modal-brand">MAREN &amp; MILL &mdash; ARCHIVE</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

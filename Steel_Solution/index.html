@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEELCRAFT - Premium Steel Supplier & Solutions</title>
+    <meta name="description" content="STEELCRAFT is India's premium steel supplier, delivering high quality steel solutions for construction, infrastructure, and industrial projects on time.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fragment+Mono&family=Inter:wght@400;500;600&family=Oswald:wght@400;500;600;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo" id="logo-link">
+                
+                <img src="./images/logo.SVG" alt="Logo" class="logo-image">
+            </a>
+            
+            <nav class="nav-menu" id="navigation-menu">
+                <a href="#" class="nav-link">STRONGER</a>
+                <span class="nav-separator">•</span>
+                <a href="#" class="nav-link">BETTER</a>
+                <span class="nav-separator">•</span>
+                <a href="#" class="nav-link">TOGETHER</a>
+            </nav>
+            
+            <div class="contact-info" id="contact-info-block">
+                <a href="tel:+0987654321" class="phone-link">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#EC6100" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="phone-icon">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    <span class="phone-number">+0987654321</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Trigger -->
+            <button class="mobile-menu-trigger" id="mobileMenuTrigger" aria-label="Toggle Menu">
+                <span class="burger-bar"></span>
+                <span class="burger-bar"></span>
+                <span class="burger-bar"></span>
+            </button>
+        </div>
+    </header>
+
+    
+    <main class="hero-container">
+        
+        <section class="hero-left-col">
+            <span class="hero-badge">(PREMIUM STEEL SUPPLIER - EST. 2026)</span>
+            <h1 class="hero-title">
+                STEEL<br>
+                <span class="text-orange">SOLUTIONS</span><br>
+                FOR EVERY<br>
+                PROJECT
+            </h1>
+            <p class="hero-description">
+                High quality steel products for construction, infrastructure and industrial applications — delivered across India, on time, every time.
+            </p>
+            <div class="features-wrapper">
+                <div class="feature-item">
+                    <div class="feature-icon-box">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#EC6100" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M9 11l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <div class="feature-text">
+                        <div class="feature-title">100% QUALITY</div>
+                        <div class="feature-subtitle">ASSURED</div>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon-box">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#EC6100" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="1" y="3" width="15" height="13"/>
+                            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                            <circle cx="5.5" cy="18.5" r="2.5"/>
+                            <circle cx="18.5" cy="18.5" r="2.5"/>
+                        </svg>
+                    </div>
+                    <div class="feature-text">
+                        <div class="feature-title">ON TIME</div>
+                        <div class="feature-subtitle">DELIVERY</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="hero-center-col">
+            <div class="hero-image-wrapper">
+                <img src="./images/mainsteel.svg" alt="Stacked Steel Pipes in Warehouse" class="hero-image" id="hero-main-image">
+            </div>
+        </section>
+
+     
+        <section class="hero-right-col">
+            <div class="quote-form-container">
+                <span class="form-tagline">Get Best Price</span>
+                <h2 class="form-title">QUICK <span class="text-orange">QUOTE</span></h2>
+                
+                <form action="#" method="POST" class="quote-form" id="steel-quote-form">
+                    <div class="form-group">
+                        <input type="text" id="user-name" name="name" placeholder="YOUR NAME" required autocomplete="name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="tel" id="user-phone" name="phone" placeholder="PHONE NUMBER" required autocomplete="tel">
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="user-product" name="product" placeholder="PRODUCT REQUIRED" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="user-quantity" name="quantity" placeholder="QUANTITY (TON/KG)" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="user-message" name="message" placeholder="YOUR MESSAGE" rows="1"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn" id="submit-quote-btn">
+                        <span>GET QUOTENOW</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-arrow">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Stats Bar -->
+    <div class="stats-footer" id="stats-footer-section">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">10+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">20,000+</div>
+                <div class="stat-label">Tons Delivered</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">PAN INDIA</div>
+                <div class="stat-label">Delivery Network</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Products Catalogue Section -->
+    <section class="products-section" id="products-catalogue">
+        <div class="products-container">
+            <span class="catalogue-badge">/ CATALOGUE</span>
+            <h2 class="section-title">OUR PRODUCTS</h2>
+            
+            <div class="products-grid">
+                <!-- Card 1: TMT Bars -->
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="./images/tmt_bras.svg" alt="TMT Bars" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">TMT BARS</h3>
+                        <p class="product-desc">High strength TMT bars for strong and durable concrete structures.</p>
+                        <a href="#" class="view-details-link">
+                            <span>VIEW DETAILS</span>
+                            <span class="diagonal-arrow">
+                                <img src="/images/RightIcon.svg" width="10" height="10" alt="arrow">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Card 2: Steel Pipes -->
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="./images/steel_pipes.svg" alt="Steel Pipes" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">STEEL PIPES</h3>
+                        <p class="product-desc">MS Pipes for water, gas, oil and structural applications.</p>
+                        <a href="#" class="view-details-link">
+                            <span>VIEW DETAILS</span>
+                            <span class="diagonal-arrow">
+                                <img src="/images/RightIcon.svg" width="10" height="10" alt="arrow">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Card 3: MS Sheets -->
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="./images/ms_sheets.svg" alt="MS Sheets" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">MS SHEETS</h3>
+                        <p class="product-desc">Premium quality MS sheets in various thickness.</p>
+                        <a href="#" class="view-details-link">
+                            <span>VIEW DETAILS</span>
+                            <span class="diagonal-arrow">
+                                <img src="/images/RightIcon.svg" width="10" height="10" alt="arrow">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Card 4: GI Sheets -->
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="./images/gi_sheets.svg" alt="GI Sheets" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">GI SHEETS</h3>
+                        <p class="product-desc">Rust resistant GI sheets for roofing and cladding.</p>
+                        <a href="#" class="view-details-link">
+                            <span>VIEW DETAILS</span>
+                            <span class="diagonal-arrow">
+                                <img src="/images/RightIcon.svg" width="10" height="10" alt="arrow">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Card 5: Structural Steel -->
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="./images/STRUCTURAL_STEEL.svg" alt="Structural Steel" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">STRUCTURAL STEEL</h3>
+                        <p class="product-desc">Beams, channels, angles and other structural sections.</p>
+                        <a href="#" class="view-details-link">
+                            <span>VIEW DETAILS</span>
+                            <span class="diagonal-arrow">
+                                <img src="/images/RightIcon.svg" width="10" height="10" alt="arrow">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Card 6: Roofing Sheets -->
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="./images/roofing_steel.svg" alt="Roofing Sheets" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">ROOFING SHEETS</h3>
+                        <p class="product-desc">High quality roofing sheets for industrial and commercial.</p>
+                        <a href="#" class="view-details-link">
+                            <span>VIEW DETAILS</span>
+                            <span class="diagonal-arrow">
+                                <img src="/images/RightIcon.svg" width="10" height="10" alt="arrow">
+                                
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="advantages-section" id="why-choose-us">
+        <div class="advantages-container">
+            <span class="advantages-badge">/ ADVANTAGES</span>
+            <h2 class="advantages-title">WHY CHOOSE US</h2>
+            
+            <div class="advantages-grid">
+                <!-- Advantage 1: Best Quality -->
+                <div class="advantage-card">
+                    <img src="./images/best_quality.svg" alt="Best Quality Icon" class="advantage-icon">
+                    <h3 class="advantage-name">BEST QUALITY</h3>
+                    <p class="advantage-desc">We provide tested and certified steel products.</p>
+                </div>
+                
+                <!-- Advantage 2: Competitive Price -->
+                <div class="advantage-card">
+                    <img src="./images/COMPETITIVE_PRICE.svg" alt="Competitive Price Icon" class="advantage-icon">
+                    <h3 class="advantage-name">COMPETITIVE PRICE</h3>
+                    <p class="advantage-desc">Best market rates with complete transparency.</p>
+                </div>
+                
+                <!-- Advantage 3: Fast Delivery -->
+                <div class="advantage-card">
+                    <img src="./images/fast_delevery.svg" alt="Fast Delivery Icon" class="advantage-icon">
+                    <h3 class="advantage-name">FAST DELIVERY</h3>
+                    <p class="advantage-desc">Strong logistics network ensures on-time delivery.</p>
+                </div>
+                
+                <!-- Advantage 4: Bulk Supply -->
+                <div class="advantage-card">
+                    <img src="./images/bulk_supply.svg" alt="Bulk Supply Icon" class="advantage-icon">
+                    <h3 class="advantage-name">BULK SUPPLY</h3>
+                    <p class="advantage-desc">Large inventory to meet all your bulk requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sectors & Workflow Section -->
+    <section class="" id="sectors-workflow">
+        <!-- Part 1: Industries We Serve -->
+        <div class="sectors-wrapper-full sectors-workflow-section ">
+            <span class="column-badge">/ SECTORS</span>
+            <h2 class="column-title">INDUSTRIES WE SERVE</h2>
+            
+            <div class="sectors-cards-row">
+                <!-- Card 1: Construction -->
+                <div class="sector-photo-card">
+                    <img src="./images/Construction.svg" alt="Construction" class="sector-card-bg">
+                    <div class="sector-card-overlay">
+                        <h3 class="sector-card-name">CONSTRUCTION</h3>
+                    </div>
+                </div>
+                
+                <!-- Card 2: Infrastructure -->
+                <div class="sector-photo-card">
+                    <img src="./images/Infrastructure.svg" alt="Infrastructure" class="sector-card-bg">
+                    <div class="sector-card-overlay">
+                        <h3 class="sector-card-name">INFRASTRUCTURE</h3>
+                    </div>
+                </div>
+                
+                <!-- Card 3: Manufacturing -->
+                <div class="sector-photo-card">
+                    <img src="./images/Manufacturing.svg" alt="Manufacturing" class="sector-card-bg">
+                    <div class="sector-card-overlay">
+                        <h3 class="sector-card-name">MANUFACTURING</h3>
+                    </div>
+                </div>
+                
+                <!-- Card 4: Engineering -->
+                <div class="sector-photo-card">
+                    <img src="./images/Engineering.svg" alt="Engineering" class="sector-card-bg">
+                    <div class="sector-card-overlay">
+                        <h3 class="sector-card-name">ENGINEERING</h3>
+                    </div>
+                </div>
+                
+                <!-- Card 5: Oil & Gas -->
+                <div class="sector-photo-card">
+                    <img src="./images/Oil_&_Gas.svg" alt="Oil & Gas" class="sector-card-bg">
+                    <div class="sector-card-overlay">
+                        <h3 class="sector-card-name">OIL & GAS</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Part 2: Our Simple Process -->
+        <div class="workflow-wrapper-full">
+            <div class="workflow-text-div">
+                <span class="column-badge">/ WORKFLOW</span>
+                <h2 class="column-title">OUR SIMPLE PROCESS</h2>
+            </div>
+            
+            <div class="workflow-timeline-row">
+                <!-- SVG Curved Connector Line -->
+                <img src="./images/line.svg" alt="Curved Connector" class="timeline-svg-connector">
+                
+                <!-- Step 1: Send Inquiry -->
+                <div class="workflow-timeline-step step-1">
+                    <div class="step-header">
+                        <span class="step-big-num">01</span>
+                        <!-- <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A0AEC0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="step-icon">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="9" y1="15" x2="9" y2="15"></line>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                        </svg> -->
+                        <img src="./images/overimg1.svg" alt="Inquiry" class="step-icon">
+                    </div>
+                    <p class="step-desc">Share your requirements</p>
+                </div>
+                
+                <!-- Step 2: Get Quotation -->
+                <div class="workflow-timeline-step step-2">
+                    <div class="step-header">
+                        <span class="step-big-num">02</span>
+                        <!-- <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A0AEC0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="step-icon">
+                            <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A5 5 0 0 0 8 8c0 1.3.5 2.5 1.5 3.5.7.8 1.3 1.5 1.5 2.5"></path>
+                            <line x1="9" y1="18" x2="15" y2="18"></line>
+                            <line x1="10" y1="22" x2="14" y2="22"></line>
+                        </svg> -->
+                        <img src="./images/overimg2.svg" alt="Inquiry" class="step-icon">
+                    </div>
+                    <p class="step-desc">Receive best competitive quote</p>
+                </div>
+                
+                <!-- Step 3: Confirm Order -->
+                <div class="workflow-timeline-step step-3">
+                    <div class="step-header">
+                        <span class="step-big-num">03</span>
+                        <!-- <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A0AEC0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="step-icon">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="16 10 12 14 8 10"></polyline>
+                        </svg> -->
+                        <img src="./images/overimg3.svg" alt="Inquiry" class="step-icon">
+                    </div>
+                    <p class="step-desc">Confirm the order and make payment</p>
+                </div>
+                
+                <!-- Step 4: On Time Delivery -->
+                <div class="workflow-timeline-step step-4">
+                    <div class="step-header">
+                        <span class="step-big-num">04</span>
+                        <!-- <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A0AEC0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="step-icon">
+                            <rect x="1" y="3" width="15" height="13"></rect>
+                            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                            <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                            <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                        </svg> -->
+                        <img src="./images/overimg4.svg" alt="Inquiry" class="step-icon">
+                    </div>
+                    <p class="step-desc">We deliver at your location</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Info Strips Section -->
+    <section class="quick-info-section" id="quick-info">
+        <div class="quick-info-container">
+            <!-- Left Column: Quick Info Strips -->
+            <div class="quick-info-left">
+                <span class="column-badge">/ CONTACT</span>
+                <h2 class="quick-info-title">QUICK INFO STRIPS</h2>
+                
+                <div class="quick-info-grid">
+                    <!-- Call Us -->
+                    <div class="quick-info-item quick-info-item-border">
+                        <div class="quick-info-icon-box">
+                            <img src="./images/contact.svg" alt="Call Us" class="quick-info-icon">
+                        </div>
+                        <div class="quick-info-content">
+                            <h3 class="quick-info-label">CALL US</h3>
+                            <p class="quick-info-value"><a href="tel:+910987654321">+91 0987654321</a></p>
+                        </div>
+                    </div>
+                    
+                    <!-- Email Us -->
+                    <div class="quick-info-item">
+                        <div class="quick-info-icon-box">
+                            <img src="./images/email.svg" alt="Email Us" class="quick-info-icon">
+                        </div>
+                        <div class="quick-info-content">
+                            <h3 class="quick-info-label">EMAIL US</h3>
+                            <p class="quick-info-value"><a href="mailto:info@steelcraft.com">info@steelcraft.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <!-- Our Location -->
+                    <div class="quick-info-item quick-info-item-border">
+                        <div class="quick-info-icon-box">
+                            <img src="./images/location.svg" alt="Our Location" class="quick-info-icon">
+                        </div>
+                        <div class="quick-info-content">
+                            <h3 class="quick-info-label">OUR LOCATION</h3>
+                            <p class="quick-info-value">GIDC, Vatva, Ahmedabad<br>Gujarat - 382445</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Working Hours -->
+                    <div class="quick-info-item">
+                        <div class="quick-info-icon-box">
+                            <img src="./images/watch.svg" alt="Working Hours" class="quick-info-icon">
+                        </div>
+                        <div class="quick-info-content">
+                            <h3 class="quick-info-label">WORKING HOURS</h3>
+                            <p class="quick-info-value">Mon - Sat<br>9:00 AM - 7:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Column: Interactive Map Card -->
+            <div class="quick-info-right">
+                <div class="map-card">
+                    <div class="map-image-container">
+                        <img src="./images/map.png" alt="Steelcraft Industries Map" class="map-image">
+                        
+                        <!-- Open in Maps Badge Overlay -->
+                        <a href="https://maps.google.com/?q=GIDC,+Vatva,+Ahmedabad,+Gujarat+382445" target="_blank" rel="noopener noreferrer" class="map-badge-open">
+                            <span>OPEN IN MAPS</span>
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                        
+                        <!-- Maximize Icon Overlay -->
+                        <div class="map-icon-maximize">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="map-card-info">
+                        <h3 class="map-company-name">STEELCRAFT INDUSTRIES</h3>
+                        <p class="map-address-text">GIDC, Vatva, Ahmedabad, Gujarat - 382445</p>
+                        
+                        <!-- Orange Button -->
+                        <a href="https://maps.google.com/?q=GIDC,+Vatva,+Ahmedabad,+Gujarat+382445" target="_blank" rel="noopener noreferrer" class="map-directions-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-arrow-icon">
+                                <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+                            </svg>
+                            <span>GET DIRECTIONS</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Bottom Pin Icon Decoration -->
+                <div class="map-outer-pin">
+                    <img src="./images/location.svg" alt="Location Marker" class="outer-pin-icon">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="testimonials-container">
+            <span class="column-badge">/ TRUST</span>
+            <h2 class="advantages-title">WHAT CLIENTS SAY</h2>
+            
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="stars-container">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#EC6100" stroke="#EC6100" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#EC6100" stroke="#EC6100" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#EC6100" stroke="#EC6100" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#EC6100" stroke="#EC6100" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#EC6100" stroke="#EC6100" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <p class="testimonial-quote">"SteelCraft is our trusted partner for all our projects. Quality and delivery is always on time."</p>
+                    <h3 class="testimonial-author">RAJESH PATEL</h3>
+                    <span class="testimonial-role">BUILDER , AHMEDABAD</span>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="stars-container">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#EC6100" stroke="#EC6100" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#EC6100" stroke="#EC6100" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#EC6100" stroke="#EC6100" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#EC6100" stroke="#EC6100" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#EC6100" stroke="#EC6100" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <p class="testimonial-quote">"Best prices in the market and very professional team. Highly recommended!"</p>
+                    <h3 class="testimonial-author">MAHESH SHARMA</h3>
+                    <span class="testimonial-role">CONTRACTOR , SURAT</span>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="stars-container">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#EC6100" stroke="#EC6100" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#EC6100" stroke="#EC6100" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#EC6100" stroke="#EC6100" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#EC6100" stroke="#EC6100" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#EC6100" stroke="#EC6100" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <p class="testimonial-quote">"We get all our steel requirements from SteelCraft. Their inventory and service is excellent."</p>
+                    <h3 class="testimonial-author">DHAVAL MEHTA</h3>
+                    <span class="testimonial-role">INFRASTRUCTURE DEVELOPER</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project CTA Section -->
+    <section class="project-cta-section" id="project-cta">
+        <div class="project-cta-container">
+            <!-- Left Column: Content -->
+            <div class="project-cta-content">
+                <span class="column-badge">/ GET IN TOUCH</span>
+                <h2 class="project-cta-title">
+                    NEED STEEL<br>
+                    FOR YOUR<br>
+                    <span class="text-orange">NEXT PROJECT?</span>
+                </h2>
+                <p class="project-cta-desc">
+                    Get the best quality steel at the best price. Contact us today.
+                </p>
+                
+                <div class="project-cta-badges">
+                    <div class="cta-badge-item">
+                        <img src="./images/best_quality.svg" alt="Best Quality" class="cta-badge-icon">
+                        <span class="cta-badge-text">BEST QUALITY</span>
+                    </div>
+                    <div class="cta-badge-item">
+                        <img src="./images/COMPETITIVE_PRICE.svg" alt="Best Price" class="cta-badge-icon">
+                        <span class="cta-badge-text">BEST PRICE</span>
+                    </div>
+                    <div class="cta-badge-item">
+                        <img src="./images/fast_delevery.svg" alt="On Time Delivery" class="cta-badge-icon">
+                        <span class="cta-badge-text">ON TIME DELIVERY</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Column: Quote Form Card -->
+            <div class="project-cta-form-col">
+                <div class="quote-form-container">
+                    <form action="#" method="POST" class="quote-form" id="cta-quote-form">
+                        <div class="form-group">
+                            <input type="text" id="cta-user-name" name="name" placeholder="YOUR NAME" required autocomplete="name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" id="cta-user-phone" name="phone" placeholder="PHONE NUMBER" required autocomplete="tel">
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="cta-user-product" name="product" placeholder="PRODUCT REQUIRED" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="cta-user-quantity" name="quantity" placeholder="QUANTITY (TON/KG)" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="cta-user-message" name="message" placeholder="YOUR MESSAGE">
+                        </div>
+                        
+                        <button type="submit" class="submit-btn" id="cta-submit-quote-btn">
+                            <span>GET QUOTENOW</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-arrow">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Footer -->
+    <footer class="main-footer" id="page-footer">
+        <!-- Top Footer Grid: Brand & Information -->
+        <div class="footer-main-dark-grid">
+            <!-- Brand Column -->
+            <div class="footer-brand-col">
+                <a href="#" class="footer-logo">
+                    <img src="./images/logo2.SVG" alt="SteelCraft Logo" class="footer-logo-img">
+                </a>
+                
+                <!-- Social Media Links -->
+                <div class="footer-socials">
+                    <a href="#" class="social-circle" aria-label="Facebook">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-circle" aria-label="Instagram">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-circle" aria-label="LinkedIn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-circle" aria-label="Email">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Office Column -->
+            <div class="footer-info-col">
+                <h4 class="footer-col-header">OFFICE</h4>
+                <p class="footer-col-text">
+                    GIDC, Vatva,<br>
+                    Ahmedabad<br>
+                    Gujarat - 382445
+                </p>
+            </div>
+            
+            <!-- Connect Column -->
+            <div class="footer-info-col">
+                <h4 class="footer-col-header">CONNECT</h4>
+                <p class="footer-col-text">
+                    <a href="tel:+919876543210" class="footer-link">+91 98765 43210</a><br>
+                    <a href="mailto:info@steelcraft.com" class="footer-link">info@steelcraft.com</a>
+                </p>
+            </div>
+            
+            <!-- Legal Column -->
+            <div class="footer-info-col">
+                <h4 class="footer-col-header">LEGAL</h4>
+                <p class="footer-col-text">
+                    <a href="#" class="footer-link">Privacy</a><br>
+                    <a href="#" class="footer-link">Terms</a>
+                </p>
+            </div>
+        </div>
+        
+        <!-- Bottom Footer Strip -->
+        <div class="footer-bottom-strip">
+            <span class="footer-copyright">© 2026 SteelCraft — All Rights Reserved</span>
+            <div class="footer-nav">
+                <a href="#" class="footer-nav-link">STRONGER</a>
+                <span class="footer-nav-separator">•</span>
+                <a href="#" class="footer-nav-link">BETTER</a>
+                <span class="footer-nav-separator">•</span>
+                <a href="#" class="footer-nav-link">TOGETHER</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Details Modal Overlay -->
+    <div class="product-modal-overlay" id="productModal">
+        <div class="product-modal">
+            <!-- Header -->
+            <div class="modal-header">
+                <span class="modal-product-code" id="modalProductCode">PR-01</span>
+                <span class="modal-product-badge">/ PRODUCT DETAIL</span>
+                <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Modal Body Content -->
+            <div class="modal-body">
+                <!-- Description -->
+                <p class="modal-desc" id="modalProductDesc"></p>
+                
+                <!-- Sizes & Grades Grid -->
+                <div class="modal-info-grid">
+                    <div class="modal-info-box">
+                        <span class="modal-info-label">SIZES AVAILABLE</span>
+                        <strong class="modal-info-value" id="modalProductSizes"></strong>
+                    </div>
+                    <div class="modal-info-box">
+                        <span class="modal-info-label">GRADES</span>
+                        <strong class="modal-info-value" id="modalProductGrades"></strong>
+                    </div>
+                </div>
+                
+                <!-- Specifications -->
+                <div>
+                    <div class="modal-section-title">/ SPECIFICATIONS</div>
+                    <div class="modal-specs-list" id="modalProductSpecs"></div>
+                </div>
+                
+                <!-- Applications -->
+                <div>
+                    <div class="modal-section-title">/ APPLICATIONS</div>
+                    <div class="modal-apps-grid" id="modalProductApps"></div>
+                </div>
+            </div>
+            
+            <!-- Quote Form -->
+            <div class="modal-footer-form">
+                <span class="modal-form-badge">/ GET A QUOTE</span>
+                <h3 class="modal-form-title" id="modalFormTitle">REQUEST TMT BARS</h3>
+                
+                <form action="#" method="POST" class="modal-quote-form" id="modalRequestForm">
+                    <div class="modal-form-group">
+                        <input type="text" id="modal-user-name" name="name" placeholder="YOUR NAME" required autocomplete="name">
+                    </div>
+                    <div class="modal-form-group">
+                        <input type="tel" id="modal-user-phone" name="phone" placeholder="PHONE NUMBER" required autocomplete="tel">
+                    </div>
+                    <div class="modal-form-group">
+                        <input type="text" id="modal-user-product" name="product" placeholder="PRODUCT REQUIRED" readonly required>
+                    </div>
+                    <div class="modal-form-group">
+                        <input type="text" id="modal-user-quantity" name="quantity" placeholder="QUANTITY (TON/KG)" required>
+                    </div>
+                    <div class="modal-form-group">
+                        <input type="text" id="modal-user-message" name="message" placeholder="YOUR MESSAGE">
+                    </div>
+                    
+                    <button type="submit" class="modal-submit-btn">
+                        <span>GET QUOTENOW</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Drawer Overlay -->
+    <div class="mobile-drawer-overlay" id="mobileDrawerOverlay">
+        <div class="mobile-drawer" id="mobileDrawer">
+            <div class="drawer-header">
+                <a href="#" class="drawer-logo" id="drawer-logo-link">
+                    <img src="./images/logo.SVG" alt="Logo" class="logo-image">
+                </a>
+                <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <nav class="drawer-nav">
+                <a href="#" class="drawer-link">STRONGER</a>
+                <a href="#" class="drawer-link">BETTER</a>
+                <a href="#" class="drawer-link">TOGETHER</a>
+            </nav>
+            <div class="drawer-footer">
+                <a href="tel:+0987654321" class="drawer-phone-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="phone-icon">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    <span class="phone-number">+0987654321</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Modal Controller -->
+    <script src="script.js" defer></script>
+</body>
+</html>
