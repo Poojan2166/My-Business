@@ -1,0 +1,1070 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLAMEBYTE | Fast Food</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,100..700;1,100..700&family=Inter:wght@400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="navbar" id="navbar">
+      <div class="navbar-container">
+        <!-- Logo Group -->
+        <a href="#" class="logo-group" id="logoLink">
+          <span class="logo-title">FLAMEBYTE</span>
+          <span class="logo-subtitle">Fast Food</span>
+        </a>
+
+        <!-- Navigation Links Group -->
+        <nav class="nav-menu" id="navMenu">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Menu</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Combos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Reviews</a></li>
+            <li class="nav-item"><a href="#visit" class="nav-link">Visit</a></li>
+          </ul>
+        </nav>
+
+        <!-- Right Header Actions (Order + Hamburger) -->
+        <div class="nav-right-group">
+          <!-- Order Button -->
+          <div class="nav-actions">
+            <a href="#" class="btn-order" id="btnOrder">
+              <span class="btn-text">Order Now</span>
+              <span class="arrow">&rarr;</span>
+            </a>
+          </div>
+
+          <!-- Hamburger Icon for Mobile -->
+          <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" id="navToggle">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Background (Hero Section with Full Cover Image 16) -->
+    <main class="hero-section">
+      <div class="hero-content-wrapper">
+        <!-- Tag Banner -->
+        <div class="hero-tag-banner">
+          <span class="tag-line"></span>
+          <span class="tag-text">Made Fresh &middot; Made For You</span>
+        </div>
+
+        <!-- Heading -->
+        <h1 class="hero-title">HOT. <span class="font-cursive">Fresh.</span><br>UNFORGETTABLE.</h1>
+
+        <!-- Subheading Paragraph -->
+        <p class="hero-description">
+          Premium handcrafted burgers, crispy loaded fries &amp; signature shakes &mdash; flame-grilled the moment you order.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-ctas">
+          <a href="#" class="btn-hero-primary">
+            <span class="btn-text">Order Now</span>
+            <span class="arrow">&rarr;</span>
+          </a>
+          <a href="#" class="btn-hero-secondary">
+            <span class="btn-text">View Menu</span>
+            <span class="btn-icon"></span>
+          </a>
+        </div>
+
+        <!-- Social Proof Ratings Block -->
+        <div class="hero-social-proof">
+          <div class="avatar-stack">
+            <div class="avatar">a</div>
+            <div class="avatar">p</div>
+            <div class="avatar">d</div>
+            <div class="avatar">s</div>
+          </div>
+          <div class="stat-group">
+            <span class="stat-value">10K+</span>
+            <span class="stat-label">Happy Customers</span>
+          </div>
+          <div class="social-divider"></div>
+          <div class="stat-group rating-group">
+            <div class="rating-top">
+              <span class="stat-value">4.9</span>
+              <span class="star-icon">★</span>
+            </div>
+            <span class="stat-label">2.5K+ reviews</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Stats Ribbon -->
+      <div class="hero-stats-ribbon">
+        <div class="stats-ribbon-container">
+          <!-- Stat 1 -->
+          <div class="ribbon-item">
+            <div class="ribbon-icon-circle"></div>
+            <div class="ribbon-text">
+              <span class="ribbon-value">10K+</span>
+              <span class="ribbon-label">Happy Customers</span>
+            </div>
+          </div>
+          <!-- Stat 2 -->
+          <div class="ribbon-item">
+            <div class="ribbon-icon-circle"></div>
+            <div class="ribbon-text">
+              <span class="ribbon-value">50K+</span>
+              <span class="ribbon-label">Orders Delivered</span>
+            </div>
+          </div>
+          <!-- Stat 3 -->
+          <div class="ribbon-item">
+            <div class="ribbon-icon-circle"></div>
+            <div class="ribbon-text">
+              <span class="ribbon-value">30 Min</span>
+              <span class="ribbon-label">Fast Delivery</span>
+            </div>
+          </div>
+          <!-- Stat 4 -->
+          <div class="ribbon-item">
+            <div class="ribbon-icon-circle"></div>
+            <div class="ribbon-text">
+              <span class="ribbon-value">100%</span>
+              <span class="ribbon-label">Quality Guaranteed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floating WhatsApp Button -->
+      <a href="https://wa.me/yourwhatsappnumber" class="whatsapp-float" target="_blank" aria-label="Contact us on WhatsApp">
+        <svg class="whatsapp-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.703 1.457h.004c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413" fill="#FFF"/>
+        </svg>
+      </a>
+    </main>
+
+    <!-- Signature Menu Section -->
+    <section class="menu-section" id="menu">
+      <div class="menu-section-container">
+        
+        <!-- Section Header Badge -->
+        <div class="menu-section-badge">
+          <span class="badge-line"></span>
+          <span class="badge-text">Our Best Sellers</span>
+        </div>
+
+        <!-- Section Main Header -->
+        <div class="menu-section-header">
+          <h2 class="menu-section-title">SIGNATURE <span class="font-cursive">Menu</span></h2>
+          <p class="menu-section-desc">
+            Five recipes we obsess over. Each one tested, refined and built to be the best version of itself.
+          </p>
+        </div>
+
+        <!-- Cards Grid Container -->
+        <div class="menu-grid">
+          <!-- Card 1: Classic Burger -->
+          <div class="menu-card">
+            <span class="menu-card-tag">Signature</span>
+            <div class="menu-card-img-container">
+              <img src="Images/Classic_Burger.svg" alt="Classic Burger" class="menu-card-img">
+            </div>
+            <div class="menu-card-content">
+              <div class="menu-card-header">
+                <h3 class="menu-card-title">Classic Burger</h3>
+                <span class="menu-card-price">$8.50</span>
+              </div>
+              <p class="menu-card-desc">
+                Single patty, aged cheddar, garden lettuce, vine tomato
+              </p>
+              <a href="#" class="btn-card-action">
+                <span class="btn-text">Add to order</span>
+                <img src="Images/righticon.svg" alt="Arrow" class="btn-icon">
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Double Cheese -->
+          <div class="menu-card">
+            <span class="menu-card-tag">Best Seller</span>
+            <div class="menu-card-img-container">
+              <img src="Images/Double_Cheese.svg" alt="Double Cheese" class="menu-card-img">
+            </div>
+            <div class="menu-card-content">
+              <div class="menu-card-header">
+                <h3 class="menu-card-title">Double Cheese</h3>
+                <span class="menu-card-price">$11.90</span>
+              </div>
+              <p class="menu-card-desc">
+                Two smashed patties, double American cheese, secret sauce
+              </p>
+              <a href="#" class="btn-card-action">
+                <span class="btn-text">Add to order</span>
+                <img src="Images/righticon.svg" alt="Arrow" class="btn-icon">
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Crispy Chicken -->
+          <div class="menu-card">
+            <span class="menu-card-tag">Spicy</span>
+            <div class="menu-card-img-container">
+              <img src="Images/Crispy_Chicken.svg" alt="Crispy Chicken" class="menu-card-img">
+            </div>
+            <div class="menu-card-content">
+              <div class="menu-card-header">
+                <h3 class="menu-card-title">Crispy Chicken</h3>
+                <span class="menu-card-price">$9.40</span>
+              </div>
+              <p class="menu-card-desc">
+                Buttermilk-brined chicken, crunchy slaw, chipotle mayo
+              </p>
+              <a href="#" class="btn-card-action">
+                <span class="btn-text">Add to order</span>
+                <img src="Images/righticon.svg" alt="Arrow" class="btn-icon">
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4: Loaded Fries -->
+          <div class="menu-card">
+            <span class="menu-card-tag">Sharing</span>
+            <div class="menu-card-img-container">
+              <img src="Images/Loaded_Fries.svg" alt="Loaded Fries" class="menu-card-img">
+            </div>
+            <div class="menu-card-content">
+              <div class="menu-card-header">
+                <h3 class="menu-card-title">Loaded Fries</h3>
+                <span class="menu-card-price">$6.90</span>
+              </div>
+              <p class="menu-card-desc">
+                Hand-cut, melted cheese, smoked bacon, scallions
+              </p>
+              <a href="#" class="btn-card-action">
+                <span class="btn-text">Add to order</span>
+                <img src="Images/righticon.svg" alt="Arrow" class="btn-icon">
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 5: Signature Shake -->
+          <div class="menu-card">
+            <span class="menu-card-tag">Sweet</span>
+            <div class="menu-card-img-container">
+              <img src="Images/Signature_Shake.svg" alt="Signature Shake" class="menu-card-img">
+            </div>
+            <div class="menu-card-content">
+              <div class="menu-card-header">
+                <h3 class="menu-card-title">Signature Shake</h3>
+                <span class="menu-card-price">$5.50</span>
+              </div>
+              <p class="menu-card-desc">
+                Slow-churned chocolate, whipped cream, ganache drip
+              </p>
+              <a href="#" class="btn-card-action">
+                <span class="btn-text">Add to order</span>
+                <img src="Images/righticon.svg" alt="Arrow" class="btn-icon">
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Features Section (Why Choose Us) -->
+    <section class="features-section" id="features">
+      <div class="features-section-container">
+        
+        <!-- Section Header Badge -->
+        <div class="features-section-badge">
+          <span class="badge-line"></span>
+          <span class="badge-text">Why choose us</span>
+        </div>
+
+        <!-- Section Main Header -->
+        <div class="features-section-header">
+          <h2 class="features-section-title">GREAT FOOD. <span class="font-cursive">Experience.</span></h2>
+          <p class="features-section-desc">
+            We craft every order with passion and precision &mdash; using only the finest ingredients to serve happiness.
+          </p>
+        </div>
+
+        <!-- Cards Grid Container -->
+        <div class="features-grid">
+          <!-- Card 1: Fresh Ingredients -->
+          <div class="features-card">
+            <div class="features-card-icon-circle">
+              <!-- Leaf Icon -->
+              <span class="features-card-icon">🍃</span>
+            </div>
+            <div class="features-card-content">
+              <h3 class="features-card-title">Fresh Ingredients</h3>
+              <p class="features-card-desc">
+                Handpicked, hygienic &amp; 100% fresh, every day.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2: Made To Order -->
+          <div class="features-card">
+            <div class="features-card-icon-circle">
+              <!-- Chef Hat Icon -->
+              <span class="features-card-icon">👨‍🍳</span>
+            </div>
+            <div class="features-card-content">
+              <h3 class="features-card-title">Made To Order</h3>
+              <p class="features-card-desc">
+                Cooked fresh the moment you place your order.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3: Fast Delivery -->
+          <div class="features-card">
+            <div class="features-card-icon-circle">
+              <!-- Delivery Truck Icon -->
+              <span class="features-card-icon">⚡</span>
+            </div>
+            <div class="features-card-content">
+              <h3 class="features-card-title">Fast Delivery</h3>
+              <p class="features-card-desc">
+                Delivered hot &amp; fresh in under 30 minutes.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4: Quality Guaranteed -->
+          <div class="features-card">
+            <div class="features-card-icon-circle">
+              <!-- Quality Medal Icon -->
+              <span class="features-card-icon">🏅</span>
+            </div>
+            <div class="features-card-content">
+              <h3 class="features-card-title">Quality Guaranteed</h3>
+              <p class="features-card-desc">
+                Premium quality in every bite, every time.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- AMAZING Combos Section -->
+    <section class="combos-section" id="combos">
+      <div class="combos-section-container">
+        
+        <!-- Section Header Badge -->
+        <div class="combos-section-badge">
+          <span class="badge-line"></span>
+          <span class="badge-text">Perfect Together</span>
+        </div>
+
+        <!-- Section Main Header -->
+        <div class="combos-section-header">
+          <h2 class="combos-section-title">AMAZING <span class="font-cursive">Combos</span></h2>
+        </div>
+
+        <!-- Combos List Container -->
+        <div class="combos-list">
+          <!-- Row 1: Couple Combo ($24) -->
+          <div class="combo-row">
+            <div class="combo-img-side">
+              <span class="combo-tag">Save 25%</span>
+              <img src="Images/Couple_Combo.svg" alt="Couple Combo" class="combo-img">
+            </div>
+            <div class="combo-content-side">
+              <div class="combo-content-header">
+                <div class="combo-title-row">
+                  <h3 class="combo-title">Couple Combo</h3>
+                  <span class="combo-price">$24</span>
+                </div>
+                <p class="combo-desc">
+                  Perfect for two &mdash; 2 signature burgers, 2 sides of fries, 2 refreshing shakes.
+                </p>
+              </div>
+              <ul class="combo-features">
+                <li class="combo-feature-item">2 signature burgers</li>
+                <li class="combo-feature-item">2 sides of fries</li>
+                <li class="combo-feature-item">2 refreshing shakes</li>
+              </ul>
+              <div class="combo-actions">
+                <a href="#" class="btn-combo-order">
+                  <span class="btn-text">Order Now</span>
+                  <span class="arrow">&rarr;</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 2: Family Feast ($48) -->
+          <div class="combo-row combo-row-reverse">
+            <div class="combo-img-side">
+              <span class="combo-tag">Save 30%</span>
+              <img src="Images/Family_Feast.svg" alt="Family Feast" class="combo-img">
+            </div>
+            <div class="combo-content-side">
+              <div class="combo-content-header">
+                <div class="combo-title-row">
+                  <h3 class="combo-title">Family Feast</h3>
+                  <span class="combo-price">$48</span>
+                </div>
+                <p class="combo-desc">
+                  Feed the whole family &mdash; 4 burgers, 4 fries, 4 drinks. Pure happiness.
+                </p>
+              </div>
+              <ul class="combo-features">
+                <li class="combo-feature-item">4 burgers</li>
+                <li class="combo-feature-item">4 fries</li>
+                <li class="combo-feature-item">4 drinks</li>
+              </ul>
+              <div class="combo-actions">
+                <a href="#" class="btn-combo-order">
+                  <span class="btn-text">Order Now</span>
+                  <span class="arrow">&rarr;</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 3: Couple Combo ($89) -->
+          <div class="combo-row combo-row-tall">
+            <div class="combo-img-side">
+              <span class="combo-tag">Best Value</span>
+              <img src="Images/Couple_Combo_second.svg" alt="Couple Combo" class="combo-img">
+            </div>
+            <div class="combo-content-side">
+              <div class="combo-content-header">
+                <div class="combo-title-row">
+                  <h3 class="combo-title">Couple Combo</h3>
+                  <span class="combo-price">$89</span>
+                </div>
+                <p class="combo-desc">
+                  Sliders, wings, fries, dips &mdash; feeds 6-8
+                </p>
+              </div>
+              <ul class="combo-features">
+                <li class="combo-feature-item">10 Smash Sliders</li>
+                <li class="combo-feature-item">12 Glazed Wings</li>
+                <li class="combo-feature-item">Sharing Fries Platter</li>
+                <li class="combo-feature-item">House Dips</li>
+              </ul>
+              <div class="combo-actions">
+                <a href="#" class="btn-combo-order">
+                  <span class="btn-text">Order Now</span>
+                  <span class="arrow">&rarr;</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Gallery Section (THE Flavor) -->
+    <section class="gallery-section" id="gallery">
+      <div class="gallery-container">
+        
+        <!-- Section Header Badge -->
+        <div class="gallery-badge">
+          <span class="badge-line"></span>
+          <span class="badge-text">A Look Behind</span>
+        </div>
+
+        <!-- Section Main Header -->
+        <div class="gallery-header">
+          <h2 class="gallery-title">THE <span class="font-cursive">Flavor</span></h2>
+        </div>
+
+        <!-- Collage/Masonry Grid -->
+        <div class="gallery-grid">
+          <!-- Card 1: Column 1, span 2 rows -->
+          <div class="gallery-card">
+            <img src="Images/Flame_Grilled_img1.svg" alt="Flame Grilled" class="gallery-img">
+            <div class="gallery-card-overlay">
+              <h3 class="gallery-card-title">Flame Grilled</h3>
+              <a href="#" class="gallery-card-link">
+                <span class="link-text">view</span>
+                <span class="arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Column 2, row 1 -->
+          <div class="gallery-card">
+            <img src="Images/Flame%20Grilled_img2.svg" alt="Flame Grilled" class="gallery-img">
+            <div class="gallery-card-overlay">
+              <h3 class="gallery-card-title">Flame Grilled</h3>
+              <a href="#" class="gallery-card-link">
+                <span class="link-text">view</span>
+                <span class="arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Column 3, row 1 -->
+          <div class="gallery-card">
+            <img src="Images/Flame_Grilled_img3.svg" alt="Flame Grilled" class="gallery-img">
+            <div class="gallery-card-overlay">
+              <h3 class="gallery-card-title">Flame Grilled</h3>
+              <a href="#" class="gallery-card-link">
+                <span class="link-text">view</span>
+                <span class="arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4: Column 2 / span 2, row 2 -->
+          <div class="gallery-card">
+            <img src="Images/Flame%20Grilled_img4.svg" alt="Flame Grilled" class="gallery-img">
+            <div class="gallery-card-overlay">
+              <h3 class="gallery-card-title">Flame Grilled</h3>
+              <a href="#" class="gallery-card-link">
+                <span class="link-text">view</span>
+                <span class="arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Trending Section (Most ordered this week) -->
+    <section class="trending-section" id="trending">
+      <div class="trending-container">
+        
+        <!-- Section Header Badge -->
+        <div class="trending-badge">
+          <span class="badge-line"></span>
+          <span class="badge-text">Customer Favorites</span>
+        </div>
+
+        <!-- Section Main Header -->
+        <div class="trending-header">
+          <h2 class="trending-title">Most ordered <span class="font-cursive">this week.</span></h2>
+        </div>
+
+        <!-- Cards Grid Container -->
+        <div class="trending-grid">
+          <!-- Card 1: Double Cheese (#1) -->
+          <div class="trending-card">
+            <span class="trending-rank">#1</span>
+            <div class="trending-img-container">
+              <img src="Images/Double_Cheese_img1.svg" alt="Double Cheese" class="trending-img">
+            </div>
+            <div class="trending-content">
+              <h3 class="trending-card-title">Double Cheese</h3>
+              <span class="trending-orders">2,140 orders</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Crispy Chicken (#2) -->
+          <div class="trending-card">
+            <span class="trending-rank">#2</span>
+            <div class="trending-img-container">
+              <img src="Images/Crispy_Chicken_img1.svg" alt="Crispy Chicken" class="trending-img">
+            </div>
+            <div class="trending-content">
+              <h3 class="trending-card-title">Crispy Chicken</h3>
+              <span class="trending-orders">1,820 orders</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Loaded Fries (#3) -->
+          <div class="trending-card">
+            <span class="trending-rank">#3</span>
+            <div class="trending-img-container">
+              <img src="Images/Loaded_Fries_img1.svg" alt="Loaded Fries" class="trending-img">
+            </div>
+            <div class="trending-content">
+              <h3 class="trending-card-title">Loaded Fries</h3>
+              <span class="trending-orders">1,560 orders</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Classic Burger (#4) -->
+          <div class="trending-card">
+            <span class="trending-rank">#4</span>
+            <div class="trending-img-container">
+              <img src="Images/Classic_Burger_img1.svg" alt="Classic Burger" class="trending-img">
+            </div>
+            <div class="trending-content">
+              <h3 class="trending-card-title">Classic Burger</h3>
+              <span class="trending-orders">1,310 orders</span>
+            </div>
+          </div>
+
+          <!-- Card 5: Signature Shake (#5) -->
+          <div class="trending-card">
+            <span class="trending-rank">#5</span>
+            <div class="trending-img-container">
+              <img src="Images/Signature_Shake_img1.svg" alt="Signature Shake" class="trending-img">
+            </div>
+            <div class="trending-content">
+              <h3 class="trending-card-title">Signature Shake</h3>
+              <span class="trending-orders">980 orders</span>
+            </div>
+          </div>
+        </div>
+
+    </section>
+
+    <!-- Delivery Section -->
+    
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="testimonials-container">
+        
+        <!-- Section Header Badge -->
+        <div class="testimonials-badge">
+          <span class="badge-line"></span>
+          <span class="badge-text">Customer Reviews</span>
+        </div>
+
+        <!-- Section Main Header -->
+        <div class="testimonials-header">
+          <h2 class="testimonials-title">What food lovers <span class="font-cursive">say.</span></h2>
+        </div>
+
+        <!-- Cards Grid Container -->
+        <div class="testimonials-grid">
+          <!-- Card 1: Aarav Mehta -->
+          <div class="testimonial-card">
+            <div class="testimonial-stars-container">
+              <img src="Images/stars.svg" alt="5 Stars Rating" class="testimonial-stars-img">
+            </div>
+            <p class="testimonial-quote">
+              &ldquo;The double cheese is the best burger in the city. Period. The bun is pillowy, the patty has actual crust, and you can taste the care.&rdquo;
+            </p>
+            <div class="testimonial-divider"></div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">a</div>
+              <div class="testimonial-author-info">
+                <h4 class="testimonial-author-name">Aarav Mehta</h4>
+                <span class="testimonial-author-role">Regular since 2022</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Priya Shah -->
+          <div class="testimonial-card">
+            <div class="testimonial-stars-container">
+              <img src="Images/stars.svg" alt="5 Stars Rating" class="testimonial-stars-img">
+            </div>
+            <p class="testimonial-quote">
+              &ldquo;Loaded fries that arrive still crispy? It's a miracle. Service was warm, the place smells incredible, and the shake &mdash; chef's kiss.&rdquo;
+            </p>
+            <div class="testimonial-divider"></div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">p</div>
+              <div class="testimonial-author-info">
+                <h4 class="testimonial-author-name">Priya Shah</h4>
+                <span class="testimonial-author-role">Food blogger</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Daniel Kim -->
+          <div class="testimonial-card">
+            <div class="testimonial-stars-container">
+              <img src="Images/stars.svg" alt="5 Stars Rating" class="testimonial-stars-img">
+            </div>
+            <p class="testimonial-quote">
+              &ldquo;I bring out-of-town friends here every time. It's our spot. The party pack is the easiest dinner I never have to think about.&rdquo;
+            </p>
+            <div class="testimonial-divider"></div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">d</div>
+              <div class="testimonial-author-info">
+                <h4 class="testimonial-author-name">Daniel Kim</h4>
+                <span class="testimonial-author-role">Weekly visitor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="delivery-section" id="delivery">
+      <div class="delivery-container">
+        
+        <!-- Left content column -->
+        <div class="delivery-content">
+          <!-- Section Badge -->
+          <div class="delivery-badge">
+            <span class="badge-line"></span>
+            <span class="badge-text">Now Available On</span>
+          </div>
+          <!-- Title -->
+          <h2 class="delivery-title">HUNGRY? <span class="font-cursive">We've got you!</span></h2>
+          <!-- Description -->
+          <p class="delivery-desc">
+            We Craft Every Order With Passion And Precision — Using Only The Finest Ingredients To Serve Happiness On A Plate.
+          </p>
+        </div>
+
+        <!-- Right buttons column -->
+        <div class="delivery-actions">
+          <a href="#" class="btn-delivery" target="_blank">Zomato</a>
+          <a href="#" class="btn-delivery" target="_blank">Swiggy</a>
+          <a href="#" class="btn-delivery" target="_blank">MagicPin</a>
+          <a href="#" class="btn-delivery" target="_blank">Uber Eats</a>
+        </div>
+
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section" id="process">
+      <div class="process-container">
+        
+        <!-- Section Header Badge -->
+        <div class="process-badge">
+          <span class="badge-line"></span>
+          <span class="badge-text">Our Process</span>
+        </div>
+
+        <!-- Section Main Header -->
+        <div class="process-header">
+          <h2 class="process-title">Order. Cook. <span class="font-cursive">Deliver.</span></h2>
+        </div>
+
+        <!-- Process Steps Grid -->
+        <div class="process-steps">
+          <!-- Step 1 -->
+          <div class="process-step">
+            <div class="step-num-container">
+              <div class="step-circle">1</div>
+              <div class="step-line"></div>
+            </div>
+            <h3 class="step-title">Order</h3>
+            <p class="step-desc">
+              Tap, choose, confirm. Custom modifications welcome.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="process-step">
+            <div class="step-num-container">
+              <div class="step-circle">2</div>
+              <div class="step-line"></div>
+            </div>
+            <h3 class="step-title">Cook</h3>
+            <p class="step-desc">
+              Patty hits the flame. Toppings layered. Bun toasted.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="process-step">
+            <div class="step-num-container">
+              <div class="step-circle">3</div>
+            </div>
+            <h3 class="step-title">Deliver</h3>
+            <p class="step-desc">
+              Insulated handoff, hot at your door in under 30 minutes.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+      <div class="faq-section-container">
+        
+        <!-- Section Header Badge -->
+        <div class="faq-section-badge">
+          <span class="badge-line"></span>
+          <span class="badge-text">FAQ</span>
+        </div>
+
+        <!-- Section Main Header -->
+        <div class="faq-section-header">
+          <h2 class="faq-section-title">Common questions <span class="font-cursive">answered.</span></h2>
+        </div>
+
+        <!-- FAQ Accordion List -->
+        <div class="faq-list">
+          <!-- Accordion Item 1 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" id="faq-q1">
+              <span class="faq-question-text">How long does delivery take?</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="faq-answer-wrapper">
+              <div class="faq-answer-content">
+                <p class="faq-answer-text">We deliver hot and fresh within 30 minutes. If we're late, your next burger is on us!</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 2 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" id="faq-q2">
+              <span class="faq-question-text">Do you offer vegetarian options?</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="faq-answer-wrapper">
+              <div class="faq-answer-content">
+                <p class="faq-answer-text">Yes, we have delicious plant-based patties, vegetarian loaded fries, and side options available on our menu.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 3 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" id="faq-q3">
+              <span class="faq-question-text">Can I customize my burger?</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="faq-answer-wrapper">
+              <div class="faq-answer-content">
+                <p class="faq-answer-text">Absolutely! You can choose your bun type, swap cheese, add extra patties, or customize any of our house sauces.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 4 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" id="faq-q4">
+              <span class="faq-question-text">Where do your ingredients come from?</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="faq-answer-wrapper">
+              <div class="faq-answer-content">
+                <p class="faq-answer-text">We source our beef from local farms, fresh produce daily from regional markets, and bake our buns fresh every morning.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 5 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" id="faq-q5">
+              <span class="faq-question-text">Do you cater for events?</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="faq-answer-wrapper">
+              <div class="faq-answer-content">
+                <p class="faq-answer-text">Yes, we offer catering packages for parties, corporate events, and family gatherings. Contact us via WhatsApp to customize your menu.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Visit Section -->
+    <section class="visit-section" id="visit">
+      <div class="visit-container">
+        
+        <!-- Left Column: Content and Info Cards -->
+        <!-- Section Badge -->
+        <div class="visit-badge">
+          <span class="badge-line"></span>
+          <span class="badge-text">Visit Our Restaurant</span>
+        </div>
+
+        <!-- Title -->
+        <h2 class="visit-title">Find us <span class="font-cursive">today.</span></h2>
+         <div class="visit-containers">
+
+           <div class="visit-content">
+             
+          <!-- Cards Stack -->
+          <div class="visit-cards">
+            <!-- Address Card -->
+            <div class="visit-card">
+              <div class="visit-card-icon-container">
+                <img src="Images/Address.svg" alt="Address Icon" class="visit-card-icon">
+              </div>
+              <div class="visit-card-info">
+                <span class="visit-card-label">Address</span>
+                <p class="visit-card-text">42 Flame Street, Riverside District, Surat 395007</p>
+              </div>
+            </div>
+
+            <!-- Opening Hours Card -->
+            <div class="visit-card">
+              <div class="visit-card-icon-container">
+                <img src="Images/Watch.svg" alt="Watch Icon" class="visit-card-icon">
+              </div>
+              <div class="visit-card-info">
+                <span class="visit-card-label">Opening Hours</span>
+                <div class="visit-hours-rows">
+                  <div class="visit-hours-row">
+                    <span class="hours-day">Mon – Thu</span>
+                    <span class="hours-time">11:00 — 23:00</span>
+                  </div>
+                  <div class="visit-hours-row">
+                    <span class="hours-day">Fri – Sat</span>
+                    <span class="hours-time">11:00 — 01:00</span>
+                  </div>
+                  <div class="visit-hours-row">
+                    <span class="hours-day">Sunday</span>
+                    <span class="hours-time">12:00 — 22:00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Card -->
+            <div class="visit-card">
+              <div class="visit-card-icon-container">
+                <img src="Images/Contact.svg" alt="Contact Icon" class="visit-card-icon">
+              </div>
+              <div class="visit-card-info">
+                <span class="visit-card-label">Contact</span>
+                <p class="visit-card-text">+91 98250 12345</p>
+                <p class="visit-card-text">Hello@Emberandbun.Com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Column: Google Maps Embed in Iframe -->
+        <div class="visit-map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.508530029283!2d-0.14382!3d51.52054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad554c335b1%3A0x5a2d67a9159ff4e2!2sRegent&#39;s%20Park!5e0!3m2!1sen!2suk!4v1620000000000!5m2!1sen!2suk" 
+            class="visit-map-iframe" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Google Maps Location">
+          </iframe>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+      <div class="footer-container">
+        
+        <!-- Top Half: Three column areas -->
+        <div class="footer-top">
+          <!-- Left Brand Column -->
+          <div class="footer-brand">
+            <a href="#" class="footer-logo">
+              <span class="logo-title">FLAMEBYTE</span>
+              <span class="logo-subtitle">Fast Food</span>
+            </a>
+            <p class="footer-pitch">
+              Premium handcrafted burgers, loaded fries and signature shakes. Hot. Fresh. Unforgettable.
+            </p>
+            <div class="footer-socials">
+              <a href="#" class="social-btn" aria-label="Facebook">
+                <img src="Images/Facebook.svg" alt="Facebook">
+              </a>
+              <a href="#" class="social-btn" aria-label="Instagram">
+                <img src="Images/Instagram.svg" alt="Instagram">
+              </a>
+              <a href="mailto:hello@emberandbun.co" class="social-btn" aria-label="Email">
+                <img src="Images/Mail.svg" alt="Email">
+              </a>
+            </div>
+          </div>
+
+          <!-- Middle Column: Quick Links -->
+          <div class="footer-links-col">
+            <h4 class="footer-col-title">Quick Links</h4>
+            <ul class="footer-links-list">
+              <li><a href="#" class="footer-link">Menu</a></li>
+              <li><a href="#" class="footer-link">Combos</a></li>
+              <li><a href="#" class="footer-link">Gallery</a></li>
+              <li><a href="#" class="footer-link">Reviews</a></li>
+              <li><a href="#visit" class="footer-link">Visit</a></li>
+            </ul>
+          </div>
+
+          <!-- Right Column: Contact Info -->
+          <div class="footer-links-col">
+            <h4 class="footer-col-title">Contact</h4>
+            <ul class="footer-contact-list">
+              <li class="contact-item-text">42 Flame Street, Surat 395007</li>
+              <li class="contact-item-text"><a href="tel:+919825012345" class="footer-contact-link">+91 98250 12345</a></li>
+              <li class="contact-item-text"><a href="mailto:hello@emberandbun.co" class="footer-contact-link">hello@emberandbun.co</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Divider Line -->
+        <hr class="footer-divider">
+
+        <!-- Bottom Half: Copyright -->
+        <div class="footer-bottom">
+          <p class="footer-copyright">&copy; 2026 FLAMEBYTE Fast Food</p>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- Reusable Detail Popup Modal -->
+    <div class="modal-overlay" id="detailModal">
+      <div class="modal-container">
+        <!-- Close Button (Absolute Top Right of Modal container or Right Column) -->
+        <button class="modal-close-icon-btn" id="modalCloseIconBtn" aria-label="Close Modal">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 5L5 15M5 5L15 15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <div class="modal-layout">
+          <!-- Left Column: Product/Gallery Image -->
+          <div class="modal-image-col">
+            <span class="modal-image-tag" id="modalImageTag">Bestseller</span>
+            <img src="Images/Classic_Burger.svg" alt="Product Image" class="modal-product-img" id="modalProductImg">
+          </div>
+
+          <!-- Right Column: Details and Actions -->
+          <div class="modal-info-col">
+            <h2 class="modal-title" id="modalTitle">Classic Burger</h2>
+            
+            <p class="modal-desc" id="modalDesc">
+              Single patty, aged cheddar, garden lettuce, vine tomato, toasted brioche.
+            </p>
+
+            <!-- Ingredients List (Only visible for Menu Items) -->
+            <div class="modal-ingredients-wrapper" id="modalIngredientsWrapper">
+              <ul class="modal-ingredients-list" id="modalIngredientsList">
+                <!-- Dynamically populated -->
+              </ul>
+            </div>
+
+            <!-- Price Block (Only visible for Menu Items) -->
+            <div class="modal-price-block" id="modalPriceBlock">
+              <span class="modal-price-current" id="modalPriceCurrent">$8.50</span>
+              <span class="modal-price-original" id="modalPriceOriginal">$10.65</span>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="modal-actions-row">
+              <button class="modal-btn btn-add-order" id="modalBtnAddOrder">
+                <span>Add to order</span>
+                <span class="arrow">&rarr;</span>
+              </button>
+              <button class="modal-btn btn-close-modal" id="modalBtnClose">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Local JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>

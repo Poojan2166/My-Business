@@ -1,0 +1,1636 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IRONHAUS | Members-Only Strength & Conditioning Club</title>
+
+    <!-- Google Fonts Connection -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION BAR -->
+    <header class="navbar" id="navbar">
+      <a href="#" class="nav-brand">IRONHAUS</a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#programs" class="nav-link">Programs</a></li>
+          <li><a href="#coaches" class="nav-link">Trainers</a></li>
+          <li><a href="#facilities" class="nav-link">Facilities</a></li>
+          <li><a href="#membership" class="nav-link">Membership</a></li>
+          <li><a href="#visit" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="nav-cta" id="btn-book-trial">
+          <span>Book a Trial</span>
+          <!-- Custom right chevron SVG matching design thickness 1.5px -->
+          <svg
+            width="8"
+            height="8"
+            viewBox="0 0 8 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.5 1.5L5 4L2.5 6.5"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <main class="hero">
+      <div class="hero-content">
+        <div class="hero-tagline">
+          / Est. 2026 · Members-only training house
+        </div>
+        <h1 class="hero-heading">
+          Train where<br />
+          <span class="highlight-italic">the work</span> is<br />
+          sacred.
+        </h1>
+        <p class="hero-description">
+          IRONHAUS is a 24,000 sq ft strength & conditioning club for people who
+          measure progress in decades, not weeks. Coached, capped, and built
+          around one room.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn-primary" id="btn-view-membership">
+            <span>View Membership</span>
+            <svg
+              width="8"
+              height="8"
+              viewBox="0 0 8 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.5 1.5L5 4L2.5 6.5"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button class="btn-secondary" id="btn-personal-training">
+            Personal Training
+          </button>
+        </div>
+      </div>
+
+      <!-- STATS PANEL (Glassmorphism overlay at bottom of hero) -->
+      <div class="stats-panel">
+        <div class="stats-container">
+          <div class="stat-item">
+            <!-- The script will animate the counting, falling back to static text if JS is disabled -->
+            <span class="stat-number" data-target="5000">0+</span>
+            <span class="stat-label">Active Members</span>
+          </div>
+
+          <div class="stat-item">
+            <span class="stat-number" data-target="50">0+</span>
+            <span class="stat-label">Pieces of Equipment</span>
+          </div>
+
+          <div class="stat-item">
+            <span class="stat-number" data-target="15">0</span>
+            <span class="stat-label">Certified Coaches</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- MARQUEE BANNER SECTION (Frame 428) -->
+    <section class="marquee-banner">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>MEMBERS ONLY</span>
+          <!-- <svg
+            class="star-icon"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.784 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192z"
+            />
+          </svg> -->
+          <img src="/Images/Star.svg" alt="star" width="14" height="14" />
+          <span>BUILT BY COACHES</span>
+          <img src="/Images/Star.svg" alt="star" width="14" height="14" />
+          <span>EST. 2026</span>
+          <img src="/Images/Star.svg" alt="star" width="14" height="14" />
+          <span>BROOKLYN · TRIBECA · LONDON</span>
+          <img src="/Images/Star.svg" alt="star" width="14" height="14" />
+        </div>
+        <!-- Duplicate content to enable seamless infinite scrolling loop -->
+        <div class="marquee-group" aria-hidden="true">
+          <span>MEMBERS ONLY</span>
+          <img src="/Images/Star.svg" alt="star" width="14" height="14" />
+          <span>BUILT BY COACHES</span>
+          <img src="/Images/Star.svg" alt="star" width="14" height="14" />
+          <span>EST. 2026</span>
+          <img src="/Images/Star.svg" alt="star" width="14" height="14" />
+          <span>BROOKLYN · TRIBECA · LONDON</span>
+          <img src="/Images/Star.svg" alt="star" width="14" height="14" />
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY IRONHAUS SECTION (Rectangle 515) -->
+    <section class="why-section" id="why-ironhaus">
+      <div class="why-container">
+        <div class="why-header">
+          <div class="why-tagline">/ Why Ironhaus</div>
+          <h2 class="why-heading">Built for<br />serious results.</h2>
+        </div>
+
+        <div class="why-grid">
+          <!-- Feature 01 -->
+          <div class="why-card">
+            <span class="why-card-num">01</span>
+            <div class="why-card-content">
+              <h3 class="why-card-title">Engineered Equipment</h3>
+              <p class="why-card-text">
+                Eleiko bars, Hammer Strength plate-loaded rigs, Concept2 ergs
+                and custom climbing pegs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 02 -->
+          <div class="why-card">
+            <span class="why-card-num">02</span>
+            <div class="why-card-content">
+              <h3 class="why-card-title">Coached, Never Crowded</h3>
+              <p class="why-card-text">
+                A 1:12 trainer ratio. Every floor session is led by a
+                credentialed strength coach.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 03 -->
+          <div class="why-card">
+            <span class="why-card-num">03</span>
+            <div class="why-card-content">
+              <h3 class="why-card-title">Nutrition That Lands</h3>
+              <p class="why-card-text">
+                Quarterly bloodwork-informed protocols, written by in-house
+                registered dieticians.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 04 -->
+          <div class="why-card">
+            <span class="why-card-num">04</span>
+            <div class="why-card-content">
+              <h3 class="why-card-title">Membership On Your Terms</h3>
+              <p class="why-card-text">
+                Pause, freeze, transfer. No cancellation calls. The contract
+                works for you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE HOUSE SECTION (Rectangle 516) -->
+    <section class="house-section" id="the-house">
+      <div class="house-container">
+        <!-- Left Column: Interactive Image Container -->
+        <div class="house-image-wrapper">
+          <img
+            src="Images/The_House.svg"
+            alt="Ironhaus Gym Interior"
+            class="house-image"
+          />
+          <button class="house-expand-btn" aria-label="Explore House 01">
+            <img src="Images/righticon.svg" alt="arrow right" />
+          </button>
+          <div class="house-image-label">Inside House 01</div>
+        </div>
+
+        <!-- Right Column: Details & Stats Grid -->
+        <div class="house-details">
+          <div class="house-header">
+            <div class="house-tagline">/ The House</div>
+            <h2 class="house-heading">
+              Eleven years of<br />deliberate practice.
+            </h2>
+          </div>
+
+          <p class="house-description">
+            Ironhaus opened in a converted Brooklyn warehouse in 2014 with two
+            platforms and a rule: no music nobody asked for, no machines that
+            hide the work. We've grown by referral only.
+          </p>
+
+          <!-- Stats Grid with Cross Dividers -->
+          <div class="house-stats-grid">
+            <div class="house-stat-cell">
+              <span class="house-stat-label">Founded</span>
+              <span class="house-stat-value">2014</span>
+            </div>
+            <div class="house-stat-cell">
+              <span class="house-stat-label">Houses</span>
+              <span class="house-stat-value">3 cities</span>
+            </div>
+            <div class="house-stat-cell">
+              <span class="house-stat-label">Coaches</span>
+              <span class="house-stat-value">15 senior</span>
+            </div>
+            <div class="house-stat-cell">
+              <span class="house-stat-label">Members</span>
+              <span class="house-stat-value">Capped 600/house</span>
+            </div>
+          </div>
+
+          <!-- Checklist Items -->
+          <ul class="house-checklist">
+            <li>
+              <img
+                src="/Images/writeicon.svg"
+                alt="writeicon"
+                width="10"
+                height="7"
+              />
+              <span>Coach-led floor, every hour, no exceptions.</span>
+            </li>
+            <li>
+              <img
+                src="/Images/writeicon.svg"
+                alt="writeicon"
+                width="10"
+                height="7"
+              />
+              <span>Quarterly bloodwork and InBody composition included.</span>
+            </li>
+            <li>
+              <!-- <svg class="check-icon" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 3L4 6L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg> -->
+              <img
+                src="/Images/writeicon.svg"
+                alt="writeicon"
+                width="10"
+                height="7"
+              />
+              <span>Sound design by a former Blue Note engineer.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMS SECTION (Rectangle 518) -->
+    <section class="programs-section" id="programs">
+      <div class="programs-container">
+        <div class="programs-header-row">
+          <div class="programs-header-left">
+            <div class="programs-tagline">/ Programs</div>
+            <h2 class="programs-heading">
+              Find your <span class="highlight-italic-red">training</span>
+              path.
+            </h2>
+          </div>
+          <p class="programs-header-desc">
+            Six pillars. One periodized plan. Switch any time as your season
+            changes.
+          </p>
+        </div>
+
+        <div class="programs-grid">
+          <!-- Card 1: Strength -->
+          <div class="program-card">
+            <div class="program-image-wrapper">
+              <img
+                src="Images/Strength.svg"
+                alt="Strength program"
+                class="program-image"
+              />
+              <button class="program-expand-btn" aria-label="Explore Strength">
+                <img src="Images/righticon.svg" alt="arrow right" />
+              </button>
+            </div>
+            <div class="program-content">
+              <div class="program-meta">
+                <span class="program-tag">Power</span>
+                <span class="program-arrow">→</span>
+              </div>
+              <h3 class="program-title">Strength</h3>
+              <p class="program-desc">
+                Linear & conjugate periodization. Built for pulls, presses and
+                posture you can feel.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2: Conditioning -->
+          <div class="program-card">
+            <div class="program-image-wrapper">
+              <img
+                src="Images/Conditioning.svg"
+                alt="Conditioning program"
+                class="program-image"
+              />
+              <button
+                class="program-expand-btn"
+                aria-label="Explore Conditioning"
+              >
+                <img src="Images/righticon.svg" alt="arrow right" />
+              </button>
+            </div>
+            <div class="program-content">
+              <div class="program-meta">
+                <span class="program-tag">Endurance</span>
+                <span class="program-arrow">→</span>
+              </div>
+              <h3 class="program-title">Conditioning</h3>
+              <p class="program-desc">
+                Zone-2 engines, lactate clearance and the long, quiet work that
+                wins.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3: Hypertrophy -->
+          <div class="program-card">
+            <div class="program-image-wrapper">
+              <img
+                src="Images/Hypertrophy.svg"
+                alt="Hypertrophy program"
+                class="program-image"
+              />
+              <button
+                class="program-expand-btn"
+                aria-label="Explore Hypertrophy"
+              >
+                <img src="Images/righticon.svg" alt="arrow right" />
+              </button>
+            </div>
+            <div class="program-content">
+              <div class="program-meta">
+                <span class="program-tag">Aesthetic</span>
+                <span class="program-arrow">→</span>
+              </div>
+              <h3 class="program-title">Hypertrophy</h3>
+              <p class="program-desc">
+                Volume that respects recovery. Tracked progressive overload,
+                weekly.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4: CrossHaus -->
+          <div class="program-card">
+            <div class="program-image-wrapper">
+              <img
+                src="Images/CrossHaus.svg"
+                alt="CrossHaus program"
+                class="program-image"
+              />
+              <button class="program-expand-btn" aria-label="Explore CrossHaus">
+                <img src="Images/righticon.svg" alt="arrow right" />
+              </button>
+            </div>
+            <div class="program-content">
+              <div class="program-meta">
+                <span class="program-tag">Group</span>
+                <span class="program-arrow">→</span>
+              </div>
+              <h3 class="program-title">CrossHaus</h3>
+              <p class="program-desc">
+                Our in-house mixed-modal class. Barbells, gymnastics,
+                monostructural.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 5: Functional -->
+          <div class="program-card">
+            <div class="program-image-wrapper">
+              <img
+                src="Images/Functional.svg"
+                alt="Functional program"
+                class="program-image"
+              />
+              <button
+                class="program-expand-btn"
+                aria-label="Explore Functional"
+              >
+                <img src="Images/righticon.svg" alt="arrow right" />
+              </button>
+            </div>
+            <div class="program-content">
+              <div class="program-meta">
+                <span class="program-tag">Athletic</span>
+                <span class="program-arrow">→</span>
+              </div>
+              <h3 class="program-title">Functional</h3>
+              <p class="program-desc">
+                Loaded carries, sled, sandbag. Move heavy, awkward objects with
+                grace.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 6: 1:1 Coaching -->
+          <div class="program-card">
+            <div class="program-image-wrapper">
+              <img
+                src="Images/The_House.svg"
+                alt="1:1 Coaching program"
+                class="program-image"
+              />
+              <button
+                class="program-expand-btn"
+                aria-label="Explore 1:1 Coaching"
+              >
+                <img src="Images/righticon.svg" alt="arrow right" />
+              </button>
+            </div>
+            <div class="program-content">
+              <div class="program-meta">
+                <span class="program-tag">Private</span>
+                <span class="program-arrow">→</span>
+              </div>
+              <h3 class="program-title">1:1 Coaching</h3>
+              <p class="program-desc">
+                Private hour-long sessions with a senior coach. Programming
+                included.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FACILITIES SECTION (Rectangle 526) -->
+    <section class="facilities-section" id="facilities">
+      <div class="facilities-container">
+        <div class="facilities-header">
+          <div class="facilities-tagline">/ Facilities</div>
+          <h2 class="facilities-heading">
+            Everything you need,
+            <span class="facilities-highlight">
+              under <br />
+              one roof.
+            </span>
+          </h2>
+        </div>
+
+        <!-- Top Row (Asymmetric layout) -->
+        <div class="facilities-row-top">
+          <!-- Left Column (Big Card) -->
+          <div class="facility-card large">
+            <div class="facility-image-wrapper">
+              <img
+                src="Images/Cardio_Atrium_img1.svg"
+                alt="Cardio Atrium"
+                class="facility-image"
+              />
+              <button
+                class="facility-expand-btn"
+                aria-label="Explore Cardio Atrium"
+              >
+                <img src="Images/righticon.svg" alt="arrow right" />
+              </button>
+              <div class="facility-image-label">Cardio Atrium</div>
+            </div>
+            <p class="facility-desc">
+              20 Concept2 rowers, 8 SkiErgs, 12 belt-driven treadmills.
+            </p>
+          </div>
+
+          <!-- Right Column (Stacked Cards) -->
+          <div class="facilities-right-col">
+            <!-- Card 2 -->
+            <div class="facility-card small">
+              <div class="facility-image-wrapper">
+                <img
+                  src="Images/Cardio_Atrium_img2.svg"
+                  alt="Platforms"
+                  class="facility-image"
+                />
+                <button
+                  class="facility-expand-btn"
+                  aria-label="Explore Platforms"
+                >
+                  <img src="Images/righticon.svg" alt="arrow right" />
+                </button>
+                <div class="facility-image-label">Platforms</div>
+              </div>
+              <p class="facility-desc">
+                Six competition platforms. Calibrated plates. Chalk allowed.
+              </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="facility-card small">
+              <div class="facility-image-wrapper">
+                <img
+                  src="Images/Cardio_Atrium_img3.svg"
+                  alt="Hardwood Studio"
+                  class="facility-image"
+                />
+                <button
+                  class="facility-expand-btn"
+                  aria-label="Explore Hardwood Studio"
+                >
+                  <img src="Images/righticon.svg" alt="arrow right" />
+                </button>
+                <div class="facility-image-label">Hardwood Studio</div>
+              </div>
+              <p class="facility-desc">
+                South-facing 2,000 sq ft hardwood. Sprung floor for plyometrics.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Row (3 Equal Columns) -->
+        <div class="facilities-row-bottom">
+          <!-- Card 4 -->
+          <div class="facility-card small">
+            <div class="facility-image-wrapper">
+              <img
+                src="Images/Cardio_Atrium_img4.svg"
+                alt="Locker Suite"
+                class="facility-image"
+              />
+              <button
+                class="facility-expand-btn"
+                aria-label="Explore Locker Suite"
+              >
+                <img src="Images/righticon.svg" alt="arrow right" />
+              </button>
+              <div class="facility-image-label">Locker Suite</div>
+            </div>
+            <p class="facility-desc">
+              Mahogany lockers, towels, Aesop amenities, steam shower.
+            </p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="facility-card small">
+            <div class="facility-image-wrapper">
+              <img
+                src="Images/Cardio_Atrium_img5.svg"
+                alt="Recovery Lab"
+                class="facility-image"
+              />
+              <button
+                class="facility-expand-btn"
+                aria-label="Explore Recovery Lab"
+              >
+                <img src="Images/righticon.svg" alt="arrow right" />
+              </button>
+              <div class="facility-image-label">Recovery Lab</div>
+            </div>
+            <p class="facility-desc">
+              Cold plunge at 39°F, infrared sauna, Normatec, percussion.
+            </p>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="facility-card small">
+            <div class="facility-image-wrapper">
+              <img
+                src="Images/Cardio_Atrium_img6.svg"
+                alt="Boxing Ring"
+                class="facility-image"
+              />
+              <button
+                class="facility-expand-btn"
+                aria-label="Explore Boxing Ring"
+              >
+                <img src="Images/righticon.svg" alt="arrow right" />
+              </button>
+              <div class="facility-image-label">Boxing Ring</div>
+            </div>
+            <p class="facility-desc">
+              Boxing ring, full rack of bags, wrap and glove service.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COACHES SECTION (Rectangle 535) -->
+    <section class="coaches-section" id="coaches">
+      <div class="coaches-container">
+        <div class="coaches-header">
+          <div class="coaches-tagline">/ Coaches</div>
+          <h2 class="coaches-heading">
+            Guided by <span class="coaches-highlight"> experts. </span>
+          </h2>
+        </div>
+
+        <div class="coaches-grid">
+          <!-- Coach 1: Marcus Holt -->
+          <div class="coach-card">
+            <div class="coach-image-wrapper">
+              <img
+                src="Images/Marcus_Holt.svg"
+                alt="Marcus Holt"
+                class="coach-image"
+              />
+              <button class="coach-expand-btn" aria-label="Explore Marcus Holt">
+                <img src="Images/righticon.svg" alt="arrow right" />
+              </button>
+            </div>
+            <div class="coach-content">
+              <div class="coach-meta-row">
+                <h3 class="coach-name">Marcus Holt</h3>
+                <span class="coach-experience">12 yrs</span>
+              </div>
+              <p class="coach-specialty">Strength & Powerlifting</p>
+              <div class="coach-divider"></div>
+              <span class="coach-certs">NSCA-CSCS · SSC</span>
+            </div>
+          </div>
+
+          <!-- Coach 2: Lena Park -->
+          <div class="coach-card">
+            <div class="coach-image-wrapper">
+              <img
+                src="Images/Lena_Park.svg"
+                alt="Lena Park"
+                class="coach-image"
+              />
+              <button class="coach-expand-btn" aria-label="Explore Lena Park">
+                <img src="Images/righticon.svg" alt="arrow right" />
+              </button>
+            </div>
+            <div class="coach-content">
+              <div class="coach-meta-row">
+                <h3 class="coach-name">Lena Park</h3>
+                <span class="coach-experience">9 yrs</span>
+              </div>
+              <p class="coach-specialty">Hypertrophy & Mobility</p>
+              <div class="coach-divider"></div>
+              <span class="coach-certs">NASM-CPT · FRC</span>
+            </div>
+          </div>
+
+          <!-- Coach 3: Diego Vela Holt -->
+          <div class="coach-card">
+            <div class="coach-image-wrapper">
+              <img
+                src="Images/Diego_Vela_Holt.svg"
+                alt="Diego Vela Holt"
+                class="coach-image"
+              />
+              <button
+                class="coach-expand-btn"
+                aria-label="Explore Diego Vela Holt"
+              >
+                <img src="Images/righticon.svg" alt="arrow right" />
+              </button>
+            </div>
+            <div class="coach-content">
+              <div class="coach-meta-row">
+                <h3 class="coach-name">Diego Vela Holt</h3>
+                <span class="coach-experience">11 yrs</span>
+              </div>
+              <p class="coach-specialty">CrossHaus & Conditioning</p>
+              <div class="coach-divider"></div>
+              <span class="coach-certs">CF-L3 · Pn1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUTCOMES SECTION (Rectangle 539) -->
+    <section class="outcomes-section" id="outcomes">
+      <div class="outcomes-container">
+        <div class="outcomes-header">
+          <div class="outcomes-tagline">/ Outcomes</div>
+          <h2 class="outcomes-heading">
+            Real <span class="outcomes-highlight"> results.</span> Real people.
+          </h2>
+        </div>
+
+        <div class="outcomes-grid">
+          <!-- Testimonial 1: Jaideep M. -->
+          <div class="outcome-card">
+            <div class="outcome-image-wrapper">
+              <img
+                src="Images/Jaideep_M.svg"
+                alt="Jaideep M."
+                class="outcome-image"
+              />
+              <button
+                class="outcome-expand-btn"
+                aria-label="Explore Jaideep's Story"
+              >
+                <img src="Images/righticon.svg" alt="arrow right" />
+              </button>
+            </div>
+            <div class="outcome-content">
+              <div class="outcome-divider"></div>
+              <blockquote class="outcome-quote">
+                "I came in to fit a suit. I left rebuilt. The coaches measured
+                everything that mattered."
+              </blockquote>
+              <h3 class="outcome-name">Jaideep M.</h3>
+              <span class="outcome-stat">Lost 17 kg · gained 6 kg lean</span>
+            </div>
+          </div>
+
+          <!-- Testimonial 2: Khushi P. -->
+          <div class="outcome-card">
+            <div class="outcome-image-wrapper">
+              <img
+                src="Images/Khushi_P.svg"
+                alt="Khushi P."
+                class="outcome-image"
+              />
+              <button
+                class="outcome-expand-btn"
+                aria-label="Explore Khushi's Story"
+              >
+                <img src="Images/righticon.svg" alt="arrow right" />
+              </button>
+            </div>
+            <div class="outcome-content">
+              <div class="outcome-divider"></div>
+              <blockquote class="outcome-quote">
+                "I'd never touched a barbell. Now I out-lift the man I used to
+                be married to."
+              </blockquote>
+              <h3 class="outcome-name">Khushi P.</h3>
+              <span class="outcome-stat">Squat 40 → 110 kg in 11 months</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEMBERSHIP SECTION (Rectangle 542) -->
+    <section class="pricing-section" id="membership">
+      <div class="pricing-container">
+        <div class="pricing-header">
+          <div class="pricing-tagline">/ Membership</div>
+          <h2 class="pricing-heading">
+            Choose your <span class="pricing-highlight">membership.</span>
+          </h2>
+          <p class="pricing-subheading">
+            No initiation fee. Pause for any reason, 60 days a year. Membership
+            is non-transferable.
+          </p>
+        </div>
+
+        <div class="pricing-cards-wrapper">
+          <!-- Card 1: Monthly -->
+          <div class="pricing-card light">
+            <div class="pricing-card-header">
+              <h3 class="pricing-card-title">Monthly</h3>
+              <div class="pricing-price-block">
+                <!-- <span class="pricing-currency">₹</span> -->
+                <span class="pricing-amount">₹1999</span>
+                <span class="pricing-period">/ month</span>
+              </div>
+            </div>
+            <ul class="pricing-perks">
+              <li>
+                <svg
+                  class="check-icon"
+                  width="10"
+                  height="7"
+                  viewBox="0 0 10 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 3L4 6L9 1"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span>Open floor access</span>
+              </li>
+              <li>
+                <svg
+                  class="check-icon"
+                  width="10"
+                  height="7"
+                  viewBox="0 0 10 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 3L4 6L9 1"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span>All group classes</span>
+              </li>
+              <li>
+                <svg
+                  class="check-icon"
+                  width="10"
+                  height="7"
+                  viewBox="0 0 10 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 3L4 6L9 1"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span>Locker & towel service</span>
+              </li>
+              <li>
+                <svg
+                  class="check-icon"
+                  width="10"
+                  height="7"
+                  viewBox="0 0 10 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 3L4 6L9 1"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span>1 InBody scan / mo</span>
+              </li>
+            </ul>
+            <button class="pricing-btn-outline">Start Monthly</button>
+          </div>
+
+          <!-- Card 2: Quarterly -->
+          <div class="pricing-card dark featured">
+            <div class="pricing-badge">Most Chosen</div>
+            <div class="pricing-card-header">
+              <h3 class="pricing-card-title">Quarterly</h3>
+              <div class="pricing-price-block">
+                <!-- <span class="pricing-currency">₹</span> -->
+                <span class="pricing-amount">₹4999</span>
+                <span class="pricing-period">/ month, billed quarterly</span>
+              </div>
+            </div>
+            <ul class="pricing-perks">
+              <li>
+                <svg
+                  class="check-icon"
+                  width="10"
+                  height="7"
+                  viewBox="0 0 10 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 3L4 6L9 1"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span>Everything in Monthly</span>
+              </li>
+              <li>
+                <svg
+                  class="check-icon"
+                  width="10"
+                  height="7"
+                  viewBox="0 0 10 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 3L4 6L9 1"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span>2× 1:1 coaching sessions</span>
+              </li>
+              <li>
+                <svg
+                  class="check-icon"
+                  width="10"
+                  height="7"
+                  viewBox="0 0 10 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 3L4 6L9 1"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span>Quarterly bloodwork review</span>
+              </li>
+              <li>
+                <svg
+                  class="check-icon"
+                  width="10"
+                  height="7"
+                  viewBox="0 0 10 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 3L4 6L9 1"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span>Guest pass per month</span>
+              </li>
+            </ul>
+            <button class="pricing-btn-solid">Choose Quarterly</button>
+          </div>
+
+          <!-- Card 3: Annual -->
+          <div class="pricing-card light">
+            <div class="pricing-card-header">
+              <h3 class="pricing-card-title">Annual</h3>
+              <div class="pricing-price-block">
+                <!-- <span class="pricing-currency">₹</span> -->
+                <span class="pricing-amount">₹2999</span>
+                <span class="pricing-period">/ month, billed annually</span>
+              </div>
+            </div>
+            <ul class="pricing-perks">
+              <li>
+                <svg
+                  class="check-icon"
+                  width="10"
+                  height="7"
+                  viewBox="0 0 10 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 3L4 6L9 1"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span>Everything in Quarterly</span>
+              </li>
+              <li>
+                <svg
+                  class="check-icon"
+                  width="10"
+                  height="7"
+                  viewBox="0 0 10 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 3L4 6L9 1"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span>Unlimited 1:1 coaching</span>
+              </li>
+              <li>
+                <svg
+                  class="check-icon"
+                  width="10"
+                  height="7"
+                  viewBox="0 0 10 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 3L4 6L9 1"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span>Recovery Lab unlimited</span>
+              </li>
+              <li>
+                <svg
+                  class="check-icon"
+                  width="10"
+                  height="7"
+                  viewBox="0 0 10 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 3L4 6L9 1"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span>Two months free</span>
+              </li>
+            </ul>
+            <button class="pricing-btn-outline">Go Annual</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTION (Rectangle 546) -->
+    <section class="gallery-section" id="gallery">
+      <div class="gallery-container">
+        <div class="gallery-header">
+          <div class="gallery-tagline">/ Gallery</div>
+          <h2 class="gallery-heading">
+            A look <span class="gallery-highlight">inside.</span>
+          </h2>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Left Column -->
+          <div class="gallery-col-left">
+            <!-- Card 1: Platform 03 · 6AM -->
+            <div class="gallery-card tall">
+              <div class="gallery-image-wrapper">
+                <img
+                  src="Images/Platform_03.svg"
+                  alt="Platform 03 · 6AM"
+                  class="gallery-image"
+                />
+                <button
+                  class="gallery-expand-btn"
+                  aria-label="Expand Platform 03 · 6AM"
+                >
+                  <img src="Images/righticon.svg" alt="arrow right" />
+                </button>
+                <div class="gallery-image-label">Platform 03 · 6AM</div>
+              </div>
+            </div>
+
+            <!-- Card 5: Cedar Sauna -->
+            <div class="gallery-card medium">
+              <div class="gallery-image-wrapper">
+                <img
+                  src="Images/Cedar_Sauna.svg"
+                  alt="Cedar Sauna"
+                  class="gallery-image"
+                />
+                <button
+                  class="gallery-expand-btn"
+                  aria-label="Expand Cedar Sauna"
+                >
+                  <img src="Images/righticon.svg" alt="arrow right" />
+                </button>
+                <div class="gallery-image-label">Cedar Sauna</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="gallery-col-right">
+            <!-- Row 1: Split -->
+            <div class="gallery-row-split">
+              <!-- Card 2: Locker Suite -->
+              <div class="gallery-card small">
+                <div class="gallery-image-wrapper">
+                  <img
+                    src="Images/Locker_Suite.svg"
+                    alt="Locker Suite"
+                    class="gallery-image"
+                  />
+                  <button
+                    class="gallery-expand-btn"
+                    aria-label="Expand Locker Suite"
+                  >
+                    <img src="Images/righticon.svg" alt="arrow right" />
+                  </button>
+                  <div class="gallery-image-label">Locker Suite</div>
+                </div>
+              </div>
+
+              <!-- Card 3: Iron Wall -->
+              <div class="gallery-card small">
+                <div class="gallery-image-wrapper">
+                  <img
+                    src="Images/Iron_Wall.svg"
+                    alt="Iron Wall"
+                    class="gallery-image"
+                  />
+                  <button
+                    class="gallery-expand-btn"
+                    aria-label="Expand Iron Wall"
+                  >
+                    <img src="Images/righticon.svg" alt="arrow right" />
+                  </button>
+                  <div class="gallery-image-label">Iron Wall</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 2: Recovery Lab -->
+            <div class="gallery-card wide">
+              <div class="gallery-image-wrapper">
+                <img
+                  src="Images/Recovery_Lab.svg"
+                  alt="Recovery Lab"
+                  class="gallery-image"
+                />
+                <button
+                  class="gallery-expand-btn"
+                  aria-label="Expand Recovery Lab"
+                >
+                  <img src="Images/righticon.svg" alt="arrow right" />
+                </button>
+                <div class="gallery-image-label">Recovery Lab</div>
+              </div>
+            </div>
+
+            <!-- Row 3: Combat Room -->
+            <div class="gallery-card wide">
+              <div class="gallery-image-wrapper">
+                <img
+                  src="Images/Combat_Room.svg"
+                  alt="Combat Room"
+                  class="gallery-image"
+                />
+                <button
+                  class="gallery-expand-btn"
+                  aria-label="Expand Combat Room"
+                >
+                  <img src="Images/righticon.svg" alt="arrow right" />
+                </button>
+                <div class="gallery-image-label">Combat Room</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VOICES SECTION (Rectangle 551) -->
+    <section class="voices-section" id="voices">
+      <div class="voices-container">
+        <div class="voices-header">
+          <div class="voices-tagline">/ Voices</div>
+          <h2 class="voices-heading">
+            What our <span class="voices-highlight">members</span> say.
+          </h2>
+        </div>
+
+        <div class="voices-cards-wrapper">
+          <!-- Card 1: Rafael C. -->
+          <div class="voice-card">
+            <div class="voice-quote-mark">“</div>
+            <blockquote class="voice-quote">
+              "The first gym I've walked into that felt like an institution, not
+              a venue."
+            </blockquote>
+            <div class="voice-divider"></div>
+            <div class="voice-member-info">
+              <h3 class="voice-member-name">Rafael C.</h3>
+              <span class="voice-member-status">Member, 3 yrs</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Mira O. -->
+          <div class="voice-card">
+            <div class="voice-quote-mark">“</div>
+            <blockquote class="voice-quote">
+              "Coaching here is closer to a private studio than a club.
+              Programming is real."
+            </blockquote>
+            <div class="voice-divider"></div>
+            <div class="voice-member-info">
+              <h3 class="voice-member-name">Mira O.</h3>
+              <span class="voice-member-status">Member, 2 yrs</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Daniel R. -->
+          <div class="voice-card">
+            <div class="voice-quote-mark">“</div>
+            <blockquote class="voice-quote">
+              "I travel for work and it is the only reason I come home on
+              schedule."
+            </blockquote>
+            <div class="voice-divider"></div>
+            <div class="voice-member-info">
+              <h3 class="voice-member-name">Daniel R.</h3>
+              <span class="voice-member-status">Founding Member</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION (Rectangle 555) -->
+    <section class="faq-section" id="faq">
+      <div class="faq-container">
+        <div class="faq-left">
+          <div class="faq-tagline">/ Questions</div>
+          <h2 class="faq-heading">
+            Every <span class="faq-highlight">answer</span>, on the record.
+          </h2>
+        </div>
+
+        <div class="faq-right">
+          <div class="faq-accordion">
+            <!-- Accordion Item 1 -->
+            <div class="faq-item">
+              <button
+                class="faq-trigger"
+                aria-expanded="false"
+                aria-controls="faq-answer-1"
+              >
+                <span class="faq-question">Is membership truly capped?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer" id="faq-answer-1" aria-hidden="true">
+                <div class="faq-answer-content">
+                  Yes. To ensure our members never have to wait for a rack or
+                  train in a crowded room, we cap our active membership at
+                  exactly 350. Once reached, we operate on a strict one-in,
+                  one-out waitlist basis.
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion Item 2 -->
+            <div class="faq-item">
+              <button
+                class="faq-trigger"
+                aria-expanded="false"
+                aria-controls="faq-answer-2"
+              >
+                <span class="faq-question">Do I have to commit long-term?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer" id="faq-answer-2" aria-hidden="true">
+                <div class="faq-answer-content">
+                  No. We offer flexible month-to-month memberships that you can
+                  cancel or pause at any time. Our focus is on providing value,
+                  not locking you into contracts you don't use.
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion Item 3 -->
+            <div class="faq-item">
+              <button
+                class="faq-trigger"
+                aria-expanded="false"
+                aria-controls="faq-answer-3"
+              >
+                <span class="faq-question"
+                  >What's included in the initial onboarding?</span
+                >
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer" id="faq-answer-3" aria-hidden="true">
+                <div class="faq-answer-content">
+                  Every new membership includes our comprehensive 3-step
+                  onboarding: a 1-on-1 movement assessment, a biometric scan,
+                  and a personalized program setup guided by one of our head
+                  strength coaches.
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion Item 4 -->
+            <div class="faq-item">
+              <button
+                class="faq-trigger"
+                aria-expanded="false"
+                aria-controls="faq-answer-4"
+              >
+                <span class="faq-question">Can I bring guests?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer" id="faq-answer-4" aria-hidden="true">
+                <div class="faq-answer-content">
+                  Yes. Depending on your membership tier, you receive guest
+                  passes each month. Guests must be registered in advance and
+                  are subject to the same house rules as members.
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion Item 5 -->
+            <div class="faq-item">
+              <button
+                class="faq-trigger"
+                aria-expanded="false"
+                aria-controls="faq-answer-5"
+              >
+                <span class="faq-question">Is there parking on-site?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer" id="faq-answer-5" aria-hidden="true">
+                <div class="faq-answer-content">
+                  Yes. We provide designated, secure parking spaces for members
+                  directly behind the facility. Locker keys and parking
+                  validations are managed at the front desk.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRIAL SECTION (Rectangle 556) -->
+    <section class="trial-section" id="trial">
+      <div class="trial-container">
+        <div class="trial-left">
+          <div class="trial-tagline">/ Free Trial</div>
+          <h2 class="trial-heading">
+            Start your <span class="trial-highlight"> fitness </span> journey
+            today.
+          </h2>
+          <p class="trial-desc">
+            Three coached sessions, a full facility tour, an InBody scan and a
+            written 4-week plan. No card required.
+          </p>
+        </div>
+
+        <div class="trial-right">
+          <form class="trial-form" id="trial-form">
+            <div class="trial-form-grid">
+              <!-- Row 1: Name and Phone -->
+              <div class="trial-row-split">
+                <div class="trial-input-group split-half">
+                  <label for="trial-name" class="trial-label">Your Name</label>
+                  <input
+                    type="text"
+                    id="trial-name"
+                    class="trial-input"
+                    placeholder="Alex carter"
+                    required
+                  />
+                </div>
+                <div class="trial-input-group split-half">
+                  <label for="trial-phone" class="trial-label">Phone</label>
+                  <input
+                    type="tel"
+                    id="trial-phone"
+                    class="trial-input"
+                    placeholder="+91 0987654321"
+                    required
+                  />
+                </div>
+              </div>
+
+              <!-- Row 2: Primary Goal -->
+              <div class="trial-row-full">
+                <div class="trial-input-group">
+                  <label for="trial-goal" class="trial-label"
+                    >Primary Goal</label
+                  >
+                  <select id="trial-goal" class="trial-select" required>
+                    <option value="" disabled selected hidden>
+                      Strength . Fat loss . Endurance . Other
+                    </option>
+                    <option value="strength">Strength</option>
+                    <option value="fat-loss">Fat loss</option>
+                    <option value="endurance">Endurance</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              class="trial-submit-btn"
+              id="btn-submit-trial"
+            >
+              <span>Book My Trial</span>
+              <svg
+                class="trial-btn-icon"
+                width="7"
+                height="10"
+                viewBox="0 0 7 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1L5.5 5L1 9"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISIT SECTION (Rectangle 557) -->
+    <section class="visit-section" id="visit">
+      <div class="visit-container">
+        <div class="visit-left">
+          <div class="visit-tagline">/ Visit</div>
+          <h2 class="visit-heading">
+            Visit our <span class="visit-highlight">facility.</span>
+          </h2>
+
+          <div class="visit-contact-info">
+            <!-- Address -->
+            <div class="visit-contact-item">
+              <img
+                src="Images/Address.svg"
+                alt="address pin"
+                class="visit-contact-icon"
+              />
+              <span class="visit-contact-text"
+                >14 Linking Road, Bandra West, Mumbai 400050</span
+              >
+            </div>
+            <!-- Phone -->
+            <div class="visit-contact-item">
+              <img
+                src="Images/contact.svg"
+                alt="phone"
+                class="visit-contact-icon"
+              />
+              <a href="tel:+912267400014" class="visit-contact-text"
+                >+91 22 6740 0014</a
+              >
+            </div>
+            <!-- Mail -->
+            <div class="visit-contact-item">
+              <img
+                src="Images/Mail.svg"
+                alt="envelope"
+                class="visit-contact-icon"
+              />
+              <a href="mailto:hello@ironhaus.in" class="visit-contact-text"
+                >hello@ironhaus.in</a
+              >
+            </div>
+          </div>
+
+          <div class="visit-divider"></div>
+
+          <div class="visit-hours-wrapper">
+            <h3 class="visit-hours-title">Floor hours</h3>
+            <div class="visit-hours-list">
+              <div class="visit-hours-row">
+                <span class="visit-hours-days">Mon — Fri</span>
+                <span class="visit-hours-time">5:00 — 23:00</span>
+              </div>
+              <div class="visit-hours-row">
+                <span class="visit-hours-days">Sat — Sun</span>
+                <span class="visit-hours-time">6:00 — 21:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="visit-right">
+          <div class="visit-map-wrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.508530029283!2d-0.14382!3d51.52054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad554c335b1%3A0x5a2d67a9159ff4e2!2sRegent&#39;s%20Park!5e0!3m2!1sen!2suk!4v1620000000000!5m2!1sen!2suk"
+              class="visit-map-iframe"
+              title="Zeplin Design Specification"
+              loading="lazy"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION (Rectangle 558) -->
+    <footer class="footer-section" id="footer">
+      <div class="footer-container">
+        <div class="footer-top-row">
+          <!-- Footer Brand Info -->
+          <div class="footer-brand-col">
+            <h2 class="footer-logo">IRONHAUS</h2>
+            <p class="footer-subtitle">
+              Train hard. <span class="footer-highlight">Stay strong.</span>
+            </p>
+            <div class="footer-socials">
+              <a href="#" class="footer-social-btn" aria-label="Facebook">
+                <img src="Images/Facebook.svg" alt="facebook icon" />
+              </a>
+              <a href="#" class="footer-social-btn" aria-label="Instagram">
+                <img src="Images/Instagram.svg" alt="instagram icon" />
+              </a>
+              <a
+                href="mailto:hello@ironhaus.in"
+                class="footer-social-btn"
+                aria-label="Email"
+              >
+                <img src="Images/Mail_White.svg" alt="email icon" />
+              </a>
+            </div>
+          </div>
+
+          <!-- Footer Link Columns -->
+          <div class="footer-links-wrapper">
+            <!-- Column 1: Visit -->
+            <div class="footer-links-col">
+              <h3 class="footer-links-title">Visit</h3>
+              <ul class="footer-links-list">
+                <li><a href="#">Mumbai</a></li>
+                <li><a href="#">Bangalore</a></li>
+                <li><a href="#">Delhi</a></li>
+                <li><a href="#">Press</a></li>
+              </ul>
+            </div>
+
+            <!-- Column 2: Train -->
+            <div class="footer-links-col">
+              <h3 class="footer-links-title">Train</h3>
+              <ul class="footer-links-list">
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#coaches">Trainers</a></li>
+                <li><a href="#facilities">Facilities</a></li>
+                <li><a href="#membership">Membership</a></li>
+              </ul>
+            </div>
+
+            <!-- Column 3: Company -->
+            <div class="footer-links-col">
+              <h3 class="footer-links-title">Company</h3>
+              <ul class="footer-links-list">
+                <li><a href="#visit">About</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#visit">Contact</a></li>
+                <li><a href="#">Journal</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom-row">
+          <div class="footer-copy">© 2026 Ironhaus Strength Club · Mumbai</div>
+          <div class="footer-legal-links">
+            <a href="#" class="footer-legal-link">Privacy</a>
+            <a href="#" class="footer-legal-link">Terms</a>
+            <a href="#" class="footer-legal-link">Code of conduct</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Javascript File -->
+    <script src="script.js"></script>
+  </body>
+</html>
