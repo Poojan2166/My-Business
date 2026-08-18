@@ -1,0 +1,1642 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Helion Industries — precision manufacturing for the mission-critical hardware behind the world's most advanced systems."
+    />
+    <title>Helion Industries — Precision, at planetary scale.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      /* Only arm the scroll-reveal animation when JS is available, so the page
+     is never left invisible if scripting or IntersectionObserver fails. */
+      document.documentElement.classList.add("js-reveal");
+    </script>
+  </head>
+  <body>
+    <!-- ============ ANNOUNCEMENT BAR ============ -->
+    <div class="announce">
+      <div class="announce__inner">
+        <p>
+          Helion 2026 Industry Report is live — smart factories reach 91%
+          autonomous throughput.
+        </p>
+        <a class="announce__link" href="#"
+          >Read report
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path
+              d="M4.08 9.92 9.92 4.08M4.96 4.08h4.96v4.96"
+              stroke="#fff"
+              stroke-width="1.17"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- ============ HEADER ============ -->
+    <header class="header" id="header">
+      <div class="header__inner">
+        <a class="logo" href="#top">Helion</a>
+
+        <nav class="nav" id="nav" aria-label="Primary">
+          <a href="#capabilities">Capabilities</a>
+          <a href="#industries">Industries</a>
+          <a href="#process">Process</a>
+          <a href="#innovation">Innovation</a>
+          <a href="#projects">Projects</a>
+          <a href="#company">Company</a>
+        </nav>
+
+        <a class="btn btn--dark btn--sm header__cta" href="#contact"
+          >Request a quote
+          <svg class="ico" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path
+              d="M3.33 8h9.34"
+              stroke="currentColor"
+              stroke-width="1.33"
+              stroke-linecap="round"
+            />
+            <path
+              d="M8 3.33 12.67 8 8 12.67"
+              stroke="currentColor"
+              stroke-width="1.33"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+
+        <button
+          class="burger"
+          id="burger"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="nav"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- ============ HERO ============ -->
+      <section class="hero">
+        <span class="blob blob--blue" aria-hidden="true"></span>
+        <span class="blob blob--amber" aria-hidden="true"></span>
+
+        <div class="container hero__grid">
+          <div class="hero__copy reveal">
+            <span class="pill"
+              ><i class="dot"></i>ISO 9001 · AS9100 · IATF 16949</span
+            >
+
+            <h1 class="hero__title">
+              <span class="hero__title-strong">Precision, at</span>
+              <span class="hero__title-light">planetary scale.</span>
+            </h1>
+
+            <p class="hero__lead">
+              Helion Industries engineers the mission-critical components behind
+              the world's most advanced machines — aerospace turbines, EV
+              drivetrains, semiconductor tools and renewable energy systems.
+              Built in smart factories across four continents.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--dark" href="#contact"
+                >Start a project
+                <svg
+                  class="ico"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3.33 8h9.34"
+                    stroke="currentColor"
+                    stroke-width="1.33"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M8 3.33 12.67 8 8 12.67"
+                    stroke="currentColor"
+                    stroke-width="1.33"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <a class="btn btn--ghost-play" href="#gallery">
+                <span class="play"
+                  ><svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path
+                      d="M4.5 2.8v10.4L13 8 4.5 2.8Z"
+                      fill="#0f1728"
+                      stroke="#0f1728"
+                      stroke-width="1.33"
+                      stroke-linejoin="round"
+                    /></svg
+                ></span>
+                Tour the factory
+              </a>
+            </div>
+
+            <dl class="hero__stats">
+              <div>
+                <dt>±2μm</dt>
+                <dd>Tolerance</dd>
+              </div>
+              <div>
+                <dt>42</dt>
+                <dd>Factories</dd>
+              </div>
+              <div>
+                <dt>99.98%</dt>
+                <dd>On-time</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="hero__media reveal">
+            <figure class="hero__shot">
+              <img
+                src="Images/main_img.svg"
+                alt="Helion smart factory production line"
+              />
+              <span class="chip chip--live"
+                ><i class="dot"></i>Live · Plant 07 · Stuttgart</span
+              >
+
+              <div class="throughput">
+                <div class="throughput__head">
+                  <span class="throughput__label">Line throughput</span>
+                  <span class="throughput__delta">+12.4%</span>
+                </div>
+                <div class="throughput__body">
+                  <strong>98.7%</strong>
+                  <img
+                    class="throughput__spark"
+                    src="Images/Line_throughput.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </figure>
+
+            <div class="float-card float-card--oee">
+              <span class="float-card__top">
+                <svg
+                  class="ico"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <rect
+                    x="1"
+                    y="2.6"
+                    width="12"
+                    height="8.8"
+                    rx="1"
+                    stroke="#00781b"
+                    stroke-width="1.17"
+                  />
+                  <circle
+                    cx="7"
+                    cy="7"
+                    r="1"
+                    stroke="#00781b"
+                    stroke-width="1.17"
+                  />
+                </svg>
+                OEE
+              </span>
+              <strong>94.2%</strong>
+              <span class="meter"><i style="--w: 94%"></i></span>
+            </div>
+
+            <div class="float-card float-card--zero">
+              <span class="float-card__top">
+                <svg
+                  class="ico"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M7 1.2 12 3v3.6c0 3-2.1 5.2-5 6.2-2.9-1-5-3.2-5-6.2V3l5-1.8Z"
+                    stroke="#00781b"
+                    stroke-width="1.17"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="m5 6.9 1.4 1.4L9.2 5.5"
+                    stroke="#00781b"
+                    stroke-width="1.17"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Zero-defect
+              </span>
+              <strong>0.014%</strong>
+              <span class="float-card__sub">Rejection rate · Q3</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ TRUSTED BY ============ -->
+      <section class="trusted">
+        <div class="container trusted__grid">
+          <p class="trusted__label">
+            Trusted by the world's most demanding engineers
+          </p>
+          <div class="marquee">
+            <ul class="marquee__track">
+              <li>CATERPILLAR</li>
+              <li>MITSUBISHI</li>
+              <li>HITACHI</li>
+              <li>SCHNEIDER</li>
+              <li>GENERAL·ELECTRIC</li>
+              <li>SIEMENS</li>
+              <li>BOSCH</li>
+            </ul>
+            <ul class="marquee__track" aria-hidden="true">
+              <li>CATERPILLAR</li>
+              <li>MITSUBISHI</li>
+              <li>HITACHI</li>
+              <li>SCHNEIDER</li>
+              <li>GENERAL·ELECTRIC</li>
+              <li>SIEMENS</li>
+              <li>BOSCH</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ABOUT ============ -->
+      <section class="section section--white" id="company">
+        <div class="container about">
+          <div class="about__left reveal">
+            <span class="eyebrow"><i></i>About Helion</span>
+            <h2 class="h2">
+              Forty-two years of<br />quiet, uncompromising<br />engineering.
+            </h2>
+          </div>
+          <div class="about__right reveal">
+            <p class="lead">
+              Founded in 1983 in a single machine shop in Stuttgart, Helion
+              Industries has grown into a global manufacturing partner for the
+              companies redefining flight, mobility and energy. We don't chase
+              trends — we compound decades of tolerance, discipline and craft.
+            </p>
+            <p class="lead lead-marg">
+              Today, 12,400 engineers, machinists and quality specialists
+              produce more than 340 million components a year, shipped to 62
+              countries and integrated into everything from commercial jetliners
+              to lithography systems.
+            </p>
+            <ul class="tags">
+              <li>
+                <img
+                  src="Images/Awwwards_of_Manufacturing.svg"
+                  alt=""
+                />Awwwards of Manufacturing · 2025
+              </li>
+              <li>
+                <img src="Images/Carbon_neutral_by.svg" alt="" />Carbon-neutral
+                by 2030
+              </li>
+              <li>
+                <img src="Images/countries_served.svg" alt="" />62 countries
+                served
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ WHY HELION ============ -->
+      <section class="section section--soft">
+        <div class="container">
+          <div class="sec-head reveal">
+            <div>
+              <span class="eyebrow"><i></i>Why Helion</span>
+              <h2 class="h2">
+                Four disciplines that compound<br />into an unfair advantage.
+              </h2>
+            </div>
+            <p class="sec-head__note">
+              The world's leading engineering teams don't pick Helion for one
+              thing. They pick us for the discipline of doing every thing right,
+              at scale, every shift.
+            </p>
+          </div>
+
+          <div class="grid grid--4">
+            <article class="why-card reveal">
+              <span class="why-card__ico"
+                ><img src="Images/AI_driven_precision.svg" alt=""
+              /></span>
+              <h3>AI-driven precision</h3>
+              <p>
+                Every part inspected by computer vision within 40ms — defects
+                flagged before they leave the cell.
+              </p>
+            </article>
+
+            <article class="why-card reveal">
+              <span class="why-card__ico"
+                ><img src="Images/Certified_everywhere.svg" alt=""
+              /></span>
+              <h3>Certified everywhere</h3>
+              <p>
+                ISO 9001, AS9100, IATF 16949, ISO 13485, NADCAP. Audited
+                quarterly across all 42 plants.
+              </p>
+            </article>
+
+            <article class="why-card reveal">
+              <span class="why-card__ico"
+                ><img src="Images/Rapid_industrialization.svg" alt=""
+              /></span>
+              <h3>Rapid industrialization</h3>
+              <p>
+                Prototype to full production in an average of 11 weeks — 3×
+                faster than the industry median.
+              </p>
+            </article>
+
+            <article class="why-card reveal">
+              <span class="why-card__ico"
+                ><img src="Images/Sustainable_by_design.svg" alt=""
+              /></span>
+              <h3>Sustainable by design</h3>
+              <p>
+                78% of energy from renewables, closed-loop coolant systems, and
+                full material traceability.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CAPABILITIES ============ -->
+      <section class="section section--white" id="capabilities">
+        <div class="container">
+          <div class="sec-head sec-head--btn reveal">
+            <div>
+              <span class="eyebrow"><i></i>Capabilities</span>
+              <h2 class="h2">
+                A vertically integrated stack,<br />from raw stock to shipped<br />assembly.
+              </h2>
+            </div>
+            <a class="btn btn--line btn--sm" href="#"
+              >Explore all capabilities
+              <img class="ico" src="Images/rightupicon.svg" alt=""
+            /></a>
+          </div>
+
+          <div class="grid grid--3">
+            <article class="cap reveal">
+              <div class="cap__media">
+                <img
+                  src="Images/5_axis_CNC_machining.svg"
+                  alt="5-axis CNC machining"
+                />
+                <span class="num">01</span>
+              </div>
+              <div class="cap__body">
+                <h3>5-axis CNC machining</h3>
+                <p>
+                  ±2μm tolerances on titanium, Inconel, ceramics and hardened
+                  tool steels.
+                </p>
+                <span class="cap__link"
+                  >View spec sheet <img src="Images/righticon.svg" alt=""
+                /></span>
+              </div>
+            </article>
+
+            <article class="cap reveal">
+              <div class="cap__media">
+                <img
+                  src="Images/Precision_casting_&_forging.svg"
+                  alt="Precision casting and forging"
+                />
+                <span class="num">02</span>
+              </div>
+              <div class="cap__body">
+                <h3>Precision casting &amp; forging</h3>
+                <p>
+                  Investment casting, closed-die forging and additive-hybrid
+                  finishing under one roof.
+                </p>
+                <span class="cap__link"
+                  >View spec sheet <img src="Images/righticon.svg" alt=""
+                /></span>
+              </div>
+            </article>
+
+            <article class="cap reveal">
+              <div class="cap__media">
+                <img
+                  src="Images/Automated_assembly.svg"
+                  alt="Automated assembly"
+                />
+                <span class="num">03</span>
+              </div>
+              <div class="cap__body">
+                <h3>Automated assembly</h3>
+                <p>
+                  Cobot-assisted cells that scale from small-batch pilots to
+                  24/7 gigafactory volumes.
+                </p>
+                <span class="cap__link"
+                  >View spec sheet <img src="Images/righticon.svg" alt=""
+                /></span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ INDUSTRIES ============ -->
+      <section class="section section--dark" id="industries">
+        <div class="container">
+          <div class="sec-head reveal">
+            <div>
+              <span class="eyebrow eyebrow--light"
+                ><i></i>Industries we serve</span
+              >
+              <h2 class="h2 h2--light">
+                Trusted where failure is not an<br />option.
+              </h2>
+            </div>
+            <p class="sec-head__note sec-head__note--light">
+              From orbital telescopes to surgical robots, Helion parts sit
+              inside the systems that cannot afford a rework.
+            </p>
+          </div>
+
+          <div class="ind-grid reveal">
+            <article class="ind">
+              <svg
+                class="ind__ico"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M17.8 19.2 16 11l4.4-4.4a2.1 2.1 0 0 0-3-3L13 8 4.8 6.2a.6.6 0 0 0-.55 1L9 10l-2.5 2.5-2.2-.4a.6.6 0 0 0-.5 1L6 15l1.9 2.2a.6.6 0 0 0 1-.5l-.4-2.2L11 12l2.8 4.75a.6.6 0 0 0 1-.55Z"
+                  stroke="rgba(255,255,255,.7)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <h3>Aerospace &amp; Defense</h3>
+              <span class="ind__cert">AS9100 · NADCAP</span>
+            </article>
+
+            <article class="ind">
+              <img class="ind__ico" src="Images/Automotive_&_EV.svg" alt="" />
+              <h3>Automotive &amp; EV</h3>
+              <span class="ind__cert">IATF 16949</span>
+            </article>
+
+            <article class="ind">
+              <svg
+                class="ind__ico"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <rect
+                  x="4"
+                  y="4"
+                  width="16"
+                  height="16"
+                  rx="2"
+                  stroke="rgba(255,255,255,.7)"
+                  stroke-width="2"
+                />
+                <rect
+                  x="8"
+                  y="8"
+                  width="8"
+                  height="8"
+                  rx="1"
+                  stroke="rgba(255,255,255,.7)"
+                  stroke-width="2"
+                />
+                <g fill="rgba(255,255,255,.7)">
+                  <rect x="11" y="1" width="2" height="2" />
+                  <rect x="16" y="1" width="2" height="2" />
+                  <rect x="6" y="1" width="2" height="2" />
+                  <rect x="11" y="21" width="2" height="2" />
+                  <rect x="16" y="21" width="2" height="2" />
+                  <rect x="6" y="21" width="2" height="2" />
+                  <rect x="1" y="11" width="2" height="2" />
+                  <rect x="1" y="16" width="2" height="2" />
+                  <rect x="1" y="6" width="2" height="2" />
+                  <rect x="21" y="11" width="2" height="2" />
+                  <rect x="21" y="16" width="2" height="2" />
+                  <rect x="21" y="6" width="2" height="2" />
+                </g>
+              </svg>
+              <h3>Semiconductors</h3>
+              <span class="ind__cert">Class-100 cleanroom</span>
+            </article>
+
+            <article class="ind">
+              <img
+                class="ind__ico"
+                src="Images/Industrial_Automation.svg"
+                alt=""
+              />
+              <h3>Industrial Automation</h3>
+              <span class="ind__cert">ISO 9001</span>
+            </article>
+
+            <article class="ind">
+              <svg
+                class="ind__ico"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M21 4c-6.6 0-12 3.4-12 10 0 2 .5 3.6 1.4 4.8C13 17.6 17.4 14 21 12c0 0-6.4 1.4-9.6 6.8"
+                  stroke="rgba(255,255,255,.7)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M4 21c0-4 2-7 5-9"
+                  stroke="rgba(255,255,255,.7)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <h3>Energy &amp; Renewables</h3>
+              <span class="ind__cert">API Q1</span>
+            </article>
+
+            <article class="ind">
+              <img class="ind__ico" src="Images/Medical_Devices.svg" alt="" />
+              <h3>Medical Devices</h3>
+              <span class="ind__cert">ISO 13485</span>
+            </article>
+
+            <article class="ind">
+              <img class="ind__ico" src="Images/Maritime_&_Rail.svg" alt="" />
+              <h3>Maritime &amp; Rail</h3>
+              <span class="ind__cert">DNV · Lloyd's</span>
+            </article>
+
+            <article class="ind">
+              <img
+                class="ind__ico"
+                src="Images/Space_&_Satellites.svg"
+                alt=""
+              />
+              <h3>Space &amp; Satellites</h3>
+              <span class="ind__cert">AS9100D</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PRODUCT CATEGORIES ============ -->
+      <section class="section section--white">
+        <div class="container">
+          <div class="sec-head reveal">
+            <div>
+              <span class="eyebrow"><i></i>Product categories</span>
+              <h2 class="h2">
+                Components engineered for the<br />exact edge of what's
+                possible.
+              </h2>
+            </div>
+          </div>
+
+          <div class="grid grid--4">
+            <article class="prod reveal">
+              <div class="prod__media">
+                <img
+                  src="Images/Precision_casting_&_forging.svg"
+                  alt="Turbine blades"
+                />
+                <span class="tag-chip">Aerospace</span>
+              </div>
+              <div class="prod__foot">
+                <div>
+                  <h3>Turbine Blades</h3>
+                  <p>Nickel-superalloy, single-crystal cast.</p>
+                </div>
+                <span class="round-ico"
+                  ><img src="Images/rightupicon.svg" alt=""
+                /></span>
+              </div>
+            </article>
+
+            <article class="prod reveal">
+              <div class="prod__media">
+                <img
+                  src="Images/Automated_assembly.svg"
+                  alt="EV drive housings"
+                />
+                <span class="tag-chip">Automotive</span>
+              </div>
+              <div class="prod__foot">
+                <div>
+                  <h3>EV Drive Housings</h3>
+                  <p>High-pressure die-cast aluminium, machined.</p>
+                </div>
+                <span class="round-ico"
+                  ><img src="Images/rightupicon.svg" alt=""
+                /></span>
+              </div>
+            </article>
+
+            <article class="prod reveal">
+              <div class="prod__media">
+                <img
+                  src="Images/5_axis_CNC_machining.svg"
+                  alt="Precision bearings"
+                />
+                <span class="tag-chip">Industrial</span>
+              </div>
+              <div class="prod__foot">
+                <div>
+                  <h3>Precision Bearings</h3>
+                  <p>P4 class, ceramic hybrid, silent-run.</p>
+                </div>
+                <span class="round-ico"
+                  ><img src="Images/rightupicon.svg" alt=""
+                /></span>
+              </div>
+            </article>
+
+            <article class="prod reveal">
+              <div class="prod__media">
+                <img
+                  src="Images/Semiconductor_Chucks.svg"
+                  alt="Semiconductor chucks"
+                />
+                <span class="tag-chip">Semiconductor</span>
+              </div>
+              <div class="prod__foot">
+                <div>
+                  <h3>Semiconductor Chucks</h3>
+                  <p>Sub-micron flatness, EUV-grade.</p>
+                </div>
+                <span class="round-ico"
+                  ><img src="Images/rightupicon.svg" alt=""
+                /></span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PROCESS ============ -->
+      <section class="section section--soft" id="process">
+        <div class="container">
+          <div class="sec-head reveal">
+            <div>
+              <span class="eyebrow"><i></i>Manufacturing process</span>
+              <h2 class="h2">
+                A single, disciplined path from<br />napkin sketch to shipped
+                serial<br />number.
+              </h2>
+            </div>
+          </div>
+
+          <div class="steps">
+            <article class="step reveal">
+              <span class="step__badge">01<i></i></span>
+              <h3>Design for<br />Manufacturing</h3>
+              <p>
+                Our engineers embed with yours to refine tolerances, geometry
+                and material choice before a single chip is cut.
+              </p>
+            </article>
+            <article class="step reveal">
+              <span class="step__badge">02<i></i></span>
+              <h3>Rapid Prototyping</h3>
+              <p>
+                First articles in 7 days. Iterate physical prototypes alongside
+                digital twins in our virtual factory.
+              </p>
+            </article>
+            <article class="step reveal">
+              <span class="step__badge">03<i></i></span>
+              <h3>Industrialization</h3>
+              <p>
+                Tooling, fixturing and cell layout designed for scale — from 100
+                to 10 million units without redesign.
+              </p>
+            </article>
+            <article class="step reveal">
+              <span class="step__badge">04<i></i></span>
+              <h3>Smart Production</h3>
+              <p>
+                AI-orchestrated multi-plant scheduling with live throughput
+                visibility for your operations team.
+              </p>
+            </article>
+            <article class="step reveal">
+              <span class="step__badge">05<i></i></span>
+              <h3>Quality &amp; Traceability</h3>
+              <p>
+                Every part carries a serialized digital passport — verifiable
+                through its entire service life.
+              </p>
+            </article>
+            <article class="step reveal">
+              <span class="step__badge">06<i></i></span>
+              <h3>Global Logistics</h3>
+              <p>
+                Bonded warehousing across 4 continents, VMI programs and 99.98%
+                on-time delivery.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SMART FACTORY ============ -->
+      <section class="section section--white" id="innovation">
+        <div class="container split">
+          <div class="split__copy reveal">
+            <span class="eyebrow"><i></i>Smart factory &amp; automation</span>
+            <h2 class="h2">A production floor that<br />thinks for itself.</h2>
+            <p class="lead lead--lg">
+              Helion OS orchestrates 41,000+ connected assets across our global
+              network — routing orders to the optimal cell, predicting
+              maintenance 72 hours out, and closing the quality loop before a
+              single defect leaves the machine.
+            </p>
+
+            <ul class="feat">
+              <li>
+                <img
+                  src="/Images/Digital_twin.svg"
+                  alt="Digital_twin"
+                  width="20"
+                  height="20"
+                />
+                <div>
+                  <h4>Digital twin</h4>
+                  <p>Every plant, simulated in real time.</p>
+                </div>
+              </li>
+              <li>
+                <img
+                  src="/Images/Edge_AI.svg"
+                  alt="Edge AI"
+                  width="20"
+                  height="20"
+                />
+                <div>
+                  <h4>Edge AI</h4>
+                  <p>40ms inspection at every station.</p>
+                </div>
+              </li>
+              <li>
+                <img
+                  src="/Images/Autonomous_logistics.svg"
+                  alt="Autonomous logistics"
+                  width="20"
+                  height="20"
+                />
+                <div>
+                  <h4>Autonomous logistics</h4>
+                  <p>AMRs moving 1.4M loads/mo.</p>
+                </div>
+              </li>
+              <li>
+                <img
+                  src="/Images/Predictive_uptime.svg"
+                  alt="Predictive uptime"
+                  width="20"
+                  height="20"
+                />
+                <div>
+                  <h4>Predictive uptime</h4>
+                  <p>94.2% OEE, sustained.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="split__media reveal">
+            <figure class="shot shot--tall">
+              <img
+                src="Images/Smart_factory_&_automation.svg"
+                alt="Robotic assembly line"
+              />
+            </figure>
+            <div class="os-card">
+              <div class="os-card__head">
+                <span class="os-card__title">Helion OS</span>
+                <span class="os-card__status">● Online</span>
+              </div>
+              <dl class="os-card__stats">
+                <div>
+                  <dt>2148</dt>
+                  <dd>Cells</dd>
+                </div>
+                <div>
+                  <dt>912</dt>
+                  <dd>Orders</dd>
+                </div>
+                <div>
+                  <dt>99.98%</dt>
+                  <dd>SLA</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ QUALITY ASSURANCE ============ -->
+      <section class="section section--soft">
+        <div class="container split split--rev">
+          <div class="split__media reveal">
+            <figure class="shot">
+              <img src="Images/Step_img5.svg" alt="Quality inspection" />
+            </figure>
+          </div>
+
+          <div class="split__copy reveal">
+            <span class="eyebrow"><i></i>Quality assurance</span>
+            <h2 class="h2">
+              Zero-defect isn't a slogan.<br />It's the audit trail.
+            </h2>
+            <p class="lead lead--lg">
+              Every process, every part, every batch — measured, logged and
+              cryptographically signed. When your regulator asks, the answer
+              takes 3 seconds, not 3 weeks.
+            </p>
+
+            <div class="tabs" id="qaTabs">
+              <div class="tabs__list" role="tablist">
+                <button
+                  class="tab is-active"
+                  type="button"
+                  role="tab"
+                  aria-selected="true"
+                  data-tab="0"
+                >
+                  In-line inspection
+                </button>
+                <button
+                  class="tab"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  data-tab="1"
+                >
+                  Metrology lab
+                </button>
+                <button
+                  class="tab"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  data-tab="2"
+                >
+                  Certifications
+                </button>
+              </div>
+              <div class="tabs__panel is-active" role="tabpanel" data-panel="0">
+                <p>
+                  100% optical + tactile in-line inspection at every critical
+                  station. Machine vision trained on 42M reference images
+                  identifies deviations before rework becomes scrap.
+                </p>
+              </div>
+              <div class="tabs__panel" role="tabpanel" data-panel="1">
+                <p>
+                  Climate-controlled metrology labs with CMM, white-light
+                  interferometry and CT scanning. Every gauge is calibrated to
+                  national standards and traceable to the shift it was used on.
+                </p>
+              </div>
+              <div class="tabs__panel" role="tabpanel" data-panel="2">
+                <p>
+                  ISO 9001, AS9100 Rev D, IATF 16949, ISO 13485 and NADCAP
+                  special-process approvals — audited quarterly across all 42
+                  plants, with certificates published to your supplier portal.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ STATS BAND ============ -->
+      <section class="statband">
+        <div class="container statband__grid">
+          <div class="statband__item reveal">
+            <strong data-target="340" data-suffix="M+">0</strong
+            ><span>Parts produced annually</span>
+          </div>
+          <div class="statband__item reveal">
+            <strong data-target="42" data-suffix="">0</strong
+            ><span>Smart factories worldwide</span>
+          </div>
+          <div class="statband__item reveal">
+            <strong data-target="12.4" data-suffix="K" data-dec="1">0</strong
+            ><span>Engineers &amp; specialists</span>
+          </div>
+          <div class="statband__item reveal">
+            <strong data-target="99.98" data-suffix="%" data-dec="2">0</strong
+            ><span>On-time delivery</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FEATURED PROJECTS ============ -->
+      <section class="section section--white" id="projects">
+        <div class="container">
+          <div class="sec-head sec-head--btn reveal">
+            <div>
+              <span class="eyebrow"><i></i>Featured projects</span>
+              <h2 class="h2">
+                Selected work that ships, flies,<br />drives and computes.
+              </h2>
+            </div>
+            <a class="btn btn--line btn--sm" href="#"
+              >View case studies
+              <img class="ico" src="Images/rightupicon.svg" alt=""
+            /></a>
+          </div>
+
+          <div class="projects">
+            <a class="project reveal" href="#">
+              <figure class="project__media">
+                <img
+                  src="Images/Step_img2.svg"
+                  alt="Reusable rocket engine turbopumps"
+                />
+              </figure>
+              <div class="project__body">
+                <p class="project__meta">
+                  <span class="eyebrow-text">Aerospace</span
+                  ><span class="sep">·</span
+                  ><span class="client">Orbital Dynamics</span>
+                </p>
+                <h3>Reusable rocket engine turbopumps</h3>
+                <span class="project__stat">18 launches, zero failures</span>
+              </div>
+              <span class="round-ico round-ico--dark"
+                ><svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path
+                    d="M6.5 13.5 13.5 6.5M7.5 6.5h6v6"
+                    stroke="#fcfcfc"
+                    stroke-width="1.67"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+              ></span>
+            </a>
+
+            <a class="project project--short reveal" href="#">
+              <figure class="project__media">
+                <img src="Images/Step_img4.svg" alt="Next-gen EV drive unit" />
+              </figure>
+              <div class="project__body">
+                <p class="project__meta">
+                  <span class="eyebrow-text">Automotive</span
+                  ><span class="sep">·</span
+                  ><span class="client">Volten Motors</span>
+                </p>
+                <h3>Next-gen EV drive unit at 900V</h3>
+                <span class="project__stat">1.2M units / year</span>
+              </div>
+              <span class="round-ico round-ico--dark"
+                ><svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path
+                    d="M6.5 13.5 13.5 6.5M7.5 6.5h6v6"
+                    stroke="#fcfcfc"
+                    stroke-width="1.67"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+              ></span>
+            </a>
+
+            <a class="project reveal" href="#">
+              <figure class="project__media">
+                <img
+                  src="Images/Step_img3.svg"
+                  alt="EUV wafer handling assemblies"
+                />
+              </figure>
+              <div class="project__body">
+                <p class="project__meta">
+                  <span class="eyebrow-text">Semiconductor</span
+                  ><span class="sep">·</span
+                  ><span class="client">Nova Semiconductor</span>
+                </p>
+                <h3>EUV wafer handling assemblies</h3>
+                <span class="project__stat">±0.5μm flatness</span>
+              </div>
+              <span class="round-ico round-ico--dark"
+                ><svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path
+                    d="M6.5 13.5 13.5 6.5M7.5 6.5h6v6"
+                    stroke="#fcfcfc"
+                    stroke-width="1.67"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+              ></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ GALLERY ============ -->
+      <section class="section section--soft" id="gallery">
+        <div class="container">
+          <div class="sec-head reveal">
+            <div>
+              <span class="eyebrow"><i></i>Factory gallery</span>
+              <h2 class="h2">Step inside the floor.</h2>
+            </div>
+          </div>
+
+          <div class="gallery">
+            <figure class="gal gal--wide reveal">
+              <img src="Images/Step_img1.svg" alt="Automated assembly hall" />
+            </figure>
+            <figure class="gal reveal">
+              <img src="Images/Step_img2.svg" alt="CNC machining centre" />
+            </figure>
+            <figure class="gal reveal">
+              <img src="Images/Step_img3.svg" alt="Robotics cell" />
+            </figure>
+            <figure class="gal gal--wide reveal">
+              <img src="Images/Step_img4.svg" alt="Logistics and warehousing" />
+            </figure>
+            <figure class="gal reveal">
+              <img src="Images/Step_img5.svg" alt="Quality inspection bench" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ LEADERSHIP ============ -->
+      <section class="section section--white">
+        <div class="container">
+          <div class="sec-head reveal">
+            <div>
+              <span class="eyebrow"><i></i>Leadership</span>
+              <h2 class="h2">Operators. Engineers.<br />Craftspeople.</h2>
+            </div>
+            <p class="sec-head__note">
+              The people building the systems that build the world's most
+              demanding hardware.
+            </p>
+          </div>
+
+          <div class="grid grid--4">
+            <article class="person reveal">
+              <span class="avatar">IL</span>
+              <h3>Dr. Ingrid Larsen</h3>
+              <p>Chief Executive Officer</p>
+              <span class="person__link"
+                >Read bio
+                <svg viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                  <path
+                    d="M3 7h8"
+                    stroke="#0f141d"
+                    stroke-width="1.17"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="m7 3 4 4-4 4"
+                    stroke="#0f141d"
+                    stroke-width="1.17"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </article>
+            <article class="person reveal">
+              <span class="avatar">RM</span>
+              <h3>Rajiv Menon</h3>
+              <p>Chief Technology Officer</p>
+              <span class="person__link"
+                >Read bio
+                <svg viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                  <path
+                    d="M3 7h8"
+                    stroke="#0f141d"
+                    stroke-width="1.17"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="m7 3 4 4-4 4"
+                    stroke="#0f141d"
+                    stroke-width="1.17"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </article>
+            <article class="person reveal">
+              <span class="avatar">SA</span>
+              <h3>Sofía Álvarez</h3>
+              <p>Chief Operations Officer</p>
+              <span class="person__link"
+                >Read bio
+                <svg viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                  <path
+                    d="M3 7h8"
+                    stroke="#0f141d"
+                    stroke-width="1.17"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="m7 3 4 4-4 4"
+                    stroke="#0f141d"
+                    stroke-width="1.17"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </article>
+            <article class="person reveal">
+              <span class="avatar">KW</span>
+              <h3>Kenji Watanabe</h3>
+              <p>Chief Quality Officer</p>
+              <span class="person__link"
+                >Read bio
+                <svg viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                  <path
+                    d="M3 7h8"
+                    stroke="#0f141d"
+                    stroke-width="1.17"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="m7 3 4 4-4 4"
+                    stroke="#0f141d"
+                    stroke-width="1.17"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ TESTIMONIALS ============ -->
+      <section class="section section--soft">
+        <div class="container">
+          <div class="sec-head reveal">
+            <div>
+              <span class="eyebrow"><i></i>Client voices</span>
+              <h2 class="h2">
+                What our partners say when the<br />cameras are off.
+              </h2>
+            </div>
+          </div>
+
+          <div class="grid grid--3">
+            <blockquote class="quote reveal">
+              <span class="stars"
+                ><img src="Images/star.svg" alt="" /><img
+                  src="Images/star.svg"
+                  alt="" /><img src="Images/star.svg" alt="" /><img
+                  src="Images/star.svg"
+                  alt="" /><img src="Images/star.svg" alt=""
+              /></span>
+              <p>
+                "Helion delivered our engine housing 6 weeks ahead of schedule
+                with sub-micron tolerances on the first article. Their
+                engineering team feels like an extension of our own."
+              </p>
+              <footer>
+                <span class="avatar avatar--sm">AC</span
+                ><span class="quote__who"
+                  ><strong>Amelia Cortez</strong
+                  ><em>VP Manufacturing, Orbital Dynamics</em></span
+                >
+              </footer>
+            </blockquote>
+
+            <blockquote class="quote reveal">
+              <span class="stars"
+                ><img src="Images/star.svg" alt="" /><img
+                  src="Images/star.svg"
+                  alt="" /><img src="Images/star.svg" alt="" /><img
+                  src="Images/star.svg"
+                  alt="" /><img src="Images/star.svg" alt=""
+              /></span>
+              <p>
+                "We audited 14 suppliers before selecting Helion. Their
+                traceability infrastructure is a decade ahead of everyone else
+                in the industry."
+              </p>
+              <footer>
+                <span class="avatar avatar--sm">MW</span
+                ><span class="quote__who"
+                  ><strong>Marcus Weber</strong
+                  ><em>Head of Quality, Volten Motors</em></span
+                >
+              </footer>
+            </blockquote>
+
+            <blockquote class="quote reveal">
+              <span class="stars"
+                ><img src="Images/star.svg" alt="" /><img
+                  src="Images/star.svg"
+                  alt="" /><img src="Images/star.svg" alt="" /><img
+                  src="Images/star.svg"
+                  alt="" /><img src="Images/star.svg" alt=""
+              /></span>
+              <p>
+                "In three years of production, we've had exactly zero returns on
+                8 million Helion-built parts. That's not luck. That's
+                discipline."
+              </p>
+              <footer>
+                <span class="avatar avatar--sm">YT</span
+                ><span class="quote__who"
+                  ><strong>Yuki Tanaka</strong
+                  ><em>Supply Chain Director, Nova Semiconductor</em></span
+                >
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FAQ ============ -->
+      <section class="section section--white">
+        <div class="container faq-wrap">
+          <div class="faq-aside reveal">
+            <span class="eyebrow"><i></i>Frequently asked</span>
+            <h2 class="h2">Answers before you ask.</h2>
+            <p class="lead">
+              Still curious? Our engineering team replies within one business
+              day.
+            </p>
+            <a class="btn btn--dark btn--sm" href="#contact"
+              >Talk to engineering
+              <svg
+                class="ico"
+                viewBox="0 0 16 16"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M3.33 8h9.34"
+                  stroke="currentColor"
+                  stroke-width="1.33"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M8 3.33 12.67 8 8 12.67"
+                  stroke="currentColor"
+                  stroke-width="1.33"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <div class="faq reveal" id="faq">
+            <div class="faq__item">
+              <button class="faq__q" type="button" aria-expanded="false">
+                <span>What order volumes do you support?</span
+                ><img src="Images/down.svg" alt="" />
+              </button>
+              <div class="faq__a">
+                <p>
+                  From 25-piece first-article batches to 10 million units a year
+                  on a single programme. Cell layouts are designed at
+                  industrialization so you never re-qualify a part when volume
+                  steps up.
+                </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__q" type="button" aria-expanded="false">
+                <span>Which materials do you work with?</span
+                ><img src="Images/down.svg" alt="" />
+              </button>
+              <div class="faq__a">
+                <p>
+                  Titanium, Inconel and nickel superalloys, hardened tool
+                  steels, aluminium, technical ceramics and engineering polymers
+                  — plus additive-hybrid workflows where geometry demands it.
+                </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__q" type="button" aria-expanded="false">
+                <span>How fast can you prototype?</span
+                ><img src="Images/down.svg" alt="" />
+              </button>
+              <div class="faq__a">
+                <p>
+                  First articles in 7 days on most geometries. Prototype
+                  iterations run alongside a digital twin, so the process you
+                  validate is the process that goes into production.
+                </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__q" type="button" aria-expanded="false">
+                <span>Do you support on-site engineering?</span
+                ><img src="Images/down.svg" alt="" />
+              </button>
+              <div class="faq__a">
+                <p>
+                  Yes. Our DFM engineers embed with your team — on site or
+                  resident — through tolerance definition, material selection
+                  and launch, across all four continents we operate on.
+                </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__q" type="button" aria-expanded="false">
+                <span>How is IP protected?</span
+                ><img src="Images/down.svg" alt="" />
+              </button>
+              <div class="faq__a">
+                <p>
+                  Segregated cells, air-gapped programme data, NDA-bound teams
+                  and per-programme access control. Drawings never leave the
+                  plant network they were qualified in.
+                </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__q" type="button" aria-expanded="false">
+                <span>Are you carbon-neutral?</span
+                ><img src="Images/down.svg" alt="" />
+              </button>
+              <div class="faq__a">
+                <p>
+                  78% of our energy already comes from renewables, with
+                  closed-loop coolant recovery across the network. We are
+                  committed to full carbon neutrality by 2030.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="section section--soft" id="contact">
+        <div class="container">
+          <div class="contact reveal">
+            <div class="contact__aside">
+              <span class="eyebrow eyebrow--light"><i></i>Contact</span>
+              <h2 class="h2 h2--light">
+                Build the next thing<br />that flies, drives or<br />computes
+                with us.
+              </h2>
+              <p class="contact__lead">
+                Send us a drawing, a spec, or a napkin sketch. We'll respond
+                within one business day with a feasibility read and next-step
+                plan.
+              </p>
+
+              <ul class="contact__list">
+                <li>
+                  <span class="contact__ico"
+                    ><img src="Images/location.svg" alt="" /></span
+                  >Werkstraße 12, 70565 Stuttgart, Germany
+                </li>
+                <li>
+                  <span class="contact__ico"
+                    ><img src="Images/phone.svg" alt="" /></span
+                  >+49 711 40 88 12 00
+                </li>
+                <li>
+                  <span class="contact__ico"
+                    ><img src="Images/mail.svg" alt="" /></span
+                  >engineering@helion.industries
+                </li>
+              </ul>
+            </div>
+
+            <form class="contact__form" id="quoteForm" novalidate>
+              <div class="field">
+                <label for="fname">First name</label>
+                <input
+                  id="fname"
+                  name="fname"
+                  type="text"
+                  placeholder="Jane"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="lname">Last name</label>
+                <input
+                  id="lname"
+                  name="lname"
+                  type="text"
+                  placeholder="Keller"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="company-name">Company</label>
+                <input
+                  id="company-name"
+                  name="company"
+                  type="text"
+                  placeholder="Orbital Dynamics"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="email">Work email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="jane@company.com"
+                  required
+                />
+              </div>
+              <div class="field field--full">
+                <label for="message">Tell us about your project</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Materials, tolerances, volumes, timeline…"
+                  required
+                ></textarea>
+              </div>
+              <div class="field field--full form__foot">
+                <p class="form__note" id="formNote">
+                  We reply within one business day. Your data stays yours.
+                </p>
+                <button class="btn btn--dark" type="submit">
+                  Submit inquiry
+                  <svg
+                    class="ico"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M3.33 8h9.34"
+                      stroke="currentColor"
+                      stroke-width="1.33"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M8 3.33 12.67 8 8 12.67"
+                      stroke="currentColor"
+                      stroke-width="1.33"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ NEWSLETTER ============ -->
+      <section class="section section--white section--tight">
+        <div class="container">
+          <div class="signal reveal">
+            <span class="blob blob--amber-sm" aria-hidden="true"></span>
+            <div class="signal__copy">
+              <span class="eyebrow"><i></i>The Signal</span>
+              <h3 class="h3-xl">
+                A monthly dispatch from the factory<br />floor.
+              </h3>
+              <p class="lead">
+                Deep dives on precision engineering, factory automation, and the
+                physical supply chain — read by 84,000 engineers.
+              </p>
+            </div>
+            <form class="signal__form" id="signalForm" novalidate>
+              <div class="signal__row">
+                <input
+                  type="email"
+                  id="signalEmail"
+                  placeholder="you@company.com"
+                  aria-label="Work email"
+                  required
+                />
+                <button class="btn btn--dark" type="submit">Subscribe</button>
+              </div>
+              <p class="form__note" id="signalNote">
+                No noise. Unsubscribe any time.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <a class="logo logo--light" href="#top">Helion</a>
+            <p>
+              Precision manufacturing for the mission-critical hardware behind
+              the world's most advanced systems.
+            </p>
+            <span class="status"><i></i>All systems operational</span>
+          </div>
+
+          <div class="footer__col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#company">About</a></li>
+              <li><a href="#">Leadership</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Newsroom</a></li>
+              <li><a href="#">Sustainability</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Capabilities</h4>
+            <ul>
+              <li><a href="#capabilities">CNC Machining</a></li>
+              <li><a href="#">Casting &amp; Forging</a></li>
+              <li><a href="#">Assembly</a></li>
+              <li><a href="#">Metrology</a></li>
+              <li><a href="#innovation">Smart Factory</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Industries</h4>
+            <ul>
+              <li><a href="#industries">Aerospace</a></li>
+              <li><a href="#">Automotive</a></li>
+              <li><a href="#">Semiconductor</a></li>
+              <li><a href="#">Energy</a></li>
+              <li><a href="#">Medical</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#projects">Case Studies</a></li>
+              <li><a href="#">White Papers</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Compliance</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bar">
+          <p>© 2026 Helion Industries GmbH. Engineered in Stuttgart.</p>
+          <nav class="footer__legal" aria-label="Legal">
+            <a href="#">Privacy</a><a href="#">Terms</a
+            ><a href="#">Modern Slavery Act</a><a href="#">Cookies</a>
+          </nav>
+        </div>
+
+        <div class="footer__watermark" aria-hidden="true">HELION</div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
