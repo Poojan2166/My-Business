@@ -1584,6 +1584,45 @@
       <img src="Images/Whatsapp.svg" alt="whatsapp" height="30" width="30" />
     </a>
 
+    <!-- Card Detail Modal Popup (Zeplin Frame 604 & Frame 607 Layouts) -->
+    <div class="modal-overlay" id="card-modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="modal-container" id="card-modal-container">
+        <!-- Close button (Frame 64) -->
+        <button class="modal-close-btn" id="card-modal-close" aria-label="Close details">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 5L15 15M15 5L5 15" stroke="#4f6754" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <!-- Modal body -->
+        <div class="modal-content-wrapper">
+          <div class="modal-image-col">
+            <img id="modal-img" src="" alt="" />
+          </div>
+          <div class="modal-text-col">
+            <span class="modal-tag" id="modal-tag"></span>
+            <h2 class="modal-title" id="modal-title"></h2>
+            <p class="modal-description" id="modal-description"></p>
+            
+            <!-- Dynamic Info Grid (For Teachers/Classes/Workshops) -->
+            <div class="modal-info-grid" id="modal-info-grid"></div>
+            
+            <!-- Badges Row -->
+            <div class="modal-badges" id="modal-badges"></div>
+            
+            <!-- Action Button -->
+            <div class="modal-actions">
+              <a href="#book" class="modal-action-btn" id="modal-action-btn">
+                <span id="modal-action-text">Book a class</span>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" stroke="#1e2730" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Client-side Logic -->
     <script src="script.js"></script>
   </body>
