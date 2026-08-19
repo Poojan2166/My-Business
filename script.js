@@ -209,4 +209,256 @@
   } else {
     counters.forEach(runCount);
   }
+
+  /* ---------- Card popups details data ---------- */
+  var POPUP_DATA = {
+    // Teachers
+    "meera raichand": {
+      type: "teacher",
+      tag: "Principal · Contemporary",
+      title: "Meera Raichand",
+      desc: "18 yrs · London Contemporary Dance School. A rigorous technician known for pairing classical fundamentals with contemporary sensibility. Teaches weekday evenings and Saturday intensives. Believes that proper alignment and body awareness are the ultimate pathways to artistic freedom.",
+      img: "Images/Meera_Raichand.svg",
+      socials: { fb: "#", ig: "#", mail: "mailto:meera@aurea-dance.com" }
+    },
+    "rohan verma": {
+      type: "teacher",
+      tag: "Head of Hip Hop",
+      title: "Rohan Verma",
+      desc: "12 yrs · Millennium Dance Complex, LA. Specializes in commercial hip-hop, locking, popping, and performance styling. Rohan has taught workshops across Europe and South Asia, bringing street authenticity and high energy to the studio floor.",
+      img: "Images/Rohan_Verma.svg",
+      socials: { fb: "#", ig: "#", mail: "mailto:rohan@aurea-dance.com" }
+    },
+    "ananya iyer": {
+      type: "teacher",
+      tag: "Guru · Bharatanatyam",
+      title: "Ananya Iyer",
+      desc: "20 yrs · Kalakshetra Foundation. A gold medalist in Bharatanatyam pedagogy, devoted to preserving traditional adavus and abhinaya training. Ananya balances structural discipline with expressive freedom, guiding students toward solo and ensemble stage readiness.",
+      img: "Images/Ananya_Iyer.svg",
+      socials: { fb: "#", ig: "#", mail: "mailto:ananya@aurea-dance.com" }
+    },
+    "kabir menon": {
+      type: "teacher",
+      tag: "Ballet Master",
+      title: "Kabir Menon",
+      desc: "15 yrs · RAD Registered Teacher. Former soloist with the Royal Ballet of Flanders. Kabir combines strict RAD syllabus with modern sports science and conditioning to help dancers build turnout, extension, and alignment safely.",
+      img: "Images/Kabir_Menon.svg",
+      socials: { fb: "#", ig: "#", mail: "mailto:kabir@aurea-dance.com" }
+    },
+
+    // Styles
+    "hip hop": {
+      type: "style",
+      tag: "Beginner → Pro · Hip Hop",
+      title: "Hip Hop",
+      desc: "Rooted in street dance culture, this program covers popping, locking, breaking, and modern commercial choreography. Focus on musicality, bounce, and developing your own freestyle voice. Taught by Rohan Verma.",
+      img: "Images/Hip_Hop.svg"
+    },
+    "contemporary": {
+      type: "style",
+      tag: "All Levels · Contemporary",
+      title: "Contemporary",
+      desc: "A fluid blend of classical ballet technique and modern dance release. Emphasizes floor work, weight shift, improvisation, and emotional storytelling through motion. Taught by Meera Raichand.",
+      img: "Images/Contemporary.svg"
+    },
+    "bollywood": {
+      type: "style",
+      tag: "All Levels · Bollywood",
+      title: "Bollywood",
+      desc: "A high-energy fusion of traditional Indian folk, classical dance, and modern commercial styles. Learn expressive storytelling, energetic footwork, and fast-paced group choreographies to current beats. Taught by rotating guest choreographers.",
+      img: "Images/Bollywood.svg"
+    },
+    "salsa": {
+      type: "style",
+      tag: "Couples · Salsa",
+      title: "Salsa",
+      desc: "Learn the fundamentals of linear Salsa (LA/NY style). Covers timing, lead-and-follow technique, spin mechanics, and social dancing etiquette. Designed for partners looking to build synergy and rhythm.",
+      img: "Images/Salsa.svg"
+    },
+    "kathak": {
+      type: "style",
+      tag: "Foundational · Classical",
+      title: "Kathak",
+      desc: "Explore the grace of this North Indian classical dance form. Focuses on rhythmic footwork (tatkar), fast spins (chakkars), hand gestures, and expressive storytelling (bhava) set to traditional taals.",
+      img: "Images/Kathak.svg"
+    },
+    "bharatanatyam": {
+      type: "style",
+      tag: "Foundational · Classical",
+      title: "Bharatanatyam",
+      desc: "Nurture geometric precision and dramatic expression. Taught in the Kalakshetra style, covering adavus (basic steps), mudras (hand gestures), and abhinaya (expression) to classical Carnatic music. Taught by Ananya Iyer.",
+      img: "Images/Bharatanatyam.svg"
+    },
+    "ballet": {
+      type: "style",
+      tag: "Graded · Classical",
+      title: "Ballet",
+      desc: "Build core strength, posture, and alignment through classical RAD techniques. Covers barre work, center practice, and across-the-floor combinations. Essential for coordination and classical grace. Taught by Kabir Menon.",
+      img: "Images/Ballet.svg"
+    },
+    "freestyle": {
+      type: "style",
+      tag: "Open · Contemporary",
+      title: "Freestyle",
+      desc: "A creative lab designed for advanced dancers to break boundaries. Blends elements of street styles, contact improvisation, and experimental theater. Perfect for finding your unique signature as an artist.",
+      img: "Images/Freestyle.svg"
+    }
+  };
+
+  var modalOverlay = document.getElementById("modalOverlay");
+  var modal = document.getElementById("modal");
+  var modalClose = document.getElementById("modalClose");
+  var modalImg = document.getElementById("modalImg");
+  var modalTag = document.getElementById("modalTag");
+  var modalTitle = document.getElementById("modalTitle");
+  var modalDesc = document.getElementById("modalDesc");
+  var modalSocials = document.getElementById("modalSocials");
+  var modalActions = document.getElementById("modalActions");
+
+  var activeTrigger = null;
+
+  function openModal(data, triggerEl) {
+    if (!data) return;
+
+    activeTrigger = triggerEl;
+
+    // Populate data
+    modalImg.src = data.img;
+    modalImg.alt = data.title;
+    modalTag.textContent = data.tag;
+    modalTitle.textContent = data.title;
+    modalDesc.textContent = data.desc;
+
+    // Toggle actions vs socials
+    if (data.type === "teacher") {
+      modalSocials.style.display = "flex";
+      modalActions.style.display = "none";
+      
+      // Update social links
+      var links = modalSocials.querySelectorAll("a");
+      if (links.length >= 3) {
+        links[0].href = data.socials.fb || "#";
+        links[1].href = data.socials.ig || "#";
+        links[2].href = data.socials.mail || "#";
+      }
+    } else {
+      modalSocials.style.display = "none";
+      modalActions.style.display = "flex";
+    }
+
+    // Show modal and lock page scrolling
+    modalOverlay.classList.add("is-visible");
+    modalOverlay.setAttribute("aria-hidden", "false");
+    document.body.classList.add("modal-lock");
+
+    // Accessibility focus management
+    setTimeout(function () {
+      modalClose.focus();
+    }, 50);
+
+    // Trap focus inside modal
+    modalOverlay.addEventListener("keydown", trapFocus);
+  }
+
+  function closeModal() {
+    modalOverlay.classList.remove("is-visible");
+    modalOverlay.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("modal-lock");
+
+    modalOverlay.removeEventListener("keydown", trapFocus);
+
+    if (activeTrigger) {
+      activeTrigger.focus();
+      activeTrigger = null;
+    }
+  }
+
+  // Trap focus helper
+  function trapFocus(e) {
+    if (e.key !== "Tab") return;
+
+    var focusables = modalOverlay.querySelectorAll('button, [href], input, select, textarea, [tabindex="0"]');
+    // Filter visible elements
+    var visibleFocusables = Array.prototype.filter.call(focusables, function (el) {
+      return el.offsetWidth > 0 || el.offsetHeight > 0;
+    });
+
+    if (visibleFocusables.length === 0) return;
+
+    var first = visibleFocusables[0];
+    var last = visibleFocusables[visibleFocusables.length - 1];
+
+    if (e.shiftKey) {
+      if (document.activeElement === first) {
+        last.focus();
+        e.preventDefault();
+      }
+    } else {
+      if (document.activeElement === last) {
+        first.focus();
+        e.preventDefault();
+      }
+    }
+  }
+
+  // Style cards event listeners
+  document.querySelectorAll(".style-card").forEach(function (card) {
+    card.addEventListener("click", function (e) {
+      var h3 = card.querySelector("h3");
+      if (!h3) return;
+      var name = h3.textContent.trim().toLowerCase();
+      var data = POPUP_DATA[name];
+      if (data) {
+        e.preventDefault();
+        openModal(data, card);
+      }
+    });
+
+    // Make card focusable for keyboard navigation
+    card.setAttribute("tabindex", "0");
+    card.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        card.click();
+      }
+    });
+  });
+
+  // Teacher cards event listeners
+  document.querySelectorAll(".teacher").forEach(function (card) {
+    card.addEventListener("click", function (e) {
+      var h3 = card.querySelector("h3");
+      if (!h3) return;
+      var name = h3.textContent.trim().toLowerCase();
+      var data = POPUP_DATA[name];
+      if (data) {
+        openModal(data, card);
+      }
+    });
+
+    card.setAttribute("tabindex", "0");
+    card.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        card.click();
+      }
+    });
+  });
+
+  // Close actions
+  modalClose.addEventListener("click", closeModal);
+  modalOverlay.addEventListener("click", function (e) {
+    if (e.target === modalOverlay) {
+      closeModal();
+    }
+  });
+
+  document.getElementById("modalBookBtn").addEventListener("click", closeModal);
+  document.getElementById("modalScheduleBtn").addEventListener("click", closeModal);
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && modalOverlay.classList.contains("is-visible")) {
+      closeModal();
+    }
+  });
 })();
