@@ -1,0 +1,1395 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kirana &ndash; Business Directory</title>
+    <meta
+      name="description"
+      content="India's most trusted platform to connect buyers with verified Kirana businesses."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ==================== TOP BAR ==================== -->
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <div class="topbar__left">
+          <span class="badge-new">NEW</span>
+          <p class="topbar__text">
+            Grow your Kirana business with verified suppliers &amp; latest
+            market offers.
+          </p>
+        </div>
+        <nav class="topbar__right" aria-label="Account">
+          <a href="#" class="topbar__link"
+            ><img
+              src="Images/download_icon.svg"
+              alt=""
+              width="14"
+              height="14"
+            />Download App</a
+          >
+          <a href="#" class="topbar__link"
+            ><img
+              src="Images/person_icon.svg"
+              alt=""
+              width="14"
+              height="14"
+            />Buyer Login</a
+          >
+          <a href="#" class="topbar__link"
+            ><img
+              src="Images/login.svg"
+              alt=""
+              width="14"
+              height="14"
+            />Supplier Login</a
+          >
+        </nav>
+      </div>
+    </div>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="header" id="header">
+      <div class="container header__inner">
+        <a href="#" class="brand">
+          <span class="brand__mark">K</span>
+          <span class="brand__text">
+            <span class="brand__name">Kirana</span>
+            <span class="brand__sub">Business Directory</span>
+          </span>
+        </a>
+
+        <nav class="nav" id="nav" aria-label="Main">
+          <button
+            type="button"
+            class="nav__close"
+            id="navClose"
+            aria-label="Close menu"
+          >
+            &times;
+          </button>
+          <a href="#categories" class="nav__link">Products</a>
+          <a href="#suppliers" class="nav__link">Suppliers</a>
+          <a href="#types" class="nav__link">Manufacturers</a>
+          <a href="#cities" class="nav__link">Cities</a>
+          <a href="#services" class="nav__link">Services</a>
+          <a href="#" class="nav__link">Pricing</a>
+          <a href="#resources" class="nav__link">Resources</a>
+          <div class="nav__mobile-actions">
+            <a href="#" class="btn btn--ghost">Login</a>
+            <a href="#" class="btn btn--primary">Register Business</a>
+          </div>
+        </nav>
+
+        <div class="header__actions">
+          <button
+            type="button"
+            class="btn btn--outline btn--search js-toast"
+            data-toast="Search panel opened"
+          >
+            <img
+              src="Images/search_icon.svg"
+              alt=""
+              width="16"
+              height="16"
+            />Search
+          </button>
+          <a href="#" class="btn btn--ghost">Login</a>
+          <a href="#" class="btn btn--primary">Register Business</a>
+        </div>
+
+        <button
+          class="hamburger"
+          id="hamburger"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="nav"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+    <div class="nav-backdrop" id="navBackdrop"></div>
+
+    <main>
+      <!-- ==================== HERO ==================== -->
+      <section class="hero">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              Find Trusted <span class="accent">Kirana</span
+              ><br class="br-none" />
+              <span class="accent">Suppliers</span> Across<br
+                class="br-none"
+              />India
+            </h1>
+            <p class="hero__lead">
+              Search products, suppliers, manufacturers &amp; wholesalers in one
+              place. Verified businesses, direct contact, secure listings.
+            </p>
+
+            <form class="searchbar" id="searchForm" autocomplete="off">
+              <div class="searchbar__field">
+                <img
+                  src="Images/search_icon.svg"
+                  alt=""
+                  width="15"
+                  height="16"
+                />
+                <input
+                  type="text"
+                  id="searchInput"
+                  placeholder="Search products or suppliers&hellip;"
+                  aria-label="Search products or suppliers"
+                />
+              </div>
+              <div class="searchbar__field searchbar__select" id="citySelect">
+                <img src="Images/location.svg" alt="" width="15" height="16" />
+                <button
+                  type="button"
+                  class="select__toggle"
+                  id="cityToggle"
+                  aria-haspopup="listbox"
+                  aria-expanded="false"
+                >
+                  Select City
+                </button>
+                <ul class="select__menu" id="cityMenu" role="listbox">
+                  <li role="option" tabindex="0">Ahmedabad</li>
+                  <li role="option" tabindex="0">Surat</li>
+                  <li role="option" tabindex="0">Rajkot</li>
+                  <li role="option" tabindex="0">Vadodara</li>
+                  <li role="option" tabindex="0">Mumbai</li>
+                  <li role="option" tabindex="0">Delhi</li>
+                  <li role="option" tabindex="0">Jaipur</li>
+                  <li role="option" tabindex="0">Indore</li>
+                </ul>
+              </div>
+              <button type="submit" class="btn btn--primary searchbar__btn">
+                Search
+              </button>
+            </form>
+
+            <div class="popular">
+              <span class="popular__label">Popular:</span>
+              <div class="popular__chips" id="popularChips">
+                <button type="button" class="chip">Rice</button>
+                <button type="button" class="chip">Oil</button>
+                <button type="button" class="chip">Sugar</button>
+                <button type="button" class="chip">Tea</button>
+                <button type="button" class="chip">Masala</button>
+                <button type="button" class="chip">Atta</button>
+                <button type="button" class="chip">Dal</button>
+              </div>
+            </div>
+
+            <div class="hero__stats">
+              <div class="stat-card">
+                <img src="Images/Suppliers.svg" alt="" width="16" height="16" />
+                <strong class="stat-card__value">25K+</strong>
+                <span class="stat-card__label">Suppliers</span>
+              </div>
+              <div class="stat-card">
+                <img src="Images/Products.svg" alt="" width="16" height="16" />
+                <strong class="stat-card__value">1M+</strong>
+                <span class="stat-card__label">Products</span>
+              </div>
+              <div class="stat-card">
+                <img
+                  src="Images/location_green.svg"
+                  alt=""
+                  width="16"
+                  height="16"
+                />
+                <strong class="stat-card__value">650+</strong>
+                <span class="stat-card__label">Cities</span>
+              </div>
+              <div class="stat-card">
+                <img
+                  src="Images/User_Rating.svg"
+                  alt=""
+                  width="16"
+                  height="16"
+                />
+                <strong class="stat-card__value">4.9</strong>
+                <span class="stat-card__label">User Rating</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__visual">
+            <img
+              class="hero__map"
+              src="Images/India_main.svg"
+              alt="Map of India showing supplier coverage"
+            />
+
+            <div class="float-card float-card--a">
+              <span class="avatar avatar--sm">S</span>
+              <div class="float-card__body">
+                <p class="float-card__name">Shree Ram Traders</p>
+                <p class="float-card__meta">Mumbai, Maharashtra</p>
+              </div>
+              <div class="float-card__foot">
+                <span class="verified-mini"
+                  ><img
+                    src="Images/downicon.svg"
+                    alt=""
+                    width="12"
+                    height="12"
+                  />Verified Supplier</span
+                >
+                <span class="rating-mini">4.8 &#9733;</span>
+              </div>
+            </div>
+
+            <div class="float-card float-card--b">
+              <span class="avatar avatar--sm">G</span>
+              <div class="float-card__body">
+                <p class="float-card__name">Gupta General Store</p>
+                <p class="float-card__meta">Kolkata, West Bengal</p>
+              </div>
+              <div class="float-card__foot">
+                <span class="verified-mini"
+                  ><img
+                    src="Images/downicon.svg"
+                    alt=""
+                    width="12"
+                    height="12"
+                  />Verified Supplier</span
+                >
+                <span class="rating-mini">4.9 &#9733;</span>
+              </div>
+            </div>
+
+            <div class="float-card float-card--live">
+              <img src="Images/Growth_Icon.svg" alt="" width="16" height="16" />
+              <div>
+                <p class="float-card__live">
+                  Live: <span id="liveCount">25,348</span>
+                </p>
+                <p class="float-card__today">+145 today</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TRUSTED BRANDS ==================== -->
+      <section class="brands">
+        <div class="container brands__inner">
+          <p class="brands__label">Trusted by<br />Leading Brands</p>
+          <ul class="brands__list">
+            <li>Nestl&eacute;</li>
+            <li>Amul</li>
+            <li>Parle</li>
+            <li>Britannia</li>
+            <li>ITC</li>
+            <li>Dabur</li>
+            <li>Fortune</li>
+            <li>Coca-Cola</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ==================== BROWSE CATEGORIES ==================== -->
+      <section class="section" id="categories">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Browse Categories</h2>
+            <a href="#" class="section__link">View all categories</a>
+          </div>
+          <div class="grid grid--cat reveal">
+            <a href="#" class="cat-card"
+              ><span class="cat-card__img"
+                ><img
+                  loading="lazy"
+                  decoding="async"
+                  src="Images/Grocery.svg"
+                  alt="Grocery" /></span
+              ><span class="cat-card__name">Grocery</span></a
+            >
+            <a href="#" class="cat-card"
+              ><span class="cat-card__img"
+                ><img
+                  loading="lazy"
+                  decoding="async"
+                  src="Images/FMCG.svg"
+                  alt="FMCG" /></span
+              ><span class="cat-card__name">FMCG</span></a
+            >
+            <a href="#" class="cat-card"
+              ><span class="cat-card__img"
+                ><img
+                  loading="lazy"
+                  decoding="async"
+                  src="Images/Beverages.svg"
+                  alt="Beverages" /></span
+              ><span class="cat-card__name">Beverages</span></a
+            >
+            <a href="#" class="cat-card"
+              ><span class="cat-card__img"
+                ><img
+                  loading="lazy"
+                  decoding="async"
+                  src="Images/Dairy.svg"
+                  alt="Dairy" /></span
+              ><span class="cat-card__name">Dairy</span></a
+            >
+            <a href="#" class="cat-card"
+              ><span class="cat-card__img"
+                ><img
+                  loading="lazy"
+                  decoding="async"
+                  src="Images/Snacks.svg"
+                  alt="Snacks" /></span
+              ><span class="cat-card__name">Snacks</span></a
+            >
+            <a href="#" class="cat-card"
+              ><span class="cat-card__img"
+                ><img
+                  loading="lazy"
+                  decoding="async"
+                  src="Images/Bakery.svg"
+                  alt="Bakery" /></span
+              ><span class="cat-card__name">Bakery</span></a
+            >
+            <a href="#" class="cat-card"
+              ><span class="cat-card__img"
+                ><img
+                  loading="lazy"
+                  decoding="async"
+                  src="Images/Frozen_Food.svg"
+                  alt="Frozen Food" /></span
+              ><span class="cat-card__name">Frozen Food</span></a
+            >
+            <a href="#" class="cat-card"
+              ><span class="cat-card__img"
+                ><img
+                  loading="lazy"
+                  decoding="async"
+                  src="Images/Cleaning.svg"
+                  alt="Cleaning" /></span
+              ><span class="cat-card__name">Cleaning</span></a
+            >
+            <a href="#" class="cat-card"
+              ><span class="cat-card__img"
+                ><img
+                  loading="lazy"
+                  decoding="async"
+                  src="Images/Spices.svg"
+                  alt="Spices" /></span
+              ><span class="cat-card__name">Spices</span></a
+            >
+            <a href="#" class="cat-card"
+              ><span class="cat-card__img"
+                ><img
+                  loading="lazy"
+                  decoding="async"
+                  src="Images/Dry_Fruits.svg"
+                  alt="Dry Fruits" /></span
+              ><span class="cat-card__name">Dry Fruits</span></a
+            >
+            <a href="#" class="cat-card"
+              ><span class="cat-card__img"
+                ><img
+                  loading="lazy"
+                  decoding="async"
+                  src="Images/Personal_Care.svg"
+                  alt="Personal Care" /></span
+              ><span class="cat-card__name">Personal Care</span></a
+            >
+            <a href="#" class="cat-card"
+              ><span class="cat-card__img"
+                ><img
+                  loading="lazy"
+                  decoding="async"
+                  src="Images/Packaging.svg"
+                  alt="Packaging" /></span
+              ><span class="cat-card__name">Packaging</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== BROWSE BY BUSINESS TYPE ==================== -->
+      <section class="section" id="types">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Browse by Business Type</h2>
+            <a href="#" class="section__link">View all</a>
+          </div>
+          <div class="grid grid--type reveal">
+            <a href="#" class="type-card"
+              ><img
+                src="Images/Manufacturer.svg"
+                alt=""
+                width="28"
+                height="28"
+              /><span>Manufacturer</span></a
+            >
+            <a href="#" class="type-card"
+              ><img
+                src="Images/Supplier.svg"
+                alt=""
+                width="28"
+                height="28"
+              /><span>Supplier</span></a
+            >
+            <a href="#" class="type-card"
+              ><img
+                src="Images/Wholesaler.svg"
+                alt=""
+                width="28"
+                height="28"
+              /><span>Wholesaler</span></a
+            >
+            <a href="#" class="type-card"
+              ><img
+                src="Images/Distributor.svg"
+                alt=""
+                width="28"
+                height="28"
+              /><span>Distributor</span></a
+            >
+            <a href="#" class="type-card"
+              ><img
+                src="Images/Retailer.svg"
+                alt=""
+                width="28"
+                height="28"
+              /><span>Retailer</span></a
+            >
+            <a href="#" class="type-card"
+              ><img
+                src="Images/Exporter.svg"
+                alt=""
+                width="28"
+                height="28"
+              /><span>Exporter</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== EXPLORE BY CITY ==================== -->
+      <section class="section" id="cities">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title section__title--x">Explore by City</h2>
+          </div>
+          <div class="grid grid--city reveal">
+            <a href="#" class="city-card"
+              ><span class="city-card__img"
+                ><img
+                  loading="lazy"
+                  decoding="async"
+                  src="Images/Ahmedabad.svg"
+                  alt="Ahmedabad" /></span
+              ><span class="city-card__name">Ahmedabad</span
+              ><span class="city-card__meta">3,256+ Businesses</span></a
+            >
+            <a href="#" class="city-card"
+              ><span class="city-card__img"
+                ><img
+                  loading="lazy"
+                  decoding="async"
+                  src="Images/Surat.svg"
+                  alt="Surat" /></span
+              ><span class="city-card__name">Surat</span
+              ><span class="city-card__meta">4,125+ Businesses</span></a
+            >
+            <a href="#" class="city-card"
+              ><span class="city-card__img"
+                ><img
+                  loading="lazy"
+                  decoding="async"
+                  src="Images/Rajkot.svg"
+                  alt="Rajkot" /></span
+              ><span class="city-card__name">Rajkot</span
+              ><span class="city-card__meta">2,356+ Businesses</span></a
+            >
+            <a href="#" class="city-card"
+              ><span class="city-card__img"
+                ><img
+                  loading="lazy"
+                  decoding="async"
+                  src="Images/Vadodara.svg"
+                  alt="Vadodara" /></span
+              ><span class="city-card__name">Vadodara</span
+              ><span class="city-card__meta">3,194+ Businesses</span></a
+            >
+            <a href="#" class="city-card"
+              ><span class="city-card__img"
+                ><img
+                  loading="lazy"
+                  decoding="async"
+                  src="Images/Mumbai.svg"
+                  alt="Mumbai" /></span
+              ><span class="city-card__name">Mumbai</span
+              ><span class="city-card__meta">8,125+ Businesses</span></a
+            >
+            <a href="#" class="city-card"
+              ><span class="city-card__img"
+                ><img
+                  loading="lazy"
+                  decoding="async"
+                  src="Images/Delhi.svg"
+                  alt="Delhi" /></span
+              ><span class="city-card__name">Delhi</span
+              ><span class="city-card__meta">7,245+ Businesses</span></a
+            >
+            <a href="#" class="city-card"
+              ><span class="city-card__img"
+                ><img
+                  loading="lazy"
+                  decoding="async"
+                  src="Images/Jaipur.svg"
+                  alt="Jaipur" /></span
+              ><span class="city-card__name">Jaipur</span
+              ><span class="city-card__meta">3,245+ Businesses</span></a
+            >
+            <a href="#" class="city-card"
+              ><span class="city-card__img"
+                ><img
+                  loading="lazy"
+                  decoding="async"
+                  src="Images/Indore.svg"
+                  alt="Indore" /></span
+              ><span class="city-card__name">Indore</span
+              ><span class="city-card__meta">2,052+ Businesses</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== FEATURED SUPPLIERS ==================== -->
+      <section class="section" id="suppliers">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Featured Suppliers</h2>
+            <a href="#" class="section__link">View all suppliers</a>
+          </div>
+          <div class="grid grid--sup reveal">
+            <article class="sup-card">
+              <div class="sup-card__head">
+                <span class="sup-card__logo"
+                  ><img
+                    loading="lazy"
+                    decoding="async"
+                    src="Images/ABC_Trading_Co.svg"
+                    alt="ABC Trading Co. logo"
+                /></span>
+                <div class="sup-card__info">
+                  <h3 class="sup-card__name">ABC Trading Co.</h3>
+                  <p class="sup-card__place">Ahmedabad, Gujarat</p>
+                  <p class="sup-card__rate">
+                    <span class="stars"
+                      >&#9733;&#9733;&#9733;&#9733;&#9733;</span
+                    >
+                    4.8
+                  </p>
+                  <p class="sup-card__tag">Manufacturer &middot; 10 Years</p>
+                </div>
+              </div>
+              <p class="verified">
+                <svg
+                  viewBox="0 0 14 14"
+                  width="14"
+                  height="14"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M11.7 3.2 7 1.2 2.3 3.2v3.5c0 3 2 5.2 4.7 6.1 2.7-.9 4.7-3.1 4.7-6.1V3.2Z"
+                    stroke="currentColor"
+                    stroke-width="1.17"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="m5.2 7 1.3 1.3 2.4-2.6"
+                    stroke="currentColor"
+                    stroke-width="1.17"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+                >Verified
+              </p>
+              <div class="sup-card__actions">
+                <button
+                  type="button"
+                  class="btn btn--outline js-toast"
+                  data-toast="Contact request sent to ABC Trading Co."
+                >
+                  <svg
+                    viewBox="0 0 12 12"
+                    width="12"
+                    height="12"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M11 8.5v1.6c0 .5-.4.9-.9.9A9.1 9.1 0 0 1 1.5 1.9c0-.5.4-.9.9-.9H4c.4 0 .8.3.9.7l.4 1.6c.1.3 0 .6-.2.8l-.8.8a7.3 7.3 0 0 0 3.2 3.2l.8-.8c.2-.2.5-.3.8-.2l1.6.4c.4.1.7.5.7.9Z"
+                      stroke="currentColor"
+                      stroke-width="1"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                  >Contact
+                </button>
+                <button
+                  type="button"
+                  class="btn btn--primary js-toast"
+                  data-toast="Opening ABC Trading Co. profile"
+                >
+                  View Profile
+                </button>
+              </div>
+            </article>
+
+            <article class="sup-card">
+              <div class="sup-card__head">
+                <span class="sup-card__logo"
+                  ><img
+                    loading="lazy"
+                    decoding="async"
+                    src="Images/Shree_Laxmi_Traders.svg"
+                    alt="Shree Laxmi Traders logo"
+                /></span>
+                <div class="sup-card__info">
+                  <h3 class="sup-card__name">Shree Laxmi Traders</h3>
+                  <p class="sup-card__place">Surat, Gujarat</p>
+                  <p class="sup-card__rate">
+                    <span class="stars"
+                      >&#9733;&#9733;&#9733;&#9733;&#9733;</span
+                    >
+                    4.7
+                  </p>
+                  <p class="sup-card__tag">Wholesaler &middot; 8 Years</p>
+                </div>
+              </div>
+              <p class="verified">
+                <svg
+                  viewBox="0 0 14 14"
+                  width="14"
+                  height="14"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M11.7 3.2 7 1.2 2.3 3.2v3.5c0 3 2 5.2 4.7 6.1 2.7-.9 4.7-3.1 4.7-6.1V3.2Z"
+                    stroke="currentColor"
+                    stroke-width="1.17"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="m5.2 7 1.3 1.3 2.4-2.6"
+                    stroke="currentColor"
+                    stroke-width="1.17"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+                >Verified
+              </p>
+              <div class="sup-card__actions">
+                <button
+                  type="button"
+                  class="btn btn--outline js-toast"
+                  data-toast="Contact request sent to Shree Laxmi Traders"
+                >
+                  <svg
+                    viewBox="0 0 12 12"
+                    width="12"
+                    height="12"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M11 8.5v1.6c0 .5-.4.9-.9.9A9.1 9.1 0 0 1 1.5 1.9c0-.5.4-.9.9-.9H4c.4 0 .8.3.9.7l.4 1.6c.1.3 0 .6-.2.8l-.8.8a7.3 7.3 0 0 0 3.2 3.2l.8-.8c.2-.2.5-.3.8-.2l1.6.4c.4.1.7.5.7.9Z"
+                      stroke="currentColor"
+                      stroke-width="1"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                  >Contact
+                </button>
+                <button
+                  type="button"
+                  class="btn btn--primary js-toast"
+                  data-toast="Opening Shree Laxmi Traders profile"
+                >
+                  View Profile
+                </button>
+              </div>
+            </article>
+
+            <article class="sup-card">
+              <div class="sup-card__head">
+                <span class="sup-card__logo"
+                  ><img
+                    loading="lazy"
+                    decoding="async"
+                    src="Images/Gupta_Enterprises.svg"
+                    alt="Gupta Enterprises logo"
+                /></span>
+                <div class="sup-card__info">
+                  <h3 class="sup-card__name">Gupta Enterprises</h3>
+                  <p class="sup-card__place">Indore, MP</p>
+                  <p class="sup-card__rate">
+                    <span class="stars"
+                      >&#9733;&#9733;&#9733;&#9733;&#9733;</span
+                    >
+                    4.6
+                  </p>
+                  <p class="sup-card__tag">Distributor &middot; 9 Years</p>
+                </div>
+              </div>
+              <p class="verified">
+                <svg
+                  viewBox="0 0 14 14"
+                  width="14"
+                  height="14"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M11.7 3.2 7 1.2 2.3 3.2v3.5c0 3 2 5.2 4.7 6.1 2.7-.9 4.7-3.1 4.7-6.1V3.2Z"
+                    stroke="currentColor"
+                    stroke-width="1.17"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="m5.2 7 1.3 1.3 2.4-2.6"
+                    stroke="currentColor"
+                    stroke-width="1.17"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+                >Verified
+              </p>
+              <div class="sup-card__actions">
+                <button
+                  type="button"
+                  class="btn btn--outline js-toast"
+                  data-toast="Contact request sent to Gupta Enterprises"
+                >
+                  <svg
+                    viewBox="0 0 12 12"
+                    width="12"
+                    height="12"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M11 8.5v1.6c0 .5-.4.9-.9.9A9.1 9.1 0 0 1 1.5 1.9c0-.5.4-.9.9-.9H4c.4 0 .8.3.9.7l.4 1.6c.1.3 0 .6-.2.8l-.8.8a7.3 7.3 0 0 0 3.2 3.2l.8-.8c.2-.2.5-.3.8-.2l1.6.4c.4.1.7.5.7.9Z"
+                      stroke="currentColor"
+                      stroke-width="1"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                  >Contact
+                </button>
+                <button
+                  type="button"
+                  class="btn btn--primary js-toast"
+                  data-toast="Opening Gupta Enterprises profile"
+                >
+                  View Profile
+                </button>
+              </div>
+            </article>
+
+            <article class="sup-card">
+              <div class="sup-card__head">
+                <span class="sup-card__logo"
+                  ><img
+                    loading="lazy"
+                    decoding="async"
+                    src="Images/Patel_Kirana_Mart.svg"
+                    alt="Patel Kirana Mart logo"
+                /></span>
+                <div class="sup-card__info">
+                  <h3 class="sup-card__name">Patel Kirana Mart</h3>
+                  <p class="sup-card__place">Rajkot, Gujarat</p>
+                  <p class="sup-card__rate">
+                    <span class="stars"
+                      >&#9733;&#9733;&#9733;&#9733;&#9733;</span
+                    >
+                    4.6
+                  </p>
+                  <p class="sup-card__tag">Retailer &middot; 9 Years</p>
+                </div>
+              </div>
+              <p class="verified">
+                <svg
+                  viewBox="0 0 14 14"
+                  width="14"
+                  height="14"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M11.7 3.2 7 1.2 2.3 3.2v3.5c0 3 2 5.2 4.7 6.1 2.7-.9 4.7-3.1 4.7-6.1V3.2Z"
+                    stroke="currentColor"
+                    stroke-width="1.17"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="m5.2 7 1.3 1.3 2.4-2.6"
+                    stroke="currentColor"
+                    stroke-width="1.17"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+                >Verified
+              </p>
+              <div class="sup-card__actions">
+                <button
+                  type="button"
+                  class="btn btn--outline js-toast"
+                  data-toast="Contact request sent to Patel Kirana Mart"
+                >
+                  <svg
+                    viewBox="0 0 12 12"
+                    width="12"
+                    height="12"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M11 8.5v1.6c0 .5-.4.9-.9.9A9.1 9.1 0 0 1 1.5 1.9c0-.5.4-.9.9-.9H4c.4 0 .8.3.9.7l.4 1.6c.1.3 0 .6-.2.8l-.8.8a7.3 7.3 0 0 0 3.2 3.2l.8-.8c.2-.2.5-.3.8-.2l1.6.4c.4.1.7.5.7.9Z"
+                      stroke="currentColor"
+                      stroke-width="1"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                  >Contact
+                </button>
+                <button
+                  type="button"
+                  class="btn btn--primary js-toast"
+                  data-toast="Opening Patel Kirana Mart profile"
+                >
+                  View Profile
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== LATEST PRODUCTS ==================== -->
+      <section class="section" id="products">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title section__title--x">Latest Products</h2>
+            <a href="#" class="section__link section__link--sm"
+              >View all products</a
+            >
+          </div>
+          <div class="grid grid--prod reveal">
+            <article class="prod-card">
+              <span class="prod-card__img"
+                ><img
+                  loading="lazy"
+                  decoding="async"
+                  src="Images/Daawat_Basmati_Rice.svg"
+                  alt="Daawat Basmati Rice"
+              /></span>
+              <div class="prod-card__body">
+                <h3 class="prod-card__name">Daawat Basmati Rice</h3>
+                <p class="prod-card__price">&#8377;1,450<span>/ Bag</span></p>
+                <p class="prod-card__moq">MOQ 25 Bag</p>
+                <p class="prod-card__seller">Shree Ram Traders</p>
+                <button
+                  type="button"
+                  class="btn btn--primary prod-card__btn js-toast"
+                  data-toast="Inquiry sent for Daawat Basmati Rice"
+                >
+                  Send Inquiry
+                </button>
+              </div>
+            </article>
+
+            <article class="prod-card">
+              <span class="prod-card__img"
+                ><img
+                  loading="lazy"
+                  decoding="async"
+                  src="Images/Fortune_Sunflower_Oil.svg"
+                  alt="Fortune Sunflower Oil 1L"
+              /></span>
+              <div class="prod-card__body">
+                <h3 class="prod-card__name">Fortune Sunflower Oil 1L</h3>
+                <p class="prod-card__price">&#8377;135<span>/ Bottle</span></p>
+                <p class="prod-card__moq">MOQ 50 Bottle</p>
+                <p class="prod-card__seller">Maa Laxmi Suppliers</p>
+                <button
+                  type="button"
+                  class="btn btn--primary prod-card__btn js-toast"
+                  data-toast="Inquiry sent for Fortune Sunflower Oil 1L"
+                >
+                  Send Inquiry
+                </button>
+              </div>
+            </article>
+
+            <article class="prod-card">
+              <span class="prod-card__img"
+                ><img
+                  loading="lazy"
+                  decoding="async"
+                  src="Images/Tata_Tea_Premium_1kg.svg"
+                  alt="Tata Tea Premium 1kg"
+              /></span>
+              <div class="prod-card__body">
+                <h3 class="prod-card__name">Tata Tea Premium 1kg</h3>
+                <p class="prod-card__price">&#8377;210<span>/ Pack</span></p>
+                <p class="prod-card__moq">MOQ 20 Pack</p>
+                <p class="prod-card__seller">Gupta Enterprises</p>
+                <button
+                  type="button"
+                  class="btn btn--primary prod-card__btn js-toast"
+                  data-toast="Inquiry sent for Tata Tea Premium 1kg"
+                >
+                  Send Inquiry
+                </button>
+              </div>
+            </article>
+
+            <article class="prod-card">
+              <span class="prod-card__img"
+                ><img
+                  loading="lazy"
+                  decoding="async"
+                  src="Images/Amul_Taaza_Milk.svg"
+                  alt="Amul Taaza Milk 1L"
+              /></span>
+              <div class="prod-card__body">
+                <h3 class="prod-card__name">Amul Taaza Milk 1L</h3>
+                <p class="prod-card__price">&#8377;65<span>/ Pack</span></p>
+                <p class="prod-card__moq">MOQ 100 Pack</p>
+                <p class="prod-card__seller">Patel Kirana Mart</p>
+                <button
+                  type="button"
+                  class="btn btn--primary prod-card__btn js-toast"
+                  data-toast="Inquiry sent for Amul Taaza Milk 1L"
+                >
+                  Send Inquiry
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== BUSINESS GROWTH SERVICES ==================== -->
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Business Growth Services</h2>
+          </div>
+          <div class="grid grid--svc reveal">
+            <a href="#" class="svc-card"
+              ><img
+                src="Images/Business_Growth_Services.svg"
+                alt=""
+                width="24"
+                height="24"
+              /><span class="svc-card__name">GST Services</span
+              ><span class="svc-card__sub">Expert GST solutions</span></a
+            >
+            <a href="#" class="svc-card"
+              ><img
+                src="Images/Business_Growth_Services.svg"
+                alt=""
+                width="24"
+                height="24"
+              /><span class="svc-card__name">Transport</span
+              ><span class="svc-card__sub">Reliable transport</span></a
+            >
+            <a href="#" class="svc-card"
+              ><img
+                src="Images/Business_Growth_Services.svg"
+                alt=""
+                width="24"
+                height="24"
+              /><span class="svc-card__name">Warehouse</span
+              ><span class="svc-card__sub">Secure storage</span></a
+            >
+            <a href="#" class="svc-card"
+              ><img
+                src="Images/Business_Growth_Services.svg"
+                alt=""
+                width="24"
+                height="24"
+              /><span class="svc-card__name">Digital Marketing</span
+              ><span class="svc-card__sub">Grow your business</span></a
+            >
+            <a href="#" class="svc-card"
+              ><img
+                src="Images/Business_Growth_Services.svg"
+                alt=""
+                width="24"
+                height="24"
+              /><span class="svc-card__name">Finance</span
+              ><span class="svc-card__sub">Business loans</span></a
+            >
+            <a href="#" class="svc-card"
+              ><img
+                src="Images/Business_Growth_Services.svg"
+                alt=""
+                width="24"
+                height="24"
+              /><span class="svc-card__name">Export Support</span
+              ><span class="svc-card__sub">Global trade</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== WHY BUSINESSES TRUST US ==================== -->
+      <section class="section" id="trust">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Why Businesses Trust Us</h2>
+          </div>
+          <div class="grid grid--trust reveal">
+            <div class="trust-card">
+              <span class="trust-card__icon"
+                ><img src="Images/Register.svg" alt="" width="20" height="20"
+              /></span>
+              <h3>Register</h3>
+              <p>Create your account</p>
+            </div>
+            <div class="trust-card">
+              <span class="trust-card__icon"
+                ><img
+                  src="Images/Verification.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+              /></span>
+              <h3>Verification</h3>
+              <p>We verify your details</p>
+            </div>
+            <div class="trust-card">
+              <span class="trust-card__icon"
+                ><img src="Images/Get_Listed.svg" alt="" width="20" height="20"
+              /></span>
+              <h3>Get Listed</h3>
+              <p>List your business</p>
+            </div>
+            <div class="trust-card">
+              <span class="trust-card__icon"
+                ><img
+                  src="Images/Receive_Inquiries.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+              /></span>
+              <h3>Receive Inquiries</h3>
+              <p>Get genuine inquiries</p>
+            </div>
+            <div class="trust-card">
+              <span class="trust-card__icon"
+                ><img
+                  src="Images/Grow_Business.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+              /></span>
+              <h3>Grow Business</h3>
+              <p>Expand your reach</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== LIVE STATISTICS ==================== -->
+      <section class="live" id="live">
+        <div class="container">
+          <h2 class="live__title">Live Statistics</h2>
+          <div class="grid grid--live reveal">
+            <div class="live-card">
+              <img
+                src="Images/Businesses.svg"
+                alt=""
+                width="28"
+                height="28"
+              /><strong data-count="25000" data-suffix="+">25,000+</strong
+              ><span>Businesses</span>
+            </div>
+            <div class="live-card">
+              <img
+                src="Images/Products_white_icon.svg"
+                alt=""
+                width="28"
+                height="28"
+              /><strong data-count="10" data-suffix=" Lakh+">10 Lakh+</strong
+              ><span>Products</span>
+            </div>
+            <div class="live-card">
+              <img
+                src="Images/location_live.svg"
+                alt=""
+                width="28"
+                height="28"
+              /><strong data-count="650" data-suffix="+">650+</strong
+              ><span>Cities</span>
+            </div>
+            <div class="live-card">
+              <img
+                src="Images/Monthly_Visits.svg"
+                alt=""
+                width="28"
+                height="28"
+              /><strong data-count="5" data-suffix=" Million+"
+                >5 Million+</strong
+              ><span>Monthly Visits</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== SUCCESS STORIES ==================== -->
+      <section class="section" id="stories">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Success Stories</h2>
+            <a href="#" class="section__link">View all stories</a>
+          </div>
+          <div class="grid grid--story reveal">
+            <article class="story-card">
+              <div class="story-card__head">
+                <span class="avatar">R</span>
+                <div>
+                  <h3>Ramesh Patel</h3>
+                  <p>Patel Traders, Rajkot</p>
+                </div>
+              </div>
+              <blockquote>
+                &ldquo;We got 300% more inquiries after listing our business.
+                Highly recommended!&rdquo;
+              </blockquote>
+              <p class="story-card__growth">
+                <img
+                  src="Images/Growth_Icon.svg"
+                  alt=""
+                  width="16"
+                  height="16"
+                />Growth: 300%
+              </p>
+            </article>
+            <article class="story-card">
+              <div class="story-card__head">
+                <span class="avatar">A</span>
+                <div>
+                  <h3>Amit Sharma</h3>
+                  <p>Sharma Enterprises, Indore</p>
+                </div>
+              </div>
+              <blockquote>
+                &ldquo;This platform helped us connect with genuine buyers
+                across India.&rdquo;
+              </blockquote>
+              <p class="story-card__growth">
+                <img
+                  src="Images/Growth_Icon.svg"
+                  alt=""
+                  width="16"
+                  height="16"
+                />Growth: 250%
+              </p>
+            </article>
+            <article class="story-card">
+              <div class="story-card__head">
+                <span class="avatar">V</span>
+                <div>
+                  <h3>Vikram Singh</h3>
+                  <p>Singh Trading Co., Delhi</p>
+                </div>
+              </div>
+              <blockquote>
+                &ldquo;Best business directory for the Kirana industry. Very
+                helpful!&rdquo;
+              </blockquote>
+              <p class="story-card__growth">
+                <img
+                  src="Images/Growth_Icon.svg"
+                  alt=""
+                  width="16"
+                  height="16"
+                />Growth: 200%
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== RESOURCES ==================== -->
+      <section class="section section--last" id="resources">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Resources</h2>
+            <a href="#" class="section__link">View all resources</a>
+          </div>
+          <div class="grid grid--res reveal">
+            <a href="#" class="res-card"
+              ><img
+                src="Images/Industry_News.svg"
+                alt=""
+                width="24"
+                height="24"
+              /><span class="res-card__name">Industry News</span
+              ><span class="res-card__sub">Latest market updates</span></a
+            >
+            <a href="#" class="res-card"
+              ><img
+                src="Images/Business_Guides.svg"
+                alt=""
+                width="24"
+                height="24"
+              /><span class="res-card__name">Business Guides</span
+              ><span class="res-card__sub">Grow your business</span></a
+            >
+            <a href="#" class="res-card"
+              ><img
+                src="Images/Government_Schemes.svg"
+                alt=""
+                width="24"
+                height="24"
+              /><span class="res-card__name">Government Schemes</span
+              ><span class="res-card__sub">Latest schemes</span></a
+            >
+            <a href="#" class="res-card"
+              ><img
+                src="Images/Market_Trends.svg"
+                alt=""
+                width="24"
+                height="24"
+              /><span class="res-card__name">Market Trends</span
+              ><span class="res-card__sub">Industry insights</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== CTA ==================== -->
+      <section class="cta">
+        <div class="container cta__inner">
+          <div class="cta__copy">
+            <h2 class="cta__title">Ready to Grow Your Business?</h2>
+            <p class="cta__text">
+              Join thousands of successful businesses today.
+            </p>
+          </div>
+          <div class="cta__actions">
+            <a href="#" class="btn btn--white">Register Today</a>
+            <a href="#" class="btn btn--outline-light">Post Requirement</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <a href="#" class="brand brand--light">
+            <span class="brand__mark brand__mark--light">K</span>
+            <span class="brand__text">
+              <span class="brand__name">Kirana</span>
+              <span class="brand__sub">Business Directory</span>
+            </span>
+          </a>
+          <p class="footer__about">
+            India's most trusted platform to connect buyers with verified Kirana
+            businesses.
+          </p>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook"
+              ><img src="Images/facebook.svg" alt="" width="16" height="16"
+            /></a>
+            <a href="#" aria-label="Twitter"
+              ><img src="Images/twitter.svg" alt="" width="16" height="16"
+            /></a>
+            <a href="#" aria-label="Instagram"
+              ><img src="Images/instagram.svg" alt="" width="16" height="16"
+            /></a>
+            <a href="#" aria-label="LinkedIn"
+              ><img src="Images/linkdin.svg" alt="" width="16" height="16"
+            /></a>
+            <a href="#" aria-label="YouTube"
+              ><img src="Images/you_tube.svg" alt="" width="16" height="16"
+            /></a>
+          </div>
+        </div>
+
+        <nav class="footer__col">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Press &amp; Media</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col">
+          <h3>Products</h3>
+          <ul>
+            <li><a href="#">All Products</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">New Products</a></li>
+            <li><a href="#">Popular Products</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col">
+          <h3>Suppliers</h3>
+          <ul>
+            <li><a href="#">All Suppliers</a></li>
+            <li><a href="#">Top Suppliers</a></li>
+            <li><a href="#">Verified</a></li>
+            <li><a href="#">Registration</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Guides</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Events</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="container footer__bottom-inner">
+          <p>
+            &copy; <span id="year">2026</span> Kirana Business Directory. All
+            Rights Reserved.
+          </p>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
