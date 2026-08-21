@@ -1,0 +1,1476 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MobiStore — Smart Choice · Best Price</title>
+    <meta
+      name="description"
+      content="Buy the latest smartphones, accessories and smart gadgets with best offers, exchange discounts and no-cost EMI."
+    />
+    <link rel="icon" href="Images/mobile.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ================= TOP BAR ================= -->
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <div class="topbar__left">
+          <a href="tel:+919876543210" class="topbar__item"
+            ><img src="Images/contact.svg" alt="" class="ic-14" /> +91 98765
+            43210</a
+          >
+          <a href="mailto:support@mobistore.in" class="topbar__item"
+            ><img src="Images/support.svg" alt="" class="ic-14" />
+            support@mobistore.in</a
+          >
+        </div>
+        <div class="topbar__right">
+          <a href="#" class="topbar__item">Track Order</a>
+          <a href="#" class="topbar__item">Store Locator</a>
+          <a href="#contact" class="topbar__item">Help &amp; Support</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+      <div class="container header__inner">
+        <a href="#" class="brand">
+          <span class="brand__logo"
+            ><img src="Images/mobile.svg" alt="MobiStore"
+          /></span>
+          <span class="brand__text">
+            <span class="brand__name">MobiStore</span>
+            <span class="brand__tag">Smart Choice · Best Price</span>
+          </span>
+        </a>
+
+        <form class="searchbar" onsubmit="return false;">
+          <button type="button" class="searchbar__cat">All Categories</button>
+          <span class="searchbar__divider"></span>
+          <input
+            type="text"
+            class="searchbar__input"
+            placeholder="Search for mobiles, accessories…"
+            aria-label="Search"
+          />
+          <button type="submit" class="searchbar__btn" aria-label="Search">
+            <img src="Images/search.svg" alt="" />
+          </button>
+        </form>
+
+        <div class="header__actions">
+          <a href="#compare" class="iconbtn"
+            ><img src="Images/Compare.svg" alt="" /><span>Compare</span></a
+          >
+          <a href="#" class="iconbtn"
+            ><img src="Images/Wishlist.svg" alt="" /><span>Wishlist</span></a
+          >
+          <a href="#" class="iconbtn iconbtn--cart">
+            <span class="iconbtn__wrap"
+              ><img src="Images/cart.svg" alt="" /><em
+                class="badge"
+                id="cartCount"
+                >1</em
+              ></span
+            >
+            <span class="is-dark">Cart</span>
+          </a>
+          <button
+            class="navtoggle"
+            id="navToggle"
+            aria-label="Menu"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- ============ NAV ============ -->
+      <nav class="nav" id="mainNav">
+        <div class="container nav__inner">
+          <button class="nav__cats">
+            <img src="Images/Categories.svg" alt="" /> All Categories
+          </button>
+          <ul class="nav__links">
+            <li><a href="#" class="is-active">Home</a></li>
+            <li><a href="#trending">Smartphones</a></li>
+            <li><a href="#accessories">Accessories</a></li>
+            <li><a href="#launches">New Launches</a></li>
+            <li><a href="#deals">Deals</a></li>
+            <li><a href="#exchange">Exchange</a></li>
+            <li><a href="#repair">Repair &amp; Service</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ================= HERO ================= -->
+      <section class="container">
+        <div class="hero">
+          <div class="hero__copy">
+            <span class="pill pill--light">
+              <svg viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path
+                  d="M7.58 1.17 2.33 7.58h4.09l-.58 5.25 5.25-6.41H7l.58-5.25Z"
+                  stroke="#b3e3dc"
+                  stroke-width="1.17"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              New Arrivals
+            </span>
+            <h1 class="hero__title">
+              Upgrade to the<br /><span>Latest<br />Smartphones</span>
+            </h1>
+            <p class="hero__text">
+              Explore premium mobiles from top brands with the best offers,
+              exchange discounts and no-cost EMI options.
+            </p>
+            <div class="hero__actions">
+              <a href="#trending" class="btn btn--primary"
+                >Shop Now <img src="Images/right_icon.svg" alt=""
+              /></a>
+              <a href="#compare" class="btn btn--ghost">Compare Phones</a>
+            </div>
+            <ul class="hero__usp">
+              <li>
+                <img src="Images/down_icon.svg" alt="" /><span
+                  ><b>100% Original</b>Products</span
+                >
+              </li>
+              <li>
+                <img src="Images/down_icon.svg" alt="" /><span
+                  ><b>Official</b>Warranty</span
+                >
+              </li>
+              <li>
+                <img src="Images/down_icon.svg" alt="" /><span
+                  ><b>Easy 7-Day</b>Returns</span
+                >
+              </li>
+              <li>
+                <img src="Images/down_icon.svg" alt="" /><span
+                  ><b>Free &amp; Fast</b>Delivery</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="hero__media">
+            <img
+              class="hero__img"
+              src="Images/Latest_premium_smartphones.svg"
+              alt="Latest premium smartphones"
+            />
+            <div class="hero__off">
+              <small>Up to</small>
+              <strong>20% OFF</strong>
+              <small>Selected models</small>
+            </div>
+            <div class="hero__emi">
+              EMI starting from <span>₹1,249/month</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CATEGORY CIRCLES ================= -->
+      <section class="container">
+        <div class="catstrip">
+          <a href="#" class="catstrip__item"
+            ><span class="catstrip__ring"
+              ><img src="Images/Smartphones.svg" alt="" /></span
+            >Smartphones</a
+          >
+          <a href="#" class="catstrip__item"
+            ><span class="catstrip__ring"
+              ><img src="Images/Smart_Watches.svg" alt="" /></span
+            >Smart Watches</a
+          >
+          <a href="#" class="catstrip__item"
+            ><span class="catstrip__ring"
+              ><img src="Images/Earbuds.svg" alt="" /></span
+            >Earbuds</a
+          >
+          <a href="#" class="catstrip__item"
+            ><span class="catstrip__ring"
+              ><img src="Images/Tablets.svg" alt="" /></span
+            >Tablets</a
+          >
+          <a href="#" class="catstrip__item"
+            ><span class="catstrip__ring"
+              ><img src="Images/Chargers.svg" alt="" /></span
+            >Chargers</a
+          >
+          <a href="#" class="catstrip__item"
+            ><span class="catstrip__ring"
+              ><img src="Images/Power_Banks.svg" alt="" /></span
+            >Power Banks</a
+          >
+          <a href="#" class="catstrip__item"
+            ><span class="catstrip__ring"
+              ><img src="Images/Cameras.svg" alt="" /></span
+            >Cameras</a
+          >
+          <a href="#" class="catstrip__item"
+            ><span class="catstrip__ring"
+              ><img src="Images/Accessories.svg" alt="" /></span
+            >Accessories</a
+          >
+        </div>
+      </section>
+
+      <!-- ================= SHOP BY BRAND ================= -->
+      <section class="section" id="brands">
+        <div class="container">
+          <div class="sechead">
+            <h2 class="h2">Shop by Brand</h2>
+            <a href="#" class="viewall"
+              >View all brands <img src="Images/right_min.svg" alt=""
+            /></a>
+          </div>
+          <div class="brandgrid">
+            <a href="#" class="brandcard"
+              ><img src="Images/Apple.svg" alt="Apple" />
+              <h3>Apple</h3>
+              <span>View Collection →</span></a
+            >
+            <a href="#" class="brandcard"
+              ><img src="Images/Samsung.svg" alt="Samsung" />
+              <h3>Samsung</h3>
+              <span>View Collection →</span></a
+            >
+            <a href="#" class="brandcard"
+              ><img src="Images/OnePlus.svg" alt="OnePlus" />
+              <h3>OnePlus</h3>
+              <span>View Collection →</span></a
+            >
+            <a href="#" class="brandcard"
+              ><img src="Images/Vivo.svg" alt="Vivo" />
+              <h3>Vivo</h3>
+              <span>View Collection →</span></a
+            >
+            <a href="#" class="brandcard"
+              ><img src="Images/Xiaomi.svg" alt="Xiaomi" />
+              <h3>Xiaomi</h3>
+              <span>View Collection →</span></a
+            >
+            <a href="#" class="brandcard"
+              ><img src="Images/realme.svg" alt="realme" />
+              <h3>realme</h3>
+              <span>View Collection →</span></a
+            >
+            <a href="#" class="brandcard"
+              ><img src="Images/OPPO.svg" alt="OPPO" />
+              <h3>OPPO</h3>
+              <span>View Collection →</span></a
+            >
+            <a href="#" class="brandcard"
+              ><img src="Images/Motorola.svg" alt="Motorola" />
+              <h3>Motorola</h3>
+              <span>View Collection →</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= TRENDING ================= -->
+      <section class="section" id="trending">
+        <div class="container">
+          <div class="sechead">
+            <h2 class="h2">Trending Smartphones</h2>
+            <a href="#" class="viewall"
+              >View all <img src="Images/right_min.svg" alt=""
+            /></a>
+          </div>
+          <div class="prodgrid" id="trendingGrid"></div>
+        </div>
+      </section>
+
+      <!-- ================= DEAL OF THE DAY ================= -->
+      <section class="section">
+        <div class="container">
+          <div class="deal">
+            <div class="deal__left">
+              <span class="pill pill--light">Deal of the Day</span>
+              <h3 class="deal__title">Limited Time Offer</h3>
+              <p class="deal__ends">Ends in</p>
+              <div class="countdown" id="countdown">
+                <div class="countdown__box">
+                  <strong data-cd="h">15</strong><small>Hrs</small>
+                </div>
+                <div class="countdown__box">
+                  <strong data-cd="m">32</strong><small>Min</small>
+                </div>
+                <div class="countdown__box">
+                  <strong data-cd="s">45</strong><small>Sec</small>
+                </div>
+              </div>
+            </div>
+            <div class="deal__mid">
+              <span class="deal__brand">Samsung</span>
+              <h4 class="deal__model">Galaxy S23 FE 5G</h4>
+              <p class="deal__spec">8GB · 128GB</p>
+              <p class="deal__price">
+                <strong>₹29,999</strong><s>₹39,999</s
+                ><em class="tag tag--green">25% OFF</em>
+              </p>
+              <a href="#" class="btn btn--primary"
+                >Shop Now <img src="Images/right_icon.svg" alt=""
+              /></a>
+            </div>
+            <div class="deal__media">
+              <img src="Images/Limited_Time_Offer.svg" alt="Galaxy S23 FE 5G" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= USP STRIP ================= -->
+      <section class="section">
+        <div class="container">
+          <div class="uspstrip">
+            <div class="usp">
+              <span class="usp__ic"
+                ><img src="Images/Free_Delivery.svg" alt="" /></span
+              ><span><b>Free Delivery</b><small>On all orders</small></span>
+            </div>
+            <div class="usp">
+              <span class="usp__ic"
+                ><img src="Images/Secure_Payment.svg" alt="" /></span
+              ><span><b>Secure Payment</b><small>100% protected</small></span>
+            </div>
+            <div class="usp">
+              <span class="usp__ic"
+                ><img src="Images/Easy_Returns.svg" alt="" /></span
+              ><span><b>Easy Returns</b><small>7-day returns</small></span>
+            </div>
+            <div class="usp">
+              <span class="usp__ic"
+                ><img src="Images/No_Cost_EMI.svg" alt="" /></span
+              ><span><b>No-Cost EMI</b><small>Easy instalments</small></span>
+            </div>
+            <div class="usp">
+              <span class="usp__ic"
+                ><img src="Images/Official_Warranty.svg" alt="" /></span
+              ><span
+                ><b>Genuine Products</b><small>Brand authorised</small></span
+              >
+            </div>
+            <div class="usp">
+              <span class="usp__ic"
+                ><img src="Images/247_Support.svg" alt="" /></span
+              ><span><b>24/7 Support</b><small>We're here to help</small></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= EXCHANGE + EMI ================= -->
+      <section class="section">
+        <div class="container">
+          <div class="duo">
+            <div class="promo promo--mint">
+              <h3 class="h3">Exchange Your Old Phone</h3>
+              <p class="promo__text">
+                Get the best value for your old smartphone in a hassle-free
+                process.
+              </p>
+              <ul class="checklist">
+                <li>
+                  <img src="Images/down_icon_green.svg" alt="" />Instant
+                  valuation
+                </li>
+                <li>
+                  <img src="Images/down_icon_green.svg" alt="" />Best exchange
+                  price
+                </li>
+                <li>
+                  <img src="Images/down_icon_green.svg" alt="" />Doorstep pickup
+                </li>
+              </ul>
+              <a href="#exchange" class="btn btn--primary"
+                >Exchange Now <img src="Images/right_icon.svg" alt=""
+              /></a>
+              <img
+                class="promo__img"
+                src="Images/Exchange_Your_Old_Phone.svg"
+                alt=""
+              />
+            </div>
+            <div class="promo promo--cream">
+              <h3 class="h3">No-Cost EMI</h3>
+              <p class="promo__text">
+                Easy EMI options on credit &amp; debit cards from all major
+                banks.
+              </p>
+              <ul class="checklist">
+                <li>
+                  <img src="Images/down_icon_green.svg" alt="" />0% interest
+                </li>
+                <li>
+                  <img src="Images/down_icon_green.svg" alt="" />Tenure up to 24
+                  months
+                </li>
+                <li>
+                  <img src="Images/down_icon_green.svg" alt="" />Instant
+                  approval
+                </li>
+              </ul>
+              <a href="#emi" class="btn btn--orange"
+                >View EMI Options <img src="Images/right_black_icon.svg" alt=""
+              /></a>
+              <img
+                class="promo__img"
+                src="Images/No_Cost_EMI_main.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= TODAY'S BEST DEALS ================= -->
+      <section class="section" id="deals">
+        <div class="container">
+          <div class="sechead">
+            <h2 class="h2">Today's Best Deals</h2>
+            <a href="#" class="viewall"
+              >View all offers <img src="Images/right_min.svg" alt=""
+            /></a>
+          </div>
+          <div class="dealgrid">
+            <div class="dealcard">
+              <span class="dealcard__ic bg-orange"
+                ><img src="Images/Flash_Sale.svg" alt=""
+              /></span>
+              <div>
+                <h3>Flash Sale <em class="chip">Ends in 6h</em></h3>
+                <p>Up to 40% off on select models</p>
+              </div>
+            </div>
+            <div class="dealcard">
+              <span class="dealcard__ic bg-teal"
+                ><img src="Images/Limited_Stock.svg" alt=""
+              /></span>
+              <div>
+                <h3>Limited Stock <em class="chip">Hurry</em></h3>
+                <p>Hot deals while stocks last</p>
+              </div>
+            </div>
+            <div class="dealcard">
+              <span class="dealcard__ic bg-green"
+                ><img src="Images/Special_Offers.svg" alt=""
+              /></span>
+              <div>
+                <h3>Special Offers <em class="chip">New</em></h3>
+                <p>Freebies with every purchase</p>
+              </div>
+            </div>
+            <div class="dealcard">
+              <span class="dealcard__ic bg-dark"
+                ><img src="Images/Coupon_Codes.svg" alt=""
+              /></span>
+              <div>
+                <h3>
+                  Coupon Codes
+                  <em class="chip chip--copy" data-code="SAVE2K">Copy</em>
+                </h3>
+                <p>Extra ₹2000 off — code SAVE2K</p>
+              </div>
+            </div>
+            <div class="dealcard">
+              <span class="dealcard__ic bg-teal"
+                ><img src="Images/Bank_Offers.svg" alt=""
+              /></span>
+              <div>
+                <h3>Bank Offers <em class="chip">Instant</em></h3>
+                <p>10% instant discount on HDFC / ICICI</p>
+              </div>
+            </div>
+            <div class="dealcard">
+              <span class="dealcard__ic bg-green"
+                ><img src="Images/Combo_Discount.svg" alt=""
+              /></span>
+              <div>
+                <h3>Combo Discount <em class="chip">Bundle</em></h3>
+                <p>Buy phone + accessory, save more</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= COMPARE ================= -->
+      <section class="section" id="compare">
+        <div class="container">
+          <div class="sechead">
+            <h2 class="h2">Compare Phones</h2>
+            <a href="#" class="viewall"
+              >Open full compare <img src="Images/right_min.svg" alt=""
+            /></a>
+          </div>
+          <div class="comparecard">
+            <div class="table-wrap">
+              <table class="ctable">
+                <thead>
+                  <tr>
+                    <th>Spec</th>
+                    <th>iPhone 15 Pro</th>
+                    <th>Galaxy S24 Ultra</th>
+                    <th>OnePlus 12</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Camera</td>
+                    <td>48 MP Triple</td>
+                    <td>200 MP Quad</td>
+                    <td>50 MP Triple</td>
+                  </tr>
+                  <tr>
+                    <td>Display</td>
+                    <td>6.1" OLED 120Hz</td>
+                    <td>6.8" AMOLED 120Hz</td>
+                    <td>6.82" LTPO 120Hz</td>
+                  </tr>
+                  <tr>
+                    <td>Processor</td>
+                    <td>A17 Pro</td>
+                    <td>Snapdragon 8 Gen 3</td>
+                    <td>Snapdragon 8 Gen 3</td>
+                  </tr>
+                  <tr>
+                    <td>RAM</td>
+                    <td>8 GB</td>
+                    <td>12 GB</td>
+                    <td>16 GB</td>
+                  </tr>
+                  <tr>
+                    <td>Storage</td>
+                    <td>256 GB</td>
+                    <td>256 GB</td>
+                    <td>256 GB</td>
+                  </tr>
+                  <tr>
+                    <td>Battery</td>
+                    <td>3274 mAh</td>
+                    <td>5000 mAh</td>
+                    <td>5400 mAh</td>
+                  </tr>
+                  <tr>
+                    <td>Charging</td>
+                    <td>20W</td>
+                    <td>45W</td>
+                    <td>100W SuperVOOC</td>
+                  </tr>
+                  <tr>
+                    <td>Price</td>
+                    <td>₹1,34,900</td>
+                    <td>₹1,29,999</td>
+                    <td>₹64,999</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="comparecard__foot">
+              <p>Compare up to 4 phones side-by-side.</p>
+              <a href="#" class="btn btn--primary"
+                ><img src="Images/Compare_Now.svg" alt="" /> Compare Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= WHY CHOOSE ================= -->
+      <section class="section">
+        <div class="container">
+          <div class="sechead sechead--center">
+            <h2 class="h2">Why Choose MobiStore</h2>
+            <p class="sechead__sub">
+              Trusted by 2 lakh+ happy customers across India.
+            </p>
+          </div>
+          <div class="whygrid">
+            <div class="whycard">
+              <span class="whycard__ic"
+                ><img src="Images/Official_Warranty.svg" alt=""
+              /></span>
+              <h3>Genuine Products</h3>
+            </div>
+            <div class="whycard">
+              <span class="whycard__ic"
+                ><img src="Images/Secure_Payment.svg" alt=""
+              /></span>
+              <h3>Official Warranty</h3>
+            </div>
+            <div class="whycard">
+              <span class="whycard__ic"
+                ><img src="Images/Free_Delivery.svg" alt=""
+              /></span>
+              <h3>Same Day Delivery</h3>
+            </div>
+            <div class="whycard">
+              <span class="whycard__ic"
+                ><img src="Images/Easy_Returns.svg" alt=""
+              /></span>
+              <h3>Easy Returns</h3>
+            </div>
+            <div class="whycard">
+              <span class="whycard__ic"
+                ><img src="Images/No_Cost_EMI.svg" alt=""
+              /></span>
+              <h3>EMI Available</h3>
+            </div>
+            <div class="whycard">
+              <span class="whycard__ic"
+                ><img src="Images/Data_Transfer.svg" alt=""
+              /></span>
+              <h3>Exchange Offer</h3>
+            </div>
+            <div class="whycard">
+              <span class="whycard__ic"
+                ><img src="Images/Lowest_Price.svg" alt=""
+              /></span>
+              <h3>Lowest Price</h3>
+            </div>
+            <div class="whycard">
+              <span class="whycard__ic"
+                ><img src="Images/Secure_Payment.svg" alt=""
+              /></span>
+              <h3>Secure Payment</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= LATEST LAUNCHES ================= -->
+      <section class="section" id="launches">
+        <div class="container">
+          <div class="sechead">
+            <h2 class="h2">Latest Launches</h2>
+            <a href="#" class="viewall"
+              >View all new arrivals <img src="Images/right_min.svg" alt=""
+            /></a>
+          </div>
+          <div class="filterrow" id="filterRow">
+            <button class="filter is-active" data-brand="all">All</button>
+            <button class="filter" data-brand="iPhone">iPhone</button>
+            <button class="filter" data-brand="Samsung">Samsung</button>
+            <button class="filter" data-brand="Vivo">Vivo</button>
+            <button class="filter" data-brand="OnePlus">OnePlus</button>
+            <button class="filter" data-brand="Nothing">Nothing</button>
+            <button class="filter" data-brand="Motorola">Motorola</button>
+          </div>
+          <div class="prodgrid" id="launchGrid"></div>
+          <p class="emptynote" id="emptyNote" hidden>
+            No products found for this brand yet — check back soon.
+          </p>
+        </div>
+      </section>
+
+      <!-- ================= ACCESSORIES ================= -->
+      <section class="section" id="accessories">
+        <div class="container">
+          <div class="sechead">
+            <h2 class="h2">Accessories Collection</h2>
+            <a href="#" class="viewall"
+              >Shop all accessories <img src="Images/right_min.svg" alt=""
+            /></a>
+          </div>
+          <div class="accgrid">
+            <a href="#" class="acccard"
+              ><span class="acccard__ic"
+                ><img src="Images/mobile.svg" alt="" class="ic-teal" /></span
+              ><span
+                ><b>Cases &amp; Covers</b><small>Shop now →</small></span
+              ></a
+            >
+            <a href="#" class="acccard"
+              ><span class="acccard__ic"
+                ><img src="Images/Secure_Payment.svg" alt="" /></span
+              ><span><b>Screen Guards</b><small>Shop now →</small></span></a
+            >
+            <a href="#" class="acccard"
+              ><span class="acccard__ic"
+                ><img src="Images/247_Support.svg" alt="" /></span
+              ><span><b>Earbuds</b><small>Shop now →</small></span></a
+            >
+            <a href="#" class="acccard"
+              ><span class="acccard__ic"
+                ><img src="Images/Data_Transfer.svg" alt="" /></span
+              ><span
+                ><b>Chargers &amp; Cables</b><small>Shop now →</small></span
+              ></a
+            >
+            <a href="#" class="acccard"
+              ><span class="acccard__ic"
+                ><img src="Images/Smart_Watche.svg" alt="" /></span
+              ><span><b>Smart Watches</b><small>Shop now →</small></span></a
+            >
+            <a href="#" class="acccard"
+              ><span class="acccard__ic"
+                ><img src="Images/Power_Bank.svg" alt="" /></span
+              ><span><b>Power Banks</b><small>Shop now →</small></span></a
+            >
+            <a href="#" class="acccard"
+              ><span class="acccard__ic"
+                ><img src="Images/Repair_Booking.svg" alt="" /></span
+              ><span
+                ><b>Bluetooth Speakers</b><small>Shop now →</small></span
+              ></a
+            >
+            <a href="#" class="acccard"
+              ><span class="acccard__ic"
+                ><img src="Images/camera.svg" alt="" /></span
+              ><span><b>Camera Gimbals</b><small>Shop now →</small></span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= FEATURED BRANDS ================= -->
+      <section class="section">
+        <div class="container">
+          <div class="featured">
+            <div class="featured__head">
+              <div>
+                <h3 class="h3">Featured Brands</h3>
+                <p>Handpicked collections from the world's top brands.</p>
+              </div>
+              <a href="#brands" class="viewall">Explore all →</a>
+            </div>
+            <div class="featured__row">
+              <a href="#">Apple</a><a href="#">Samsung</a><a href="#">OnePlus</a
+              ><a href="#">Xiaomi</a> <a href="#">Oppo</a><a href="#">Realme</a
+              ><a href="#">Google Pixel</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= TESTIMONIALS ================= -->
+      <section class="section">
+        <div class="container">
+          <div class="sechead sechead--center">
+            <h2 class="h2">What Our Customers Say</h2>
+            <p class="sechead__sub">
+              4.8/5 average rating from 25,000+ verified reviews.
+            </p>
+          </div>
+          <div class="revgrid">
+            <article class="revcard">
+              <img
+                class="revcard__quote"
+                src="Images/customer_only.svg"
+                alt=""
+              />
+              <div class="stars">
+                <img src="Images/star_yellow.svg" alt="" /><img
+                  src="Images/star_yellow.svg"
+                  alt=""
+                /><img src="Images/star_yellow.svg" alt="" /><img
+                  src="Images/star_yellow.svg"
+                  alt=""
+                /><img src="Images/star_yellow.svg" alt="" />
+              </div>
+              <p class="revcard__text">
+                "Genuine product, super fast delivery. Exchange price was the
+                best I got anywhere."
+              </p>
+              <footer class="revcard__foot">
+                <span class="avatar">RS</span>
+                <span
+                  ><b>Rahul Sharma</b
+                  ><small
+                    ><img
+                      src="Images/down_icon_green.svg"
+                      alt=""
+                      class="ic-12"
+                    />
+                    Verified · iPhone 15 Pro</small
+                  ></span
+                >
+              </footer>
+            </article>
+            <article class="revcard">
+              <img
+                class="revcard__quote"
+                src="Images/customer_only.svg"
+                alt=""
+              />
+              <div class="stars">
+                <img src="Images/star_yellow.svg" alt="" /><img
+                  src="Images/star_yellow.svg"
+                  alt=""
+                /><img src="Images/star_yellow.svg" alt="" /><img
+                  src="Images/star_yellow.svg"
+                  alt=""
+                /><img src="Images/star_yellow.svg" alt="" />
+              </div>
+              <p class="revcard__text">
+                "Loved the packaging and the No-Cost EMI made it so affordable.
+                Highly recommend!"
+              </p>
+              <footer class="revcard__foot">
+                <span class="avatar">PP</span>
+                <span
+                  ><b>Priya Patel</b
+                  ><small
+                    ><img
+                      src="Images/down_icon_green.svg"
+                      alt=""
+                      class="ic-12"
+                    />
+                    Verified · Galaxy S24 Ultra</small
+                  ></span
+                >
+              </footer>
+            </article>
+            <article class="revcard">
+              <img
+                class="revcard__quote"
+                src="Images/customer_only.svg"
+                alt=""
+              />
+              <div class="stars">
+                <img src="Images/star_yellow.svg" alt="" /><img
+                  src="Images/star_yellow.svg"
+                  alt=""
+                /><img src="Images/star_yellow.svg" alt="" /><img
+                  src="Images/star_yellow.svg"
+                  alt=""
+                /><img src="Images/star_yellow.svg" alt="" />
+              </div>
+              <p class="revcard__text">
+                "Bought in-store — helpful staff, clean billing, GST invoice
+                with warranty. 5 stars."
+              </p>
+              <footer class="revcard__foot">
+                <span class="avatar">AV</span>
+                <span
+                  ><b>Aman Verma</b
+                  ><small
+                    ><img
+                      src="Images/down_icon_green.svg"
+                      alt=""
+                      class="ic-12"
+                    />
+                    Verified · OnePlus 12</small
+                  ></span
+                >
+              </footer>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= TRUST STRIP ================= -->
+      <section class="section">
+        <div class="container">
+          <div class="trust">
+            <div class="trust__item">
+              <img src="Images/Free_Delivery.svg" alt="" /><span
+                >Free Shipping</span
+              >
+            </div>
+            <div class="trust__item">
+              <img src="Images/Secure_Payment.svg" alt="" /><span
+                >Secure Payment</span
+              >
+            </div>
+            <div class="trust__item">
+              <img src="Images/247_Support.svg" alt="" /><span
+                >Instant Support</span
+              >
+            </div>
+            <div class="trust__item">
+              <img src="Images/Easy_Returns.svg" alt="" /><span
+                >Easy Return</span
+              >
+            </div>
+            <div class="trust__item">
+              <img src="Images/Official_Warranty.svg" alt="" /><span
+                >Warranty</span
+              >
+            </div>
+            <div class="trust__item">
+              <img src="Images/Lowest_Price.svg" alt="" /><span
+                >GST Billing</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= EXCHANGE PROGRAMME ================= -->
+      <section class="section" id="exchange">
+        <div class="container">
+          <div class="exchange">
+            <div class="exchange__copy">
+              <span class="pill pill--teal"
+                ><img src="Images/Data_Transfer.svg" alt="" class="ic-14" />
+                Exchange Programme</span
+              >
+              <h3 class="h3">Trade in your old phone. Save big.</h3>
+              <p class="exchange__text">
+                Instant on-screen valuation, guaranteed best price, doorstep
+                pickup — all in three steps.
+              </p>
+              <ol class="steps">
+                <li><span>1</span>Tell us your phone model &amp; condition</li>
+                <li><span>2</span>Get an instant online quote</li>
+                <li><span>3</span>Doorstep pickup &amp; instant discount</li>
+              </ol>
+              <a href="#" class="btn btn--primary"
+                >Exchange Now <img src="Images/right_icon.svg" alt=""
+              /></a>
+            </div>
+            <div class="exchange__panel">
+              <div class="quote">
+                <span class="quote__label">Estimated Value</span>
+                <strong class="quote__value">₹22,500</strong>
+                <p class="quote__meta">iPhone 12 · 128GB · Good condition</p>
+                <ul class="quote__list">
+                  <li>
+                    Best price guarantee
+                    <img src="Images/down_icon_green.svg" alt="" />
+                  </li>
+                  <li>
+                    Free pickup <img src="Images/down_icon_green.svg" alt="" />
+                  </li>
+                  <li>
+                    Instant discount
+                    <img src="Images/down_icon_green.svg" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= EMI & FINANCE ================= -->
+      <section class="section" id="emi">
+        <div class="container">
+          <div class="sechead">
+            <h2 class="h2">EMI &amp; Finance Options</h2>
+            <a href="#" class="viewall"
+              >See all EMI plans <img src="Images/right_min.svg" alt=""
+            /></a>
+          </div>
+          <div class="emigrid">
+            <div class="emicard">
+              <img src="Images/Combo_Discount.svg" alt="" class="ic-32" />
+              <h3>0% Interest EMI</h3>
+              <p>No extra cost on 6–24 month plans</p>
+            </div>
+            <div class="emicard">
+              <img src="Images/No_Cost_EMI.svg" alt="" class="ic-32" />
+              <h3>Credit Card EMI</h3>
+              <p>All major banks supported</p>
+            </div>
+            <div class="emicard">
+              <img src="Images/Bank_Offers.svg" alt="" class="ic-32" />
+              <h3>Debit Card EMI</h3>
+              <p>Instant approval, no paperwork</p>
+            </div>
+            <div class="emicard">
+              <img src="Images/gift_icon.svg" alt="" class="ic-32" />
+              <h3>No-Cost EMI</h3>
+              <p>Pay exactly the sticker price</p>
+            </div>
+            <div class="emicard">
+              <img src="Images/Finance_Available.svg" alt="" class="ic-32" />
+              <h3>Finance Available</h3>
+              <p>Bajaj, HDFC, ICICI &amp; more</p>
+            </div>
+            <div class="emicard">
+              <img src="Images/Instant_Approval.svg" alt="" class="ic-32" />
+              <h3>Instant Approval</h3>
+              <p>2-minute in-store approvals</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= REPAIR & SERVICES ================= -->
+      <section class="section" id="repair">
+        <div class="container">
+          <div class="sechead sechead--center">
+            <h2 class="h2">Mobile Repair &amp; Services</h2>
+            <p class="sechead__sub">
+              Certified technicians · Genuine parts · Quick turnaround.
+            </p>
+          </div>
+          <div class="servgrid">
+            <div class="servcard">
+              <span class="servcard__ic"
+                ><img src="Images/mobile.svg" alt="" class="ic-teal"
+              /></span>
+              <div>
+                <h3>Screen Replacement</h3>
+                <p>Original displays with warranty</p>
+                <a href="#" class="booknow"
+                  >Book now <img src="Images/right_min.svg" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="servcard">
+              <span class="servcard__ic"
+                ><img src="Images/Power_Bank.svg" alt=""
+              /></span>
+              <div>
+                <h3>Battery Replacement</h3>
+                <p>Same-day battery service</p>
+                <a href="#" class="booknow"
+                  >Book now <img src="Images/right_min.svg" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="servcard">
+              <span class="servcard__ic"
+                ><img src="Images/download_green.svg" alt=""
+              /></span>
+              <div>
+                <h3>Software Update</h3>
+                <p>OS updates &amp; troubleshooting</p>
+                <a href="#" class="booknow"
+                  >Book now <img src="Images/right_min.svg" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="servcard">
+              <span class="servcard__ic"
+                ><img src="Images/Data_Transfer.svg" alt=""
+              /></span>
+              <div>
+                <h3>Data Transfer</h3>
+                <p>Safe transfer between devices</p>
+                <a href="#" class="booknow"
+                  >Book now <img src="Images/right_min.svg" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="servcard">
+              <span class="servcard__ic"
+                ><img src="Images/Secure_Payment.svg" alt=""
+              /></span>
+              <div>
+                <h3>Insurance</h3>
+                <p>Damage &amp; theft protection plans</p>
+                <a href="#" class="booknow"
+                  >Book now <img src="Images/right_min.svg" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="servcard">
+              <span class="servcard__ic"
+                ><img src="Images/Repair_Booking.svg" alt=""
+              /></span>
+              <div>
+                <h3>Repair Booking</h3>
+                <p>Book online, walk in, get done</p>
+                <a href="#" class="booknow"
+                  >Book now <img src="Images/right_min.svg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= BUYING GUIDE ================= -->
+      <section class="section">
+        <div class="container">
+          <div class="sechead">
+            <h2 class="h2">Mobile Buying Guide</h2>
+            <a href="#" class="viewall"
+              >Read all articles <img src="Images/right_min.svg" alt=""
+            /></a>
+          </div>
+          <div class="guidegrid">
+            <a href="#" class="guidecard"
+              ><span class="guidecard__ic"
+                ><img src="Images/camera.svg" alt="" /></span
+              ><em>Guide</em>
+              <h3>Best Camera Phones 2026</h3>
+              <p>Top 10 picks for photography lovers.</p>
+              <span class="readmore"
+                >Read more <img src="Images/right_min.svg" alt="" /></span
+            ></a>
+            <a href="#" class="guidecard"
+              ><span class="guidecard__ic"
+                ><img src="Images/Latest_Launches.svg" alt="" /></span
+              ><em>Guide</em>
+              <h3>Best Gaming Phones</h3>
+              <p>High refresh, cooling &amp; processors.</p>
+              <span class="readmore"
+                >Read more <img src="Images/right_min.svg" alt="" /></span
+            ></a>
+            <a href="#" class="guidecard"
+              ><span class="guidecard__ic"
+                ><img src="Images/Lowest_Price.svg" alt="" /></span
+              ><em>Guide</em>
+              <h3>Best Budget Phones</h3>
+              <p>Great value under ₹20,000.</p>
+              <span class="readmore"
+                >Read more <img src="Images/right_min.svg" alt="" /></span
+            ></a>
+            <a href="#" class="guidecard"
+              ><span class="guidecard__ic"
+                ><img src="Images/Power_Bank.svg" alt="" /></span
+              ><em>Guide</em>
+              <h3>Top Battery Phones</h3>
+              <p>5000+ mAh, all-day performance.</p>
+              <span class="readmore"
+                >Read more <img src="Images/right_min.svg" alt="" /></span
+            ></a>
+            <a href="#" class="guidecard"
+              ><span class="guidecard__ic"
+                ><img src="Images/Smart_Watche.svg" alt="" /></span
+              ><em>Guide</em>
+              <h3>Latest Launches</h3>
+              <p>This month's most exciting drops.</p>
+              <span class="readmore"
+                >Read more <img src="Images/right_min.svg" alt="" /></span
+            ></a>
+            <a href="#" class="guidecard"
+              ><span class="guidecard__ic"
+                ><img src="Images/No_Cost_EMI.svg" alt="" /></span
+              ><em>Guide</em>
+              <h3>How to Choose an EMI Plan</h3>
+              <p>Everything you need to know.</p>
+              <span class="readmore"
+                >Read more <img src="Images/right_min.svg" alt="" /></span
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= FAQ ================= -->
+      <section class="section">
+        <div class="container">
+          <div class="sechead sechead--center">
+            <h2 class="h2">Frequently Asked Questions</h2>
+            <p class="sechead__sub">
+              Everything you need to know before buying.
+            </p>
+          </div>
+          <div class="faqgrid" id="faqGrid">
+            <details class="faq">
+              <summary>
+                What is the delivery time?<img
+                  src="Images/right_min.svg"
+                  alt=""
+                  class="faq__chev"
+                />
+              </summary>
+              <p>
+                Metro cities get same-day or next-day delivery. Rest of India
+                ships in 2–4 working days, with free shipping on all prepaid
+                orders.
+              </p>
+            </details>
+            <details class="faq">
+              <summary>
+                Do you provide exchange offers?<img
+                  src="Images/right_min.svg"
+                  alt=""
+                  class="faq__chev"
+                />
+              </summary>
+              <p>
+                Yes. Get an instant on-screen valuation for your old phone, free
+                doorstep pickup, and the exchange value adjusted straight off
+                your bill.
+              </p>
+            </details>
+            <details class="faq">
+              <summary>
+                Do you offer cash on delivery?<img
+                  src="Images/right_min.svg"
+                  alt=""
+                  class="faq__chev"
+                />
+              </summary>
+              <p>
+                COD is available on orders up to ₹50,000 across 19,000+ pin
+                codes. Higher value orders need prepaid payment or EMI.
+              </p>
+            </details>
+            <details class="faq">
+              <summary>
+                Are the products original?<img
+                  src="Images/right_min.svg"
+                  alt=""
+                  class="faq__chev"
+                />
+              </summary>
+              <p>
+                Every device is 100% original, brand-authorised and sealed, and
+                ships with a GST invoice plus full manufacturer warranty.
+              </p>
+            </details>
+            <details class="faq">
+              <summary>
+                What is your return policy?<img
+                  src="Images/right_min.svg"
+                  alt=""
+                  class="faq__chev"
+                />
+              </summary>
+              <p>
+                Easy 7-day returns on unused products in original packaging.
+                Pickup is free and refunds are processed within 4–5 working
+                days.
+              </p>
+            </details>
+            <details class="faq">
+              <summary>
+                How does EMI work?<img
+                  src="Images/right_min.svg"
+                  alt=""
+                  class="faq__chev"
+                />
+              </summary>
+              <p>
+                Choose No-Cost EMI at checkout on credit or debit cards from all
+                major banks, with tenures from 3 to 24 months and instant
+                approval.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= NEWSLETTER ================= -->
+      <section class="section">
+        <div class="container">
+          <div class="newsletter">
+            <div>
+              <h3 class="newsletter__title">
+                Get Exclusive Offers in Your Inbox
+              </h3>
+              <p class="newsletter__text">
+                Latest launches, deals &amp; exclusive offers, straight to you.
+              </p>
+            </div>
+            <form class="newsletter__form" id="newsForm" novalidate>
+              <input
+                type="email"
+                id="newsEmail"
+                placeholder="Enter your email address"
+                aria-label="Email address"
+              />
+              <button type="submit" class="btn btn--primary">Subscribe</button>
+              <span class="newsletter__msg" id="newsMsg"></span>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= APP ================= -->
+      <section class="section">
+        <div class="container">
+          <div class="app">
+            <div class="app__copy">
+              <span class="pill pill--light"
+                ><img src="Images/download.svg" alt="" class="ic-14" />
+                MobiStore App</span
+              >
+              <h3 class="app__title">Shop faster on our app</h3>
+              <p class="app__text">
+                App-only prices, faster checkout, order tracking, and instant
+                support in your pocket.
+              </p>
+              <div class="app__badges">
+                <a href="#" class="storebtn"
+                  ><img src="Images/download.svg" alt="" /><span
+                    ><small>Get it on</small><b>Google Play</b></span
+                  ></a
+                >
+                <a href="#" class="storebtn"
+                  ><img src="Images/download.svg" alt="" /><span
+                    ><small>Download on</small><b>App Store</b></span
+                  ></a
+                >
+              </div>
+            </div>
+            <div class="app__qrwrap">
+              <div class="qr">
+                <img src="Images/scan_and_download.svg" alt="QR code" />
+                <span>Scan to download</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CONTACT ================= -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="sechead sechead--center">
+            <h2 class="h2">Get in Touch</h2>
+            <p class="sechead__sub">
+              We're here to help — reach us any way you prefer.
+            </p>
+          </div>
+          <div class="contact">
+            <div class="contact__cards">
+              <div class="ccard">
+                <span class="ccard__ic"
+                  ><img src="Images/247_Support.svg" alt="" /></span
+                ><span
+                  ><b>Call Us</b><i>+91 98765 43210</i
+                  ><small>Mon–Sun · 10 AM – 8 PM</small></span
+                >
+              </div>
+              <div class="ccard">
+                <span class="ccard__ic"
+                  ><img src="Images/247_Support.svg" alt="" /></span
+                ><span
+                  ><b>WhatsApp</b><i>+91 98765 43210</i
+                  ><small>Instant chat support</small></span
+                >
+              </div>
+              <div class="ccard">
+                <span class="ccard__ic"
+                  ><img src="Images/download_green.svg" alt="" /></span
+                ><span
+                  ><b>Email</b><i>support@mobistore.in</i
+                  ><small>Replies within 4 hrs</small></span
+                >
+              </div>
+              <div class="ccard">
+                <span class="ccard__ic"
+                  ><img src="Images/Repair_Booking.svg" alt="" /></span
+                ><span
+                  ><b>Store Location</b><i>123 Digital Street</i
+                  ><small>Ahmedabad, Gujarat</small></span
+                >
+              </div>
+              <div class="ccard">
+                <span class="ccard__ic"
+                  ><img src="Images/Smart_Watche.svg" alt="" /></span
+                ><span
+                  ><b>Working Hours</b><i>Mon–Sun · 10–8</i
+                  ><small>Public holidays open</small></span
+                >
+              </div>
+              <div class="ccard">
+                <span class="ccard__ic"
+                  ><img src="Images/Easy_Returns.svg" alt="" /></span
+                ><span
+                  ><b>24/7 Helpline</b><i>1800-123-4567</i
+                  ><small>Toll-free across India</small></span
+                >
+              </div>
+            </div>
+            <div class="contact__map">
+              <iframe
+                title="MobiStore store location"
+                loading="lazy"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=72.5500%2C23.0000%2C72.6200%2C23.0600&amp;layer=mapnik"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="container footer__top">
+        <div class="footer__brandcol">
+          <div class="brand brand--footer">
+            <span class="brand__logo"
+              ><img src="Images/mobile.svg" alt=""
+            /></span>
+            <span class="brand__name">MobiStore</span>
+          </div>
+          <p>
+            Your one-stop destination for the latest smartphones, accessories
+            and smart gadgets.
+          </p>
+          <div class="socials">
+            <a href="#" aria-label="Facebook"
+              ><img src="Images/facebook_icon.svg" alt=""
+            /></a>
+            <a href="#" aria-label="Instagram"
+              ><img src="Images/instagram_icon.svg" alt=""
+            /></a>
+            <a href="#" aria-label="Twitter"
+              ><img src="Images/twitter.svg" alt=""
+            /></a>
+            <a href="#" aria-label="YouTube"
+              ><img src="Images/you_tube.svg" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#">Smartphones</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Tablets</a></li>
+            <li><a href="#">Smart Watches</a></li>
+            <li><a href="#">Power Banks</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Returns &amp; Refunds</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Warranty</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Brands</a></li>
+            <li><a href="#">Exchange</a></li>
+            <li><a href="#">Repair Services</a></li>
+            <li><a href="#">EMI</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <div class="container">
+          <div class="footer__barin">
+            <p>© 2026 MobiStore. All Rights Reserved.</p>
+            <div class="pays">
+              <span class="pays__label">We Accept</span>
+              <em>VISA</em><em>MC</em><em>AMEX</em><em>UPI</em><em>PayPal</em
+              ><em>RuPay</em>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button class="totop" id="toTop" aria-label="Back to top">↑</button>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
