@@ -1,0 +1,2301 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxora &ndash; Salon &amp; Spa</title>
+    <meta
+      name="description"
+      content="Luxora Salon &amp; Spa — premium hair, beauty, makeup and spa services by certified professionals, crafted for your perfect look."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#services">Skip to content</a>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="header" id="header">
+      <div class="container header__inner">
+        <a href="#hero" class="brand" aria-label="Luxora Salon and Spa">
+          <span class="brand__mark">
+            <img src="Images/luxora.svg" alt="" width="20" height="20" />
+          </span>
+          <span class="brand__text">
+            <span class="brand__name">Luxora</span>
+            <span class="brand__tag">Salon &amp; Spa</span>
+          </span>
+        </a>
+
+        <nav class="nav" id="nav" aria-label="Primary">
+          <button
+            class="nav__close"
+            id="navClose"
+            type="button"
+            aria-label="Close menu"
+          >
+            <span></span><span></span>
+          </button>
+          <ul class="nav__list">
+            <li><a class="nav__link is-active" href="#hero">Home</a></li>
+            <li><a class="nav__link" href="#services">Services</a></li>
+            <li><a class="nav__link" href="#packages">Packages</a></li>
+            <li><a class="nav__link" href="#gallery">Gallery</a></li>
+            <li><a class="nav__link" href="#experts">Experts</a></li>
+            <li><a class="nav__link" href="#about">About</a></li>
+            <li><a class="nav__link" href="#contact">Contact</a></li>
+          </ul>
+          <a href="#contact" class="btn btn--gold nav__cta">
+            Book Appointment
+            <img src="Images/right_arrow.svg" alt="" width="16" height="16" />
+          </a>
+        </nav>
+
+        <a href="#contact" class="btn btn--gold header__cta">
+          Book Appointment
+          <img src="Images/right_arrow.svg" alt="" width="16" height="16" />
+        </a>
+
+        <button
+          class="hamburger"
+          id="hamburger"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="nav"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+    <div class="nav-backdrop" id="navBackdrop" hidden></div>
+
+    <main>
+      <!-- ==================== HERO ==================== -->
+      <section class="hero" id="hero">
+        <div class="hero__media">
+          <img
+            src="Images/Luxora_salon_main_Img.svg"
+            alt="Luxora salon interior"
+          />
+        </div>
+        <div class="hero__scrim"></div>
+
+        <div class="container container--sm hero__inner">
+          <p class="eyebrow eyebrow--rule reveal">
+            <span class="eyebrow__rule"></span>
+            Beauty That Reflects You
+            <span class="eyebrow__rule"></span>
+          </p>
+
+          <h1 class="hero__title reveal">
+            Look &amp; Feel<br />
+            Your <em class="accent">Absolute<br />Best</em>
+          </h1>
+
+          <p class="hero__lead reveal">
+            Premium hair, beauty, makeup &amp; spa services by certified
+            professionals &mdash; crafted for your perfect look.
+          </p>
+
+          <div class="hero__actions reveal">
+            <a href="#contact" class="btn btn--gold btn--lg">
+              Book Appointment
+              <img src="Images/right_arrow.svg" alt="" width="16" height="16" />
+            </a>
+            <a href="#services" class="btn btn--ghost btn--lg"
+              >Explore Services</a
+            >
+          </div>
+
+          <ul class="hero__stats reveal">
+            <li class="hstat">
+              <span class="hstat__icon"
+                ><img src="Images/person.svg" alt="" width="16" height="16"
+              /></span>
+              <span class="hstat__body">
+                <b class="counter" data-count="10" data-suffix="K+">0</b>
+                <span>Happy<br />Clients</span>
+              </span>
+            </li>
+            <li class="hstat">
+              <span class="hstat__icon"
+                ><img src="Images/star_icon.svg" alt="" width="16" height="16"
+              /></span>
+              <span class="hstat__body">
+                <b>4.9/5</b>
+                <span>Google<br />Rating</span>
+              </span>
+            </li>
+            <li class="hstat">
+              <span class="hstat__icon"
+                ><img src="Images/Years.svg" alt="" width="16" height="16"
+              /></span>
+              <span class="hstat__body">
+                <b class="counter" data-count="10" data-suffix="+">0</b>
+                <span>Years<br />Experience</span>
+              </span>
+            </li>
+            <li class="hstat">
+              <span class="hstat__icon"
+                ><img src="Images/location.svg" alt="" width="16" height="16"
+              /></span>
+              <span class="hstat__body">
+                <b class="counter" data-count="5" data-suffix="+">0</b>
+                <span>Locations</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ==================== STATS STRIP ==================== -->
+      <section class="strip" aria-label="Salon highlights">
+        <div class="container strip__inner">
+          <div class="strip__item reveal">
+            <img src="Images/Happy_Clients.svg" alt="" width="20" height="20" />
+            <div>
+              <b>5,000+</b>
+              <span>Happy Clients</span>
+            </div>
+          </div>
+          <div class="strip__item reveal">
+            <img src="Images/Happy_Clients.svg" alt="" width="20" height="20" />
+            <div>
+              <b>10+</b>
+              <span>Years Experience</span>
+            </div>
+          </div>
+          <div class="strip__item reveal">
+            <img src="Images/Happy_Clients.svg" alt="" width="20" height="20" />
+            <div>
+              <b>20+</b>
+              <span>Certified Stylists</span>
+            </div>
+          </div>
+          <div class="strip__item reveal">
+            <img src="Images/Happy_Clients.svg" alt="" width="20" height="20" />
+            <div>
+              <b>100%</b>
+              <span>Premium Products</span>
+            </div>
+          </div>
+          <div class="strip__item reveal">
+            <img src="Images/Happy_Clients.svg" alt="" width="20" height="20" />
+            <div>
+              <b>Award</b>
+              <span>Winning Salon</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== SERVICES ==================== -->
+      <section class="services section" id="services">
+        <div class="container">
+          <div class="sec-head">
+            <div class="reveal">
+              <p class="eyebrow">Our Services</p>
+              <h2 class="h2">
+                Bespoke rituals for<br /><em class="accent accent--dark"
+                  >every you.</em
+                >
+              </h2>
+            </div>
+            <p class="sec-head__note reveal">
+              Twelve signature services, refined over fourteen years and
+              delivered by a team of certified specialists &mdash; each one
+              designed to feel unhurried and entirely yours.
+            </p>
+          </div>
+
+          <div class="svc-grid">
+            <article class="svc reveal">
+              <span class="svc__icon"
+                ><img src="Images/Hair_Cut.svg" alt="" width="24" height="24"
+              /></span>
+              <span class="svc__num">01</span>
+              <h3 class="svc__title">Hair Cut</h3>
+              <p class="svc__text">Precision cuts, tailored to your face.</p>
+              <a href="#contact" class="link-gold"
+                >Book
+                <img
+                  src="Images/right_arrow_green.svg"
+                  alt=""
+                  width="14"
+                  height="14"
+              /></a>
+            </article>
+
+            <article class="svc reveal">
+              <span class="svc__icon"
+                ><img src="Images/Hair_Color.svg" alt="" width="24" height="24"
+              /></span>
+              <span class="svc__num">02</span>
+              <h3 class="svc__title">Hair Color</h3>
+              <p class="svc__text">Global, balayage &amp; couture tones.</p>
+              <a href="#contact" class="link-gold"
+                >Book
+                <img
+                  src="Images/right_arrow_green.svg"
+                  alt=""
+                  width="14"
+                  height="14"
+              /></a>
+            </article>
+
+            <article class="svc reveal">
+              <span class="svc__icon"
+                ><img
+                  src="Images/Spa_%26_Massage.svg"
+                  alt=""
+                  width="24"
+                  height="24"
+              /></span>
+              <span class="svc__num">03</span>
+              <h3 class="svc__title">Hair Styling</h3>
+              <p class="svc__text">Signature blowouts &amp; occasions.</p>
+              <a href="#contact" class="link-gold"
+                >Book
+                <img
+                  src="Images/right_arrow_green.svg"
+                  alt=""
+                  width="14"
+                  height="14"
+              /></a>
+            </article>
+
+            <article class="svc reveal">
+              <span class="svc__icon"
+                ><img src="Images/Hair_Spa.svg" alt="" width="24" height="24"
+              /></span>
+              <span class="svc__num">04</span>
+              <h3 class="svc__title">Hair Spa</h3>
+              <p class="svc__text">Deep-nourishing rituals for shine.</p>
+              <a href="#contact" class="link-gold"
+                >Book
+                <img
+                  src="Images/right_arrow_green.svg"
+                  alt=""
+                  width="14"
+                  height="14"
+              /></a>
+            </article>
+
+            <article class="svc reveal">
+              <span class="svc__icon"
+                ><img src="Images/Facial.svg" alt="" width="24" height="24"
+              /></span>
+              <span class="svc__num">05</span>
+              <h3 class="svc__title">Facial</h3>
+              <p class="svc__text">Bespoke skincare, glow guaranteed.</p>
+              <a href="#contact" class="link-gold"
+                >Book
+                <img
+                  src="Images/right_arrow_green.svg"
+                  alt=""
+                  width="14"
+                  height="14"
+              /></a>
+            </article>
+
+            <article class="svc reveal">
+              <span class="svc__icon"
+                ><img
+                  src="Images/Skin_Treatment.svg"
+                  alt=""
+                  width="24"
+                  height="24"
+              /></span>
+              <span class="svc__num">06</span>
+              <h3 class="svc__title">Skin Treatment</h3>
+              <p class="svc__text">Advanced clinical dermal care.</p>
+              <a href="#contact" class="link-gold"
+                >Book
+                <img
+                  src="Images/right_arrow_green.svg"
+                  alt=""
+                  width="14"
+                  height="14"
+              /></a>
+            </article>
+
+            <article class="svc reveal">
+              <span class="svc__icon"
+                ><img
+                  src="Images/Bridal_Makeup.svg"
+                  alt=""
+                  width="24"
+                  height="24"
+              /></span>
+              <span class="svc__num">07</span>
+              <h3 class="svc__title">Bridal Makeup</h3>
+              <p class="svc__text">The most important day, perfected.</p>
+              <a href="#contact" class="link-gold"
+                >Book
+                <img
+                  src="Images/right_arrow_green.svg"
+                  alt=""
+                  width="14"
+                  height="14"
+              /></a>
+            </article>
+
+            <article class="svc reveal">
+              <span class="svc__icon"
+                ><img
+                  src="Images/Spa_%26_Massage.svg"
+                  alt=""
+                  width="24"
+                  height="24"
+              /></span>
+              <span class="svc__num">08</span>
+              <h3 class="svc__title">Spa &amp; Massage</h3>
+              <p class="svc__text">Restorative body therapies.</p>
+              <a href="#contact" class="link-gold"
+                >Book
+                <img
+                  src="Images/right_arrow_green.svg"
+                  alt=""
+                  width="14"
+                  height="14"
+              /></a>
+            </article>
+
+            <article class="svc reveal">
+              <span class="svc__icon"
+                ><img src="Images/Nail_Art.svg" alt="" width="24" height="24"
+              /></span>
+              <span class="svc__num">09</span>
+              <h3 class="svc__title">Nail Art</h3>
+              <p class="svc__text">Manicures, pedicures &amp; extensions.</p>
+              <a href="#contact" class="link-gold"
+                >Book
+                <img
+                  src="Images/right_arrow_green.svg"
+                  alt=""
+                  width="14"
+                  height="14"
+              /></a>
+            </article>
+
+            <article class="svc reveal">
+              <span class="svc__icon"
+                ><img src="Images/Waxing.svg" alt="" width="24" height="24"
+              /></span>
+              <span class="svc__num">10</span>
+              <h3 class="svc__title">Waxing</h3>
+              <p class="svc__text">Gentle, precise, always premium.</p>
+              <a href="#contact" class="link-gold"
+                >Book
+                <img
+                  src="Images/right_arrow_green.svg"
+                  alt=""
+                  width="14"
+                  height="14"
+              /></a>
+            </article>
+
+            <article class="svc reveal">
+              <span class="svc__icon"
+                ><img
+                  src="Images/Spa_%26_Massage.svg"
+                  alt=""
+                  width="24"
+                  height="24"
+              /></span>
+              <span class="svc__num">11</span>
+              <h3 class="svc__title">Eyebrows</h3>
+              <p class="svc__text">Threading, shaping &amp; tinting.</p>
+              <a href="#contact" class="link-gold"
+                >Book
+                <img
+                  src="Images/right_arrow_green.svg"
+                  alt=""
+                  width="14"
+                  height="14"
+              /></a>
+            </article>
+
+            <article class="svc reveal">
+              <span class="svc__icon"
+                ><img src="Images/Hair_Spa.svg" alt="" width="24" height="24"
+              /></span>
+              <span class="svc__num">12</span>
+              <h3 class="svc__title">Grooming</h3>
+              <p class="svc__text">Curated for the modern gentleman.</p>
+              <a href="#contact" class="link-gold"
+                >Book
+                <img
+                  src="Images/right_arrow_green.svg"
+                  alt=""
+                  width="14"
+                  height="14"
+              /></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== WHY CHOOSE US ==================== -->
+      <section class="why section" id="about">
+        <div class="container why__inner">
+          <div class="why__media reveal">
+            <img
+              src="Images/Why_Choose_Us.svg"
+              alt="Maison Auré atelier interior"
+            />
+            <div class="badge-glass">
+              <p class="badge-glass__label">Certified</p>
+              <p class="badge-glass__title">
+                L&rsquo;Or&eacute;al Colour<br />Trophy &mdash; Finalist<br />2025
+              </p>
+            </div>
+          </div>
+
+          <div class="why__body">
+            <p class="eyebrow reveal">Why Choose Us</p>
+            <h2 class="h2 reveal">
+              We bring out the<br /><em class="accent accent--dark"
+                >beauty in you.</em
+              >
+            </h2>
+            <p class="why__text reveal">
+              We are meticulous about the details others overlook &mdash; the
+              water temperature at the wash, the music at 6pm, the pause between
+              services. It&rsquo;s how every visit becomes memorable.
+            </p>
+
+            <ul class="ticks reveal">
+              <li>
+                <span class="tick" aria-hidden="true">
+                  <img
+                    src="/Images/right_icon.svg"
+                    alt="right_icon"
+                    width="14"
+                    height="14"
+                  />
+                </span>
+                Certified master artisans
+              </li>
+              <li>
+                <span class="tick" aria-hidden="true">
+                  <img
+                    src="/Images/right_icon.svg"
+                    alt="right_icon"
+                    width="14"
+                    height="14"
+                  /> </span
+                >Personalised consultation
+              </li>
+              <li>
+                <span class="tick" aria-hidden="true">
+                  <img
+                    src="/Images/right_icon.svg"
+                    alt="right_icon"
+                    width="14"
+                    height="14"
+                  /> </span
+                >Only premium products
+              </li>
+              <li>
+                <span class="tick" aria-hidden="true">
+                  <img
+                    src="/Images/right_icon.svg"
+                    alt="right_icon"
+                    width="14"
+                    height="14"
+                  /> </span
+                >Affordable membership plans
+              </li>
+              <li>
+                <span class="tick" aria-hidden="true">
+                  <img
+                    src="/Images/right_icon.svg"
+                    alt="right_icon"
+                    width="14"
+                    height="14"
+                  /> </span
+                >Hygienic, sanitised suites
+              </li>
+              <li>
+                <span class="tick" aria-hidden="true">
+                  <img
+                    src="/Images/right_icon.svg"
+                    alt="right_icon"
+                    width="14"
+                    height="14"
+                  /> </span
+                >Modern equipment &amp; techniques
+              </li>
+            </ul>
+
+            <a href="#journal" class="btn btn--gold btn--xl reveal">
+              Discover Our Story
+              <img src="Images/right_arrow.svg" alt="" width="16" height="16" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== BEFORE &amp; AFTER ==================== -->
+      <section class="ba section section--dark">
+        <div class="container">
+          <p class="eyebrow eyebrow--rule eyebrow--center reveal">
+            <span class="eyebrow__rule"></span>
+            Transformations
+            <span class="eyebrow__rule"></span>
+          </p>
+          <h2 class="h2 h2--center reveal">
+            Before <em class="accent">&amp; After</em>
+          </h2>
+
+          <div class="ba__grid">
+            <div class="ba__viewer reveal" id="baViewer">
+              <img
+                class="ba__after"
+                src="Images/After_transformation.svg"
+                alt="After transformation"
+              />
+              <div class="ba__before" id="baBefore">
+                <div class="ba__before-inner">
+                  <img
+                    src="Images/Before_transformation.svg"
+                    alt="Before transformation"
+                  />
+                </div>
+              </div>
+              <div class="ba__divider" id="baDivider">
+                <button
+                  class="ba__handle"
+                  id="baHandle"
+                  type="button"
+                  aria-label="Drag to compare before and after"
+                >
+                  <svg
+                    viewBox="0 0 28 28"
+                    width="28"
+                    height="28"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M9 19 19 9M11 9h8v8"
+                      fill="none"
+                      stroke="#181818"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <span class="ba__tag ba__tag--before">Before</span>
+              <span class="ba__tag ba__tag--after">After</span>
+            </div>
+
+            <div class="ba__thumbs">
+              <figure class="tile reveal">
+                <img
+                  src="Images/Hair_Revival.svg"
+                  alt="Hair revival transformation"
+                />
+                <figcaption>Hair Revival</figcaption>
+              </figure>
+              <figure class="tile reveal">
+                <img
+                  src="Images/Skin_Glow.svg"
+                  alt="Skin glow transformation"
+                />
+                <figcaption>Skin Glow</figcaption>
+              </figure>
+              <figure class="tile reveal">
+                <img src="Images/Bridal.svg" alt="Bridal transformation" />
+                <figcaption>Bridal</figcaption>
+              </figure>
+              <figure class="tile reveal">
+                <img src="Images/Colour.svg" alt="Colour transformation" />
+                <figcaption>Colour</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== GALLERY ==================== -->
+      <section class="gallery section" id="gallery">
+        <div class="container">
+          <div class="sec-head sec-head--filters">
+            <div class="reveal">
+              <p class="eyebrow">Atelier Gallery</p>
+              <h2 class="h2">
+                A quiet <em class="accent accent--dark">study</em> in beauty.
+              </h2>
+            </div>
+            <div
+              class="filters reveal"
+              role="tablist"
+              aria-label="Gallery filters"
+            >
+              <button
+                class="chip is-active"
+                type="button"
+                data-filter="all"
+                role="tab"
+                aria-selected="true"
+              >
+                All
+              </button>
+              <button
+                class="chip"
+                type="button"
+                data-filter="hair"
+                role="tab"
+                aria-selected="false"
+              >
+                Hair
+              </button>
+              <button
+                class="chip"
+                type="button"
+                data-filter="spa"
+                role="tab"
+                aria-selected="false"
+              >
+                Spa
+              </button>
+              <button
+                class="chip"
+                type="button"
+                data-filter="makeup"
+                role="tab"
+                aria-selected="false"
+              >
+                Makeup
+              </button>
+              <button
+                class="chip"
+                type="button"
+                data-filter="interior"
+                role="tab"
+                aria-selected="false"
+              >
+                Interior
+              </button>
+              <button
+                class="chip"
+                type="button"
+                data-filter="bride"
+                role="tab"
+                aria-selected="false"
+              >
+                Bride
+              </button>
+              <button
+                class="chip"
+                type="button"
+                data-filter="nails"
+                role="tab"
+                aria-selected="false"
+              >
+                Nails
+              </button>
+            </div>
+          </div>
+
+          <div class="mosaic" id="mosaic">
+            <figure class="shot shot--tall" data-cat="hair">
+              <img
+                src="Images/Gallery_img1.svg"
+                alt="Hair styling at Maison Auré"
+              />
+              <figcaption>
+                <span class="shot__cat">Hair</span
+                ><span class="shot__name">Maison Aur&eacute;</span>
+              </figcaption>
+            </figure>
+            <figure class="shot" data-cat="spa">
+              <img src="Images/Gallery_img2.svg" alt="Spa candles and stones" />
+              <figcaption>
+                <span class="shot__cat">Spa</span
+                ><span class="shot__name">Maison Aur&eacute;</span>
+              </figcaption>
+            </figure>
+            <figure class="shot" data-cat="makeup">
+              <img
+                src="Images/Gallery_img4.svg"
+                alt="Makeup session at the vanity mirror"
+              />
+              <figcaption>
+                <span class="shot__cat">Makeup</span
+                ><span class="shot__name">Maison Aur&eacute;</span>
+              </figcaption>
+            </figure>
+            <figure class="shot shot--tall" data-cat="bride">
+              <img src="Images/Gallery_img6.svg" alt="Bridal look" />
+              <figcaption>
+                <span class="shot__cat">Bride</span
+                ><span class="shot__name">Maison Aur&eacute;</span>
+              </figcaption>
+            </figure>
+            <figure class="shot" data-cat="interior">
+              <img src="Images/Gallery_img3.svg" alt="Salon interior" />
+              <figcaption>
+                <span class="shot__cat">Interior</span
+                ><span class="shot__name">Maison Aur&eacute;</span>
+              </figcaption>
+            </figure>
+            <figure class="shot" data-cat="nails">
+              <img src="Images/Gallery_img5.svg" alt="Manicured nails" />
+              <figcaption>
+                <span class="shot__cat">Nails</span
+                ><span class="shot__name">Maison Aur&eacute;</span>
+              </figcaption>
+            </figure>
+            <figure class="shot" data-cat="interior">
+              <img
+                src="Images/Gallery_img7.svg"
+                alt="Premium skincare products"
+              />
+              <figcaption>
+                <span class="shot__cat">Interior</span
+                ><span class="shot__name">Maison Aur&eacute;</span>
+              </figcaption>
+            </figure>
+            <figure class="shot" data-cat="hair">
+              <img src="Images/Gallery_img8.svg" alt="Hair wash ritual" />
+              <figcaption>
+                <span class="shot__cat">Hair</span
+                ><span class="shot__name">Maison Aur&eacute;</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== PACKAGES ==================== -->
+      <section class="packages section" id="packages">
+        <div class="container">
+          <p class="eyebrow eyebrow--rule eyebrow--center reveal">
+            <span class="eyebrow__rule"></span>
+            Popular Packages
+            <span class="eyebrow__rule"></span>
+          </p>
+          <h2 class="h2 h2--center reveal">
+            Signature <em class="accent accent--dark">Experiences</em>
+          </h2>
+
+          <div class="pack-grid">
+            <article class="pack reveal">
+              <div class="pack__media">
+                <img src="Images/Hair_Spa_Package.svg" alt="Hair spa package" />
+              </div>
+              <div class="pack__body">
+                <h3 class="pack__title">Hair Spa Package</h3>
+                <ul class="dots">
+                  <li>Hair Wash</li>
+                  <li>Hair Spa</li>
+                  <li>Blow Dry</li>
+                </ul>
+                <div class="pack__foot">
+                  <div>
+                    <span class="pack__from">Starting at</span>
+                    <span class="pack__price">&#8377;999</span>
+                  </div>
+                  <a href="#contact" class="btn btn--gold btn--sm">Book Now</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="pack pack--featured reveal">
+              <div class="pack__media">
+                <img src="Images/Bridal_Package.svg" alt="Bridal package" />
+                <span class="pill-gold">Most Loved</span>
+              </div>
+              <div class="pack__body">
+                <h3 class="pack__title">Bridal Package</h3>
+                <ul class="dots">
+                  <li>Makeup</li>
+                  <li>Hair Styling</li>
+                  <li>Saree Draping</li>
+                  <li>Nails</li>
+                </ul>
+                <div class="pack__foot">
+                  <div>
+                    <span class="pack__from">Starting at</span>
+                    <span class="pack__price">&#8377;4999</span>
+                  </div>
+                  <a href="#contact" class="btn btn--gold btn--sm">Book Now</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="pack reveal">
+              <div class="pack__media">
+                <img
+                  src="Images/Skin_Glow_Package.svg"
+                  alt="Skin glow package"
+                />
+              </div>
+              <div class="pack__body">
+                <h3 class="pack__title">Skin Glow Package</h3>
+                <ul class="dots">
+                  <li>Cleanup</li>
+                  <li>Facial</li>
+                  <li>Massage</li>
+                </ul>
+                <div class="pack__foot">
+                  <div>
+                    <span class="pack__from">Starting at</span>
+                    <span class="pack__price">&#8377;1499</span>
+                  </div>
+                  <a href="#contact" class="btn btn--gold btn--sm">Book Now</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== EXPERTS ==================== -->
+      <section class="experts section section--dark" id="experts">
+        <div class="container">
+          <div class="sec-head">
+            <div class="reveal">
+              <p class="eyebrow">Meet Our Experts</p>
+              <h2 class="h2">
+                The hands<br /><em class="accent">behind the craft.</em>
+              </h2>
+            </div>
+            <p class="sec-head__note reveal">
+              Each artisan trains for years and continues advanced education
+              every quarter. Meet the specialists who make Maison Aur&eacute;
+              what it is.
+            </p>
+          </div>
+
+          <div class="team-grid">
+            <article class="member reveal">
+              <img src="Images/Anaya_Sharma.svg" alt="Anaya Sharma" />
+              <div class="member__body">
+                <p class="member__role">Hair Specialist</p>
+                <h3 class="member__name">Anaya Sharma</h3>
+                <div class="member__foot">
+                  <span>8+ yrs experience</span>
+                  <span class="member__social">
+                    <a href="#experts" aria-label="Anaya Sharma on Instagram">
+                      <svg
+                        viewBox="0 0 14 14"
+                        width="14"
+                        height="14"
+                        aria-hidden="true"
+                      >
+                        <rect
+                          x="1"
+                          y="1"
+                          width="12"
+                          height="12"
+                          rx="3.5"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.3"
+                        />
+                        <circle
+                          cx="7"
+                          cy="7"
+                          r="2.8"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.3"
+                        />
+                        <circle cx="10.4" cy="3.6" r=".8" fill="currentColor" />
+                      </svg>
+                    </a>
+                    <a href="#contact" aria-label="Message Anaya Sharma">
+                      <svg
+                        viewBox="0 0 14 14"
+                        width="14"
+                        height="14"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M12.4 6.7c0 2.7-2.4 4.9-5.4 4.9-.8 0-1.6-.2-2.3-.5l-3 .9.9-2.7A4.6 4.6 0 0 1 1.6 6.7C1.6 4 4 1.8 7 1.8s5.4 2.2 5.4 4.9Z"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.3"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </article>
+
+            <article class="member reveal">
+              <img src="Images/Pooja_Mehta.svg" alt="Pooja Mehta" />
+              <div class="member__body">
+                <p class="member__role">Makeup Artist</p>
+                <h3 class="member__name">Pooja Mehta</h3>
+                <div class="member__foot">
+                  <span>6+ yrs experience</span>
+                  <span class="member__social">
+                    <a href="#experts" aria-label="Pooja Mehta on Instagram">
+                      <svg
+                        viewBox="0 0 14 14"
+                        width="14"
+                        height="14"
+                        aria-hidden="true"
+                      >
+                        <rect
+                          x="1"
+                          y="1"
+                          width="12"
+                          height="12"
+                          rx="3.5"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.3"
+                        />
+                        <circle
+                          cx="7"
+                          cy="7"
+                          r="2.8"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.3"
+                        />
+                        <circle cx="10.4" cy="3.6" r=".8" fill="currentColor" />
+                      </svg>
+                    </a>
+                    <a href="#contact" aria-label="Message Pooja Mehta">
+                      <svg
+                        viewBox="0 0 14 14"
+                        width="14"
+                        height="14"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M12.4 6.7c0 2.7-2.4 4.9-5.4 4.9-.8 0-1.6-.2-2.3-.5l-3 .9.9-2.7A4.6 4.6 0 0 1 1.6 6.7C1.6 4 4 1.8 7 1.8s5.4 2.2 5.4 4.9Z"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.3"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </article>
+
+            <article class="member reveal">
+              <img src="Images/Ritika_Jain.svg" alt="Ritika Jain" />
+              <div class="member__body">
+                <p class="member__role">Skin Expert</p>
+                <h3 class="member__name">Ritika Jain</h3>
+                <div class="member__foot">
+                  <span>7+ yrs experience</span>
+                  <span class="member__social">
+                    <a href="#experts" aria-label="Ritika Jain on Instagram">
+                      <svg
+                        viewBox="0 0 14 14"
+                        width="14"
+                        height="14"
+                        aria-hidden="true"
+                      >
+                        <rect
+                          x="1"
+                          y="1"
+                          width="12"
+                          height="12"
+                          rx="3.5"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.3"
+                        />
+                        <circle
+                          cx="7"
+                          cy="7"
+                          r="2.8"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.3"
+                        />
+                        <circle cx="10.4" cy="3.6" r=".8" fill="currentColor" />
+                      </svg>
+                    </a>
+                    <a href="#contact" aria-label="Message Ritika Jain">
+                      <svg
+                        viewBox="0 0 14 14"
+                        width="14"
+                        height="14"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M12.4 6.7c0 2.7-2.4 4.9-5.4 4.9-.8 0-1.6-.2-2.3-.5l-3 .9.9-2.7A4.6 4.6 0 0 1 1.6 6.7C1.6 4 4 1.8 7 1.8s5.4 2.2 5.4 4.9Z"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.3"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </article>
+
+            <article class="member reveal">
+              <img src="Images/Aman_Singh.svg" alt="Aman Singh" />
+              <div class="member__body">
+                <p class="member__role">Master Stylist</p>
+                <h3 class="member__name">Aman Singh</h3>
+                <div class="member__foot">
+                  <span>9+ yrs experience</span>
+                  <span class="member__social">
+                    <a href="#experts" aria-label="Aman Singh on Instagram">
+                      <svg
+                        viewBox="0 0 14 14"
+                        width="14"
+                        height="14"
+                        aria-hidden="true"
+                      >
+                        <rect
+                          x="1"
+                          y="1"
+                          width="12"
+                          height="12"
+                          rx="3.5"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.3"
+                        />
+                        <circle
+                          cx="7"
+                          cy="7"
+                          r="2.8"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.3"
+                        />
+                        <circle cx="10.4" cy="3.6" r=".8" fill="currentColor" />
+                      </svg>
+                    </a>
+                    <a href="#contact" aria-label="Message Aman Singh">
+                      <svg
+                        viewBox="0 0 14 14"
+                        width="14"
+                        height="14"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M12.4 6.7c0 2.7-2.4 4.9-5.4 4.9-.8 0-1.6-.2-2.3-.5l-3 .9.9-2.7A4.6 4.6 0 0 1 1.6 6.7C1.6 4 4 1.8 7 1.8s5.4 2.2 5.4 4.9Z"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.3"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TOUR ==================== -->
+      <section class="tour section">
+        <div class="container">
+          <div class="tour__box reveal">
+            <img
+              class="tour__img"
+              src="Images/Salon_tour.svg"
+              alt="Inside the Luxora atelier"
+            />
+            <div class="tour__scrim"></div>
+            <div class="tour__content">
+              <button
+                class="play"
+                id="playTour"
+                type="button"
+                aria-label="Play the salon tour"
+              >
+                <img src="Images/play_icon.svg" alt="" width="32" height="32" />
+              </button>
+              <p class="eyebrow eyebrow--light">A 90-second tour</p>
+              <h2 class="tour__title">Step inside the atelier.</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TESTIMONIALS ==================== -->
+      <section class="quotes section section--dark">
+        <div class="container">
+          <p class="eyebrow eyebrow--rule eyebrow--center reveal">
+            <span class="eyebrow__rule"></span>
+            Testimonials
+            <span class="eyebrow__rule"></span>
+          </p>
+          <h2 class="h2 h2--center reveal">
+            What Our <em class="accent">Clients Say</em>
+          </h2>
+
+          <div class="quote-grid">
+            <blockquote class="quote reveal">
+              <span class="quote__mark">"</span>
+              <p>
+                Amazing experience! The staff is so friendly and professional.
+                Best salon in town.
+              </p>
+              <div class="stars" aria-label="Rated 5 out of 5">
+                <img src="Images/star_icon.svg" alt="" width="16" height="16" />
+                <img src="Images/star_icon.svg" alt="" width="16" height="16" />
+                <img src="Images/star_icon.svg" alt="" width="16" height="16" />
+                <img src="Images/star_icon.svg" alt="" width="16" height="16" />
+                <img src="Images/star_icon.svg" alt="" width="16" height="16" />
+              </div>
+              <cite>&mdash; Neha Patel</cite>
+            </blockquote>
+
+            <blockquote class="quote reveal">
+              <span class="quote__mark">"</span>
+              <p>
+                I loved the hair spa service. My hair feels so smooth and silky.
+                Highly recommended!
+              </p>
+              <div class="stars" aria-label="Rated 5 out of 5">
+                <img src="Images/star_icon.svg" alt="" width="16" height="16" />
+                <img src="Images/star_icon.svg" alt="" width="16" height="16" />
+                <img src="Images/star_icon.svg" alt="" width="16" height="16" />
+                <img src="Images/star_icon.svg" alt="" width="16" height="16" />
+                <img src="Images/star_icon.svg" alt="" width="16" height="16" />
+              </div>
+              <cite>&mdash; Priya Shah</cite>
+            </blockquote>
+
+            <blockquote class="quote reveal">
+              <span class="quote__mark">"</span>
+              <p>
+                Bridal makeup was absolutely perfect. They made my day even more
+                special.
+              </p>
+              <div class="stars" aria-label="Rated 5 out of 5">
+                <img src="Images/star_icon.svg" alt="" width="16" height="16" />
+                <img src="Images/star_icon.svg" alt="" width="16" height="16" />
+                <img src="Images/star_icon.svg" alt="" width="16" height="16" />
+                <img src="Images/star_icon.svg" alt="" width="16" height="16" />
+                <img src="Images/star_icon.svg" alt="" width="16" height="16" />
+              </div>
+              <cite>&mdash; Krunal Joshi</cite>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== BRANDS ==================== -->
+      <section class="brands">
+        <div class="container">
+          <p class="eyebrow eyebrow--center reveal">Premium Brands We Use</p>
+          <ul class="brands__list reveal">
+            <li>L&rsquo;Or&eacute;al</li>
+            <li>Schwarzkopf</li>
+            <li>Wella</li>
+            <li>Matrix</li>
+            <li>Olaplex</li>
+            <li>MAC</li>
+            <li>Lakm&eacute;</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ==================== MEMBERSHIP ==================== -->
+      <section class="plans section">
+        <div class="container">
+          <p class="eyebrow eyebrow--center reveal">Membership</p>
+          <h2 class="h2 h2--center reveal">
+            Belong to<br /><em class="accent accent--dark">the house.</em>
+          </h2>
+
+          <div class="plan-grid">
+            <article class="plan reveal">
+              <p class="plan__tier">Silver</p>
+              <p class="plan__price">&#8377;9,999<span>/ year</span></p>
+              <ul class="checks">
+                <li>10% off all services</li>
+                <li>Priority booking</li>
+                <li>Complimentary hair wash</li>
+                <li>Birthday voucher</li>
+              </ul>
+              <a href="#contact" class="btn btn--ink btn--block"
+                >Choose Silver</a
+              >
+            </article>
+
+            <article class="plan plan--featured reveal">
+              <span class="pill-gold plan__flag">Most chosen</span>
+              <p class="plan__tier">Gold</p>
+              <p class="plan__price">&#8377;19,999<span>/ year</span></p>
+              <ul class="checks">
+                <li>20% off all services</li>
+                <li>4 signature facials</li>
+                <li>2 hair spa rituals</li>
+                <li>Guest passes</li>
+                <li>Priority booking</li>
+              </ul>
+              <a href="#contact" class="btn btn--gold btn--block"
+                >Choose Gold</a
+              >
+            </article>
+
+            <article class="plan reveal">
+              <p class="plan__tier">Platinum</p>
+              <p class="plan__price">&#8377;39,999<span>/ year</span></p>
+              <ul class="checks">
+                <li>30% off all services</li>
+                <li>Unlimited hair wash</li>
+                <li>12 signature rituals</li>
+                <li>Bridal preview session</li>
+                <li>Private suite access</li>
+              </ul>
+              <a href="#contact" class="btn btn--ink btn--block"
+                >Choose Platinum</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== SEASONAL OFFERS ==================== -->
+      <section class="offers section">
+        <div class="container">
+          <div class="sec-head">
+            <h2 class="h2 reveal">
+              Seasonal <em class="accent accent--dark">offers.</em>
+            </h2>
+            <p class="sec-head__note reveal">
+              Small rituals that arrive at just the right moment. Available for
+              a limited time each season.
+            </p>
+          </div>
+
+          <div class="offer-grid">
+            <article class="offer reveal">
+              <div class="offer__top">
+                <span class="offer__kind">Seasonal</span>
+                <span class="pill-ink">25% off</span>
+              </div>
+              <h3 class="offer__title">Monsoon Hair Revival</h3>
+              <p class="offer__text">
+                Reset your scalp with a two-step keratin &amp; spa ritual.
+              </p>
+              <a href="#contact" class="link-ink"
+                >Claim
+                <img src="Images/right_arrow.svg" alt="" width="14" height="14"
+              /></a>
+            </article>
+
+            <article class="offer reveal">
+              <div class="offer__top">
+                <span class="offer__kind">Festival</span>
+                <span class="pill-ink">Flat &#8377;500 off</span>
+              </div>
+              <h3 class="offer__title">Diwali Glow Edit</h3>
+              <p class="offer__text">
+                Radiance facial + blow-dry, perfectly timed for the season.
+              </p>
+              <a href="#contact" class="link-ink"
+                >Claim
+                <img src="Images/right_arrow.svg" alt="" width="14" height="14"
+              /></a>
+            </article>
+
+            <article class="offer reveal">
+              <div class="offer__top">
+                <span class="offer__kind">Student</span>
+                <span class="pill-ink">15% off</span>
+              </div>
+              <h3 class="offer__title">Campus Card</h3>
+              <p class="offer__text">
+                Bring a valid ID and enjoy weekday styling savings.
+              </p>
+              <a href="#contact" class="link-ink"
+                >Claim
+                <img src="Images/right_arrow.svg" alt="" width="14" height="14"
+              /></a>
+            </article>
+
+            <article class="offer reveal">
+              <div class="offer__top">
+                <span class="offer__kind">Birthday</span>
+                <span class="pill-ink">Free</span>
+              </div>
+              <h3 class="offer__title">Birthday Ritual</h3>
+              <p class="offer__text">
+                A complimentary express facial on your special month.
+              </p>
+              <a href="#contact" class="link-ink"
+                >Claim
+                <img src="Images/right_arrow.svg" alt="" width="14" height="14"
+              /></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== APPOINTMENT ==================== -->
+      <section class="book section" id="contact">
+        <div class="container">
+          <div class="book__card reveal">
+            <div class="book__aside">
+              <img
+                class="book__img"
+                src="Images/Booking.svg"
+                alt="Luxora salon styling floor"
+              />
+              <div class="book__scrim"></div>
+              <div class="book__intro">
+                <p class="eyebrow eyebrow--light">Appointment</p>
+                <h2 class="book__title">Reserve<br />your ritual.</h2>
+                <p class="book__text">
+                  Tell us a little about you, and we&rsquo;ll craft a slot that
+                  fits.
+                </p>
+                <ul class="book__meta">
+                  <li>
+                    <svg
+                      viewBox="0 0 16 16"
+                      width="16"
+                      height="16"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M14.6 11.3v2a1.3 1.3 0 0 1-1.5 1.3 13.2 13.2 0 0 1-5.7-2 13 13 0 0 1-4-4A13.2 13.2 0 0 1 1.4 2.9 1.3 1.3 0 0 1 2.7 1.4h2a1.3 1.3 0 0 1 1.3 1.1c.1.6.2 1.3.5 1.9a1.3 1.3 0 0 1-.3 1.4l-.8.8a10.7 10.7 0 0 0 4 4l.8-.8a1.3 1.3 0 0 1 1.4-.3c.6.2 1.2.4 1.9.5a1.3 1.3 0 0 1 1.1 1.3Z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <a href="tel:+919876543210">+91 98765 43210</a>
+                  </li>
+                  <li>
+                    <svg
+                      viewBox="0 0 16 16"
+                      width="16"
+                      height="16"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M14 7.7c0 3.1-2.7 5.6-6 5.6a6.7 6.7 0 0 1-2.6-.5L2 13.9l1-3.1A5.4 5.4 0 0 1 2 7.7C2 4.6 4.7 2.1 8 2.1s6 2.5 6 5.6Z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.3"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <a href="#contact">Chat on WhatsApp</a>
+                  </li>
+                  <li>
+                    <svg
+                      viewBox="0 0 16 16"
+                      width="16"
+                      height="16"
+                      aria-hidden="true"
+                    >
+                      <circle
+                        cx="8"
+                        cy="8"
+                        r="6.3"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.3"
+                      />
+                      <path
+                        d="M8 4.4V8l2.4 1.4"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.3"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    <span
+                      >Mon &ndash; Sun &middot; 9:00 AM &ndash; 9:00 PM</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="book__form">
+              <form id="bookingForm" novalidate>
+                <div class="field">
+                  <label for="bkName">Full name</label>
+                  <input
+                    id="bkName"
+                    name="name"
+                    type="text"
+                    placeholder="Your name"
+                    required
+                  />
+                  <small class="field__err" data-err="bkName"></small>
+                </div>
+
+                <div class="field-row">
+                  <div class="field">
+                    <label for="bkPhone">Phone</label>
+                    <input
+                      id="bkPhone"
+                      name="phone"
+                      type="tel"
+                      placeholder="10-digit mobile"
+                      required
+                    />
+                    <small class="field__err" data-err="bkPhone"></small>
+                  </div>
+                  <div class="field">
+                    <label for="bkEmail">Email <span>(optional)</span></label>
+                    <input
+                      id="bkEmail"
+                      name="email"
+                      type="email"
+                      placeholder="you@example.com"
+                    />
+                    <small class="field__err" data-err="bkEmail"></small>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="bkService">Service</label>
+                  <select id="bkService" name="service" required>
+                    <option value="">Choose a service</option>
+                    <option>Hair Cut</option>
+                    <option>Hair Color</option>
+                    <option>Hair Styling</option>
+                    <option>Hair Spa</option>
+                    <option>Facial</option>
+                    <option>Skin Treatment</option>
+                    <option>Bridal Makeup</option>
+                    <option>Spa &amp; Massage</option>
+                    <option>Nail Art</option>
+                    <option>Waxing</option>
+                    <option>Eyebrows</option>
+                    <option>Grooming</option>
+                  </select>
+                  <small class="field__err" data-err="bkService"></small>
+                </div>
+
+                <div class="field-row">
+                  <div class="field">
+                    <label for="bkDate">Date</label>
+                    <input id="bkDate" name="date" type="date" required />
+                    <small class="field__err" data-err="bkDate"></small>
+                  </div>
+                  <div class="field">
+                    <label for="bkTime">Time</label>
+                    <select id="bkTime" name="time" required>
+                      <option value="">Pick a slot</option>
+                      <option>09:00 AM</option>
+                      <option>11:00 AM</option>
+                      <option>01:00 PM</option>
+                      <option>03:00 PM</option>
+                      <option>05:00 PM</option>
+                      <option>07:00 PM</option>
+                    </select>
+                    <small class="field__err" data-err="bkTime"></small>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="bkNote"
+                    >Anything we should know? <span>(optional)</span></label
+                  >
+                  <textarea
+                    id="bkNote"
+                    name="note"
+                    rows="3"
+                    placeholder="Preferred stylist, allergies, occasion&hellip;"
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn--gold btn--block btn--xl">
+                  Confirm Appointment
+                  <img
+                    src="Images/right_arrow.svg"
+                    alt=""
+                    width="16"
+                    height="16"
+                  />
+                </button>
+                <p class="book__note">
+                  We&rsquo;ll confirm your slot on WhatsApp within 10 minutes.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== JOURNAL ==================== -->
+      <section class="journal section" id="journal">
+        <div class="container">
+          <div class="sec-head sec-head--tight">
+            <h2 class="h2 reveal">
+              From the <em class="accent accent--dark">journal.</em>
+            </h2>
+            <a href="#journal" class="link-gold reveal"
+              >All articles
+              <img
+                src="Images/right_arrow_green.svg"
+                alt=""
+                width="16"
+                height="16"
+            /></a>
+          </div>
+
+          <div class="post-grid">
+            <article class="post reveal">
+              <div class="post__media">
+                <img
+                  src="Images/The_Slow_Beauty_Ritual.svg"
+                  alt="The slow-beauty ritual your hair has been asking for"
+                />
+              </div>
+              <p class="post__meta">
+                <span>Hair Care</span> &middot;
+                <time datetime="2026-05-15">May 15, 2026</time>
+              </p>
+              <h3 class="post__title">
+                The Slow-Beauty Ritual Your Hair Has Been Asking For
+              </h3>
+              <a href="#journal" class="link-ink"
+                >Read
+                <img src="Images/right_arrow.svg" alt="" width="14" height="14"
+              /></a>
+            </article>
+
+            <article class="post reveal">
+              <div class="post__media">
+                <img
+                  src="Images/Gallery_img4.svg"
+                  alt="How to choose bridal makeup that still looks like you"
+                />
+              </div>
+              <p class="post__meta">
+                <span>Bridal</span> &middot;
+                <time datetime="2026-05-20">May 20, 2026</time>
+              </p>
+              <h3 class="post__title">
+                How to Choose Bridal Makeup That Still Looks Like You
+              </h3>
+              <a href="#journal" class="link-ink"
+                >Read
+                <img src="Images/right_arrow.svg" alt="" width="14" height="14"
+              /></a>
+            </article>
+
+            <article class="post reveal">
+              <div class="post__media">
+                <img
+                  src="Images/Gallery_img7.svg"
+                  alt="Five habits every glowing-skin client has in common"
+                />
+              </div>
+              <p class="post__meta">
+                <span>Skin</span> &middot;
+                <time datetime="2026-05-25">May 25, 2026</time>
+              </p>
+              <h3 class="post__title">
+                Five Habits Every Glowing-Skin Client Has in Common
+              </h3>
+              <a href="#journal" class="link-ink"
+                >Read
+                <img src="Images/right_arrow.svg" alt="" width="14" height="14"
+              /></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== INSTAGRAM ==================== -->
+      <section class="instagram section" id="instagram">
+        <div class="container">
+          <div class="instagram__header reveal">
+            <div class="instagram__title-group">
+              <p class="eyebrow">Instagram</p>
+              <h2 class="instagram__handle">@maison.aure</h2>
+            </div>
+            <a
+              href="https://instagram.com/maison.aure"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="instagram__btn"
+              aria-label="Follow us on Instagram"
+            >
+              Follow us
+              <!-- <svg
+                viewBox="0 0 24 24"
+                width="16"
+                height="16"
+                aria-hidden="true"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                ></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg> -->
+              <img
+                src="/Images/instagram.svg"
+                alt="instagram"
+                width="16"
+                height="16"
+              />
+            </a>
+          </div>
+
+          <div class="instagram__grid">
+            <a
+              href="https://instagram.com/maison.aure"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="instagram__post reveal"
+            >
+              <img
+                src="Images/Gallery_img1.svg"
+                alt="A woman with beautiful curly hair style"
+                loading="lazy"
+              />
+              <div class="instagram__overlay">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                  ></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </div>
+            </a>
+            <a
+              href="https://instagram.com/maison.aure"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="instagram__post reveal"
+            >
+              <img
+                src="Images/Gallery_img8.svg"
+                alt="Stylist styling a woman's hair in the salon"
+                loading="lazy"
+              />
+              <div class="instagram__overlay">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                  ></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </div>
+            </a>
+            <a
+              href="https://instagram.com/maison.aure"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="instagram__post reveal"
+            >
+              <img
+                src="Images/Gallery_img4.svg"
+                alt="Woman looking in a lighted makeup mirror"
+                loading="lazy"
+              />
+              <div class="instagram__overlay">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                  ></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </div>
+            </a>
+            <a
+              href="https://instagram.com/maison.aure"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="instagram__post reveal"
+            >
+              <img
+                src="Images/insta_4.png"
+                alt="Beautiful Indian bridal look with elegant jewelry"
+                loading="lazy"
+              />
+              <div class="instagram__overlay">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                  ></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </div>
+            </a>
+            <a
+              href="https://instagram.com/maison.aure"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="instagram__post reveal"
+            >
+              <img
+                src="Images/Gallery_img7.svg"
+                alt="Indian bridal henna design details"
+                loading="lazy"
+              />
+              <div class="instagram__overlay">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                  ></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </div>
+            </a>
+            <a
+              href="https://instagram.com/maison.aure"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="instagram__post reveal"
+            >
+              <img
+                src="Images/Gallery_img6.svg"
+                alt="Luxury skincare cosmetic products flatlay"
+                loading="lazy"
+              />
+              <div class="instagram__overlay">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                  ></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq section" id="faq">
+        <div class="container faq__inner">
+          <!-- Left: FAQ Accordion -->
+          <div class="faq__questions">
+            <p class="eyebrow reveal">Questions</p>
+            <h2 class="h2 reveal">
+              Good to <em class="accent accent--dark">know.</em>
+            </h2>
+
+            <div class="accordion reveal">
+              <!-- Accordion Item 1 (Active by default) -->
+              <div class="accordion__item is-active">
+                <button
+                  class="accordion__trigger"
+                  aria-expanded="true"
+                  aria-controls="faq-1"
+                >
+                  <span>Do I need to book an appointment in advance?</span>
+                  <img
+                    src="Images/up_img.svg"
+                    class="accordion__icon"
+                    alt=""
+                    width="14"
+                    height="14"
+                  />
+                </button>
+                <div class="accordion__content" id="faq-1">
+                  <div class="accordion__body">
+                    <p>
+                      We strongly recommend booking 3-5 days ahead for weekend
+                      slots and 2 weeks ahead for bridal consultations. Weekday
+                      afternoons often have same-day availability.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Item 2 -->
+              <div class="accordion__item">
+                <button
+                  class="accordion__trigger"
+                  aria-expanded="false"
+                  aria-controls="faq-2"
+                >
+                  <span>Which products do you use?</span>
+                  <img
+                    src="Images/down_img.svg"
+                    class="accordion__icon"
+                    alt=""
+                    width="14"
+                    height="14"
+                  />
+                </button>
+                <div class="accordion__content" id="faq-2">
+                  <div class="accordion__body">
+                    <p>
+                      We use premium, certified products from leading global
+                      brands such as L&rsquo;Or&eacute;al Professionnel,
+                      Schwarzkopf, Wella, and Olaplex. For skincare and makeup,
+                      we select dermatologist-tested organic lines and
+                      high-definition cosmetics.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Item 3 -->
+              <div class="accordion__item">
+                <button
+                  class="accordion__trigger"
+                  aria-expanded="false"
+                  aria-controls="faq-3"
+                >
+                  <span>Do you offer at-home bridal services?</span>
+                  <img
+                    src="Images/down_img.svg"
+                    class="accordion__icon"
+                    alt=""
+                    width="14"
+                    height="14"
+                  />
+                </button>
+                <div class="accordion__content" id="faq-3">
+                  <div class="accordion__body">
+                    <p>
+                      Yes, we offer premium on-location packages for bridal
+                      parties and special events. Our senior styling team will
+                      travel to your venue or home, fully equipped to deliver
+                      the complete Maison Aur&eacute; experience.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Item 4 -->
+              <div class="accordion__item">
+                <button
+                  class="accordion__trigger"
+                  aria-expanded="false"
+                  aria-controls="faq-4"
+                >
+                  <span>What is your cancellation policy?</span>
+                  <img
+                    src="Images/down_img.svg"
+                    class="accordion__icon"
+                    alt=""
+                    width="14"
+                    height="14"
+                  />
+                </button>
+                <div class="accordion__content" id="faq-4">
+                  <div class="accordion__body">
+                    <p>
+                      We kindly request at least 24 hours notice for
+                      rescheduling or cancelling individual appointments. Bridal
+                      and group packages require a 72-hour notice to avoid
+                      deposit forfeitures.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Newsletter Card -->
+          <div class="faq__newsletter reveal">
+            <div class="newsletter-card">
+              <p class="newsletter-card__eyebrow">Newsletter</p>
+              <h3 class="newsletter-card__title">
+                The Sunday <em class="accent">edit.</em>
+              </h3>
+              <p class="newsletter-card__text">
+                Seasonal rituals, member offers and a beauty essay &mdash;
+                quietly delivered to your inbox once a week.
+              </p>
+
+              <form
+                class="newsletter-card__form"
+                id="newsletterForm"
+                novalidate
+              >
+                <div class="newsletter-card__input-wrap">
+                  <input
+                    type="email"
+                    class="newsletter-card__input"
+                    placeholder="you@email.com"
+                    required
+                    aria-label="Email address"
+                  />
+                  <button
+                    type="submit"
+                    class="btn btn--gold newsletter-card__btn"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+
+              <ul class="newsletter-card__ticks">
+                <li>
+                  <svg
+                    viewBox="0 0 12 12"
+                    width="12"
+                    height="12"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M2.5 6.5L4.5 8.5L9.5 3.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  Unsubscribe anytime
+                </li>
+                <li>
+                  <svg
+                    viewBox="0 0 12 12"
+                    width="12"
+                    height="12"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M2.5 6.5L4.5 8.5L9.5 3.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  No spam, ever
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== VISIT US (MAP) ==================== -->
+      <section class="visit section" id="visit">
+        <div class="container visit__inner">
+          <!-- Left: Iframe Map -->
+          <div class="visit__map reveal">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.196307304192!2d72.83151817596008!3d19.055172287099035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9115c54d193%3A0x6b4850fa976008ab!2sLinking%20Rd%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Maison Aur&eacute; Location Map"
+            ></iframe>
+          </div>
+
+          <!-- Right: Contact Card -->
+          <div class="visit__card reveal">
+            <p class="eyebrow">Visit Us</p>
+            <h2 class="h2">
+              Come find <em class="accent accent--dark">the house.</em>
+            </h2>
+
+            <ul class="visit__list">
+              <li>
+                <span class="visit__icon-wrap">
+                  <img
+                    src="Images/location.svg"
+                    alt="Map Pin"
+                    width="18"
+                    height="18"
+                  />
+                </span>
+                <span class="visit__text">
+                  123 Linking Road, Bandra West,<br />Mumbai - 400 050
+                </span>
+              </li>
+              <li>
+                <span class="visit__icon-wrap">
+                  <img
+                    src="Images/contact_icon.svg"
+                    alt="Phone"
+                    width="18"
+                    height="18"
+                  />
+                </span>
+                <span class="visit__text">
+                  <a href="tel:+919876543210">+91 98765 43210</a>
+                </span>
+              </li>
+              <li>
+                <span class="visit__icon-wrap">
+                  <img
+                    src="Images/Email_icon.svg"
+                    alt="Email"
+                    width="18"
+                    height="18"
+                  />
+                </span>
+                <span class="visit__text">
+                  <a href="mailto:hello@maisonaure.com">hello@maisonaure.com</a>
+                </span>
+              </li>
+              <li>
+                <span class="visit__icon-wrap">
+                  <img
+                    src="Images/Watch_icon.svg"
+                    alt="Clock"
+                    width="18"
+                    height="18"
+                  />
+                </span>
+                <span class="visit__text">
+                  Mon &ndash; Sun &middot; 9:00 AM &ndash; 9:00 PM
+                </span>
+              </li>
+            </ul>
+
+            <div class="visit__actions">
+              <a
+                href="https://maps.google.com/?q=Linking+Road,+Bandra+West,+Mumbai"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn--gold"
+              >
+                Get Directions
+                <img
+                  src="Images/right_arrow.svg"
+                  alt=""
+                  width="16"
+                  height="16"
+                />
+              </a>
+              <a
+                href="https://wa.me/919876543210"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn--whatsapp"
+              >
+                WhatsApp
+                <img src="Images/Whatsapp.svg" alt="" width="16" height="16" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <a href="#hero" class="brand">
+            <span class="brand__mark">
+              <img src="Images/luxora.svg" alt="" width="20" height="20" />
+            </span>
+            <span class="brand__text">
+              <span class="brand__name">Luxora</span>
+              <span class="brand__tag">Salon &amp; Spa</span>
+            </span>
+          </a>
+          <p class="footer__about">
+            A quiet study in beauty. Premium hair, skin, makeup and spa rituals
+            delivered by certified artisans.
+          </p>
+          <div class="online">
+            <div class="online_marketing">
+              <img
+                src="/Images/instagram_white.svg"
+                alt="instagram"
+                width="16"
+                height="16"
+              />
+            </div>
+            <div class="online_marketing">
+              <img
+                src="/Images/facebook.svg"
+                alt="instagram"
+                width="16"
+                height="16"
+              />
+            </div>
+            <div class="online_marketing">
+              <img
+                src="/Images/whatsapp_white.svg"
+                alt="instagram"
+                width="16"
+                height="16"
+              />
+            </div>
+          </div>
+        </div>
+
+        <nav class="footer__col" aria-label="Services">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#services">Hair Cut</a></li>
+            <li><a href="#services">Hair Color</a></li>
+            <li><a href="#services">Bridal Makeup</a></li>
+            <li><a href="#services">Spa &amp; Massage</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="Company">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#experts">Our Experts</a></li>
+            <li><a href="#journal">Journal</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__col">
+          <h3>Visit Us</h3>
+          <ul class="footer__contact">
+            <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+            <li>
+              <a href="mailto:hello@luxorasalon.in">hello@luxorasalon.in</a>
+            </li>
+            <li>Mon &ndash; Sun &middot; 9:00 AM &ndash; 9:00 PM</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer__bar">
+        <p>
+          &copy; <span id="year">2026</span> Luxora Salon &amp; Spa. All rights
+          reserved.
+        </p>
+        <p>Crafted with care in Ahmedabad.</p>
+      </div>
+    </footer>
+
+    <button class="to-top" id="toTop" type="button" aria-label="Back to top">
+      <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true">
+        <path
+          d="M8 13V3M3.5 7.5 8 3l4.5 4.5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+
+    <!-- Tour modal -->
+    <div class="modal" id="tourModal" hidden>
+      <div class="modal__backdrop" data-close></div>
+      <div
+        class="modal__panel"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Salon tour"
+      >
+        <button
+          class="modal__close"
+          type="button"
+          data-close
+          aria-label="Close"
+        >
+          &times;
+        </button>
+        <img src="Images/Salon_tour.svg" alt="Inside the Luxora atelier" />
+        <p>
+          The full 90-second film is coming soon. Book a visit and see it in
+          person.
+        </p>
+        <a href="#contact" class="btn btn--gold" data-close>Book Appointment</a>
+      </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
